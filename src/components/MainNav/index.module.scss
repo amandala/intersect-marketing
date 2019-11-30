@@ -1,0 +1,21 @@
+.Wrapper {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100px;
+}
+
+.Nav {
+  list-style: none;
+  display: flex;
+  padding: 16px 24px;
+}
+
+.Link {
+  color: white;
+  margin-left: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

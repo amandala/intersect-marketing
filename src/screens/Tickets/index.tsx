@@ -1,7 +1,14 @@
 import React from "react";
 
+import CheckoutForm from "../../components/CheckoutForm";
+
 const Tickets = () => {
-  return <p>Tickets</p>;
+  return (
+    <div>
+      <p>Tickets</p>
+      <CheckoutForm />
+    </div>
+  );
 };
 
 export default Tickets;
