@@ -1,11 +1,14 @@
 import React from "react";
+import WordmarkSvg from "./WordmarkSvg";
+import LogoSvg from "./LogoSvg";
 
 import styles from "./index.module.scss";
 
 const Home = () => {
   return (
     <div className={styles.Layout}>
-      <h1 className={styles.Heading}>Inter.Sect</h1>
+      <LogoSvg />
+      <WordmarkSvg />
       <h3 className={styles.Subheading}>Music and Arts Festival</h3>
       <h2 className={styles.Details}>August 21 - 23 2020</h2>
       <h2 className={styles.Details}>High Prarie, Alberta</h2>
