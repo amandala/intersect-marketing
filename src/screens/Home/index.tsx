@@ -9,9 +9,11 @@ const Home = () => {
     <div className={styles.Layout}>
       <LogoSvg />
       <WordmarkSvg />
-      <h3 className={styles.Subheading}>Music and Arts Festival</h3>
-      <h2 className={styles.Details}>August 21 - 23 2020</h2>
-      <h2 className={styles.Details}>High Prarie, Alberta</h2>
+      <div className={styles.DetailsWrapper}>
+        <h3 className={styles.Subheading}>Music and Arts Festival</h3>
+        <h2 className={styles.Details}>August 21 - 23 2020</h2>
+        <h2 className={styles.Details}>High Prarie, Alberta</h2>
+      </div>
       <div className={styles.Stages}>
         <div className={styles.Stage}>
           <h1 className={styles.HeadingMedium}>Core</h1>
