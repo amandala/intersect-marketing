@@ -14,7 +14,7 @@ const Home = () => {
       <WordmarkSvg />
       <div className={styles.DetailsWrapper}>
         <h3 className={styles.Subheading}>Art and Music Festival</h3>
-        <h2 className={styles.Details}>August 21 - 23 2020</h2>
+        <h2 className={styles.Details}>August 21 - 23, 2020</h2>
         <h2 className={styles.Details}>High Prarie, Alberta</h2>
       </div>
       <div className={styles.About}>
