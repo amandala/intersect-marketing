@@ -9,11 +9,11 @@ const MainNav = () => {
     <nav className={styles.Wrapper}>
       <ul className={styles.Nav}>
         <li>
-          <Link className={styles.Link} to="/about">
-            About
+          <Link className={styles.Link} to="/tickets">
+            tickets
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className={styles.Link} to="bridge">
             Bridge
           </Link>
@@ -27,7 +27,7 @@ const MainNav = () => {
           <Link className={styles.Link} to="galley">
             Galley
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link className={styles.Link} to="faq">
             FAQ
