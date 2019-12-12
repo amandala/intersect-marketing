@@ -80,7 +80,7 @@
   margin-bottom: 60px;
   max-width: 900px;
   background-color: rgba(black, 0.5);
-  box-shadow: 0px 0px 30px 5px #93677f;
+  box-shadow: 0px 0px 20px 0px #cfe9f6;
 }
 
 .Stage {
@@ -91,7 +91,23 @@
   margin: 20px;
   padding: 25px;
   background-color: rgba(black, 0.5);
-  box-shadow: 0px 0px 30px 5px #93677f;
+  box-shadow: 0px 0px 20px 0px #cfe9f6;
+}
+
+.Mark {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.WordMark {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 @include breakpoint(medium) {

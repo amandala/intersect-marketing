@@ -1,6 +1,5 @@
 import React from "react";
-import WordmarkSvg from "./WordmarkSvg";
-import LogoSvg from "./LogoSvg";
+
 import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
@@ -10,8 +9,8 @@ import styles from "./index.module.scss";
 const Home = () => {
   return (
     <div className={styles.Layout}>
-      <LogoSvg />
-      <WordmarkSvg />
+      <img className={styles.Mark} src="mark.png" />
+      <img className={styles.WordMark} src="type.png" />
       <div className={styles.DetailsWrapper}>
         <h3 className={styles.Subheading}>Art and Music Festival</h3>
         <h2 className={styles.Details}>August 21 - 23, 2020</h2>
