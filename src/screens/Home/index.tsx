@@ -9,8 +9,12 @@ import styles from "./index.module.scss";
 const Home = () => {
   return (
     <div className={styles.Layout}>
-      <img className={styles.Mark} src="mark.png" />
-      <img className={styles.WordMark} src="type.png" />
+      <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
+      <img
+        alt="Intersect Wordmark"
+        className={styles.WordMark}
+        src="type.png"
+      />
       <div className={styles.DetailsWrapper}>
         <h3 className={styles.Subheading}>Art and Music Festival</h3>
         <h2 className={styles.Details}>August 21 - 23, 2020</h2>
