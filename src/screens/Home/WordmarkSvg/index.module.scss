@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .Wrapper {
   width: 100%;
   display: flex;
@@ -6,5 +8,11 @@
 }
 
 .Svg {
-  width: 80%;
+  width: 100%;
+}
+
+@include breakpoint(large) {
+  .Svg {
+    width: 80%;
+  }
 }
