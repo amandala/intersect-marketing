@@ -79,7 +79,8 @@
   margin-top: 60px;
   margin-bottom: 60px;
   max-width: 900px;
-  background-color: rgba(black, 0.7);
+  background-color: rgba(black, 0.5);
+  box-shadow: 0px 0px 30px 5px #93677f;
 }
 
 .Stage {
@@ -89,7 +90,8 @@
   align-items: center;
   margin: 20px;
   padding: 25px;
-  background-color: rgba(black, 0.7);
+  background-color: rgba(black, 0.5);
+  box-shadow: 0px 0px 30px 5px #93677f;
 }
 
 @include breakpoint(medium) {
