@@ -14,7 +14,7 @@ const Home = () => {
       <WordmarkSvg />
       <div className={styles.DetailsWrapper}>
         <h3 className={styles.Subheading}>Art and Music Festival</h3>
-        <h2 className={styles.Details}>August 21 - 23 2020</h2>
+        <h2 className={styles.Details}>August 21 - 23, 2020</h2>
         <h2 className={styles.Details}>High Prarie, Alberta</h2>
       </div>
       <div className={styles.About}>
@@ -32,6 +32,10 @@ const Home = () => {
           Camping is available, as well as day passes.{" "}
         </p>
       </div>
+      <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
+      <h3 className={styles.SubheadingCentered}>
+        Lineup releases starting January 1
+      </h3>
       <div className={styles.Stages}>
         <div className={styles.Stage}>
           <CoreSvg />

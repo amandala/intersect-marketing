@@ -5,6 +5,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Heading {
@@ -33,10 +36,11 @@
 }
 
 .Details {
+  font-family: $open-sans;
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -47,39 +51,61 @@
 }
 
 .Subheading {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
   margin: 0 0 24px 0;
+  font-weight: 400;
+}
+
+.SubheadingCentered {
+  font-family: $open-sans;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+  font-weight: 500;
 }
 
 .Stages {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
   justify-content: center;
 }
 
 .About {
+  border: 1px solid white;
+  padding: 20px;
   margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 900px;
+  background-color: rgba(black, 0.5);
+  box-shadow: 0px 0px 30px 5px #93677f;
 }
 
 .Stage {
-  width: 300px;
   border: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px;
   padding: 25px;
+  background-color: rgba(black, 0.5);
+  box-shadow: 0px 0px 30px 5px #93677f;
 }
 
-@include breakpoint(large) {
+@include breakpoint(medium) {
   .Layout {
     padding: 100px 40px;
   }
 
-  .Stages {
-    justify-content: space-between;
+  .Stage {
+    max-width: 400px;
+  }
+}
+
+@include breakpoint(large) {
+  .Stage {
+    max-width: 300px;
   }
 }
