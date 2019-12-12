@@ -32,6 +32,10 @@ const Home = () => {
           Camping is available, as well as day passes.{" "}
         </p>
       </div>
+      <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
+      <h3 className={styles.SubheadingCentered}>
+        Lineup releases starting January 1
+      </h3>
       <div className={styles.Stages}>
         <div className={styles.Stage}>
           <CoreSvg />
