@@ -1,6 +1,7 @@
 import React from "react";
 
-const CoreSvg = () => {
+const CoreSvg = ({ glow }: { glow: boolean }) => {
+  console.log(glow);
   return (
     <svg viewBox="0 0 932 300" xmlns="http://www.w3.org/2000/svg">
       <g fill="#E6E7E8" fillRule="nonzero">

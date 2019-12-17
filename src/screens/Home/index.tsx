@@ -7,6 +7,10 @@ import GalleySvg from "./GalleySvg";
 import styles from "./index.module.scss";
 
 const Home = () => {
+  const [hover, setHover] = React.useState<
+    undefined | "core" | "bridge" | "galley"
+  >(undefined);
+
   return (
     <div className={styles.Layout}>
       <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
@@ -40,8 +44,12 @@ const Home = () => {
         Lineup releases starting January 1
       </h3>
       <div className={styles.Stages}>
-        <div className={styles.Stage}>
-          <CoreSvg />
+        <div
+          onMouseEnter={() => setHover("core")}
+          onMouseLeave={() => setHover(undefined)}
+          className={styles.Stage}
+        >
+          <CoreSvg glow={hover === "core"} />
           <p className={styles.Text}>Heavy Electronic</p>
           <p>
             Come and power up at The Core with Modern Electronic and Bass Music
@@ -49,8 +57,12 @@ const Home = () => {
             powerful enough to shock your system into full dance mode!
           </p>
         </div>
-        <div className={styles.Stage}>
-          <BridgeSvg />
+        <div
+          onMouseEnter={() => setHover("bridge")}
+          onMouseLeave={() => setHover(undefined)}
+          className={styles.Stage}
+        >
+          <BridgeSvg glow={hover === "bridge"} />
           <p className={styles.Text}>Genre Fustion</p>
           <p>
             This stage is all about musical fusion and “bridging the gap”
@@ -59,8 +71,12 @@ const Home = () => {
             magical sunrise sets take place.
           </p>
         </div>
-        <div className={styles.Stage}>
-          <GalleySvg />
+        <div
+          onMouseEnter={() => setHover("galley")}
+          onMouseLeave={() => setHover(undefined)}
+          className={styles.Stage}
+        >
+          <GalleySvg glow={hover === "galley"} />
           <p className={styles.Text}>Folk & Country Bands</p>
           <p>
             Located near the Market and Food Vendors, The Galley stage is a
