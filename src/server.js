@@ -13,7 +13,12 @@ app
     server.get("*", (req, res) => {
       return handle(req, res);
     });
-    server.listen(process.env.PORT, err => {
+
+    app.set("port", process.env.PORT || 5000);
+
+    // Start node server
+
+    server.listen(app.get("port"), err => {
       if (err) throw err;
       console.log(`> Ready on http://localhost:${process.env.PORT}`);
     });
