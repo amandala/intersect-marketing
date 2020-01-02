@@ -4,7 +4,7 @@ import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
 
-import styles from "./index.module.scss";
+import "./index.module.scss";
 
 const Home = () => {
   const [hover, setHover] = React.useState<
@@ -12,19 +12,15 @@ const Home = () => {
   >(undefined);
 
   return (
-    <div className={styles.Layout}>
-      <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
-      <img
-        alt="Intersect Wordmark"
-        className={styles.WordMark}
-        src="type.png"
-      />
-      <div className={styles.DetailsWrapper}>
-        <h3 className={styles.Subheading}>Art and Music Festival</h3>
-        <h2 className={styles.Details}>August 21 - 23, 2020</h2>
-        <h2 className={styles.Details}>High Prarie, Alberta</h2>
+    <div className={"Layout"}>
+      <img alt="Intersect Logo" className={"Mark"} src="mark.png" />
+      <img alt="Intersect Wordmark" className={"WordMark"} src="type.png" />
+      <div className={"DetailsWrapper"}>
+        <h3 className={"Subheading"}>Art and Music Festival</h3>
+        <h2 className={"Details"}>August 21 - 23, 2020</h2>
+        <h2 className={"Details"}>High Prarie, Alberta</h2>
       </div>
-      <div className={styles.About}>
+      <div className={"About"}>
         <p>
           Inter.Sect Art and Music Festival is a brand new, family friendly,
           multi-genre and multi-cultural Festival that focuses on Art, Community
@@ -39,18 +35,18 @@ const Home = () => {
           Camping is available, as well as day passes.{" "}
         </p>
       </div>
-      <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
-      <h3 className={styles.SubheadingCentered}>
+      <h3 className={"SubheadingCentered"}>Stay Tuned!</h3>
+      <h3 className={"SubheadingCentered"}>
         Lineup releases starting January 1
       </h3>
-      <div className={styles.Stages}>
+      <div className={"Stages"}>
         <div
           onMouseEnter={() => setHover("core")}
           onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
+          className={"Stage"}
         >
           <CoreSvg glow={hover === "core"} />
-          <p className={styles.Text}>Heavy Electronic</p>
+          <p className={"Text"}>Heavy Electronic</p>
           <p>
             Come and power up at The Core with Modern Electronic and Bass Music
             - Dubstep, House, Drum’n’Bass, Electro, Psytrance and anything
@@ -60,10 +56,10 @@ const Home = () => {
         <div
           onMouseEnter={() => setHover("bridge")}
           onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
+          className={"Stage"}
         >
           <BridgeSvg glow={hover === "bridge"} />
-          <p className={styles.Text}>Genre Fustion</p>
+          <p className={"Text"}>Genre Fustion</p>
           <p>
             This stage is all about musical fusion and “bridging the gap”
             between genres. Expect to see DJ equipment and live instruments
@@ -74,10 +70,10 @@ const Home = () => {
         <div
           onMouseEnter={() => setHover("galley")}
           onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
+          className={"Stage"}
         >
           <GalleySvg glow={hover === "galley"} />
-          <p className={styles.Text}>Folk & Country Bands</p>
+          <p className={"Text"}>Folk & Country Bands</p>
           <p>
             Located near the Market and Food Vendors, The Galley stage is a
             great place to set up your chair and enjoy all the Folk, Country,

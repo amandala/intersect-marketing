@@ -2,15 +2,15 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import styles from "./index.module.scss";
+import "./index.scss";
 
 const MainNav = () => {
   return (
-    <nav className={styles.Wrapper}>
-      <ul className={styles.Nav}>
+    <nav className={"NavWrapper"}>
+      <ul className={"Nav"}>
         <li>
           <a
-            className={styles.Link}
+            className={"NavLink"}
             target="_blank"
             href="https://dropaganda.tickit.ca/"
           >
@@ -33,7 +33,7 @@ const MainNav = () => {
           </Link>
         </li> */}
         <li>
-          <Link className={styles.Link} to="faq">
+          <Link className={"NavLink"} to="faq">
             FAQ
           </Link>
         </li>
