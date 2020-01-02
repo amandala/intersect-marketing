@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\n\nvar Tickets = function Tickets() {\n  return __jsx(\"div\", null, __jsx(\"p\", null, \"Tickets\"));\n};\n\nexport default Tickets;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,18 @@
+@import "../../../styles.scss";
+
+.WordmarkWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.WordmarkSvg {
+  width: 100%;
+}
+
+@include breakpoint(large) {
+  .WordmarkSvg {
+    width: 80%;
+  }
+}

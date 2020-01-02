@@ -1,0 +1,112 @@
+@import "../../styles.scss";
+
+.Layout {
+  background-image: url("/nebula.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Heading {
+  font-size: 50px;
+  line-height: 65px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 0;
+
+  &Medium {
+    margin: 0;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+}
+
+.Text {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.Details {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+.DetailsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Subheading {
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0 0 24px 0;
+  font-weight: 400;
+}
+
+.SubheadingCentered {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+  font-weight: 500;
+}
+
+.Stages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.About {
+  border: 1px solid white;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 900px;
+  background-color: rgba(black, 0.5);
+  box-shadow: 0px 0px 30px 5px #93677f;
+}
+
+.Stage {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 25px;
+  background-color: rgba(black, 0.5);
+  box-shadow: 0px 0px 30px 5px #93677f;
+}
+
+@include breakpoint(medium) {
+  .Layout {
+    padding: 100px 40px;
+  }
+
+  .Stage {
+    max-width: 400px;
+  }
+}
+
+@include breakpoint(large) {
+  .Stage {
+    max-width: 300px;
+  }
+}

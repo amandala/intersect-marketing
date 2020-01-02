@@ -2,15 +2,15 @@ import React from "react";
 
 import { MainNav } from "./components";
 
-import styles from "./App.module.scss";
+import "./App.scss";
 
-import { About, FAQ, Home, Tickets } from "./screens";
+import { About, FAQ, Home, Tickets } from "./pages";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className={styles.App}>
+    <div className={"App"}>
       <Router>
         <MainNav />
         <Switch>

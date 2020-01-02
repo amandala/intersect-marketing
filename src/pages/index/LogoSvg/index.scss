@@ -1,0 +1,18 @@
+@import "../../../styles.scss";
+
+.LogoWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.LogoSvg {
+  width: 100px;
+}
+
+@include breakpoint(large) {
+  .LogoSvg {
+    width: 200px;
+  }
+}
