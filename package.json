@@ -32,7 +32,8 @@
     "heroku-prebuild": "yarn install --production=false",
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "heroku-postbuild": "npm run build",
+    "start": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
