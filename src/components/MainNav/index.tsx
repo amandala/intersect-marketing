@@ -9,9 +9,13 @@ const MainNav = () => {
     <nav className={styles.Wrapper}>
       <ul className={styles.Nav}>
         <li>
-          <Link className={styles.Link} to="/tickets">
-            tickets
-          </Link>
+          <a
+            className={styles.Link}
+            target="_blank"
+            href="https://dropaganda.tickit.ca/"
+          >
+            buy tickets
+          </a>
         </li>
         {/* <li>
           <Link className={styles.Link} to="bridge">
