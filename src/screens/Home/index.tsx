@@ -1,5 +1,6 @@
 import React from "react";
-
+import WordmarkSvg from "./WordmarkSvg";
+import LogoSvg from "./LogoSvg";
 import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
@@ -7,18 +8,10 @@ import GalleySvg from "./GalleySvg";
 import styles from "./index.module.scss";
 
 const Home = () => {
-  const [hover, setHover] = React.useState<
-    undefined | "core" | "bridge" | "galley"
-  >(undefined);
-
   return (
     <div className={styles.Layout}>
-      <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
-      <img
-        alt="Intersect Wordmark"
-        className={styles.WordMark}
-        src="type.png"
-      />
+      <LogoSvg />
+      <WordmarkSvg />
       <div className={styles.DetailsWrapper}>
         <h3 className={styles.Subheading}>Art and Music Festival</h3>
         <h2 className={styles.Details}>August 21 - 23, 2020</h2>
@@ -44,12 +37,8 @@ const Home = () => {
         Lineup releases starting January 1
       </h3>
       <div className={styles.Stages}>
-        <div
-          onMouseEnter={() => setHover("core")}
-          onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
-        >
-          <CoreSvg glow={hover === "core"} />
+        <div className={styles.Stage}>
+          <CoreSvg />
           <p className={styles.Text}>Heavy Electronic</p>
           <p>
             Come and power up at The Core with Modern Electronic and Bass Music
@@ -57,12 +46,8 @@ const Home = () => {
             powerful enough to shock your system into full dance mode!
           </p>
         </div>
-        <div
-          onMouseEnter={() => setHover("bridge")}
-          onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
-        >
-          <BridgeSvg glow={hover === "bridge"} />
+        <div className={styles.Stage}>
+          <BridgeSvg />
           <p className={styles.Text}>Genre Fustion</p>
           <p>
             This stage is all about musical fusion and “bridging the gap”
@@ -71,12 +56,8 @@ const Home = () => {
             magical sunrise sets take place.
           </p>
         </div>
-        <div
-          onMouseEnter={() => setHover("galley")}
-          onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
-        >
-          <GalleySvg glow={hover === "galley"} />
+        <div className={styles.Stage}>
+          <GalleySvg />
           <p className={styles.Text}>Folk & Country Bands</p>
           <p>
             Located near the Market and Food Vendors, The Galley stage is a
