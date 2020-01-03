@@ -14,7 +14,7 @@ const MainNav = () => {
             target="_blank"
             //href="https://dropaganda.tickit.ca/"
           >
-            Ticket on sale soon
+            Tickets on sale soon
           </a>
         </li>
         {/* <li>
