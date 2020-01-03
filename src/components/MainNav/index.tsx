@@ -12,9 +12,9 @@ const MainNav = () => {
           <a
             className={styles.Link}
             target="_blank"
-            href="https://dropaganda.tickit.ca/"
+            //href="https://dropaganda.tickit.ca/"
           >
-            buy tickets
+            Tickets on sale soon
           </a>
         </li>
         {/* <li>
@@ -32,11 +32,11 @@ const MainNav = () => {
             Galley
           </Link>
         </li> */}
-        <li>
+        {/* <li>
           <Link className={styles.Link} to="faq">
             FAQ
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
