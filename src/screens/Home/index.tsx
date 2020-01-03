@@ -45,7 +45,7 @@ const Home = () => {
           GA Camping, Family Camping, Full Service RV Camping, and day passes
           will be available for the event.
         </p>
-        <div className={styles.ButtonWrapper}>
+        {/* <div className={styles.ButtonWrapper}>
           <a
             className={styles.Button}
             target="_blank"
@@ -53,7 +53,7 @@ const Home = () => {
           >
             Buy your tickets
           </a>
-        </div>
+        </div> */}
       </div>
       <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
       <h3 className={styles.SubheadingCentered}>Lineup releases coming soon</h3>
