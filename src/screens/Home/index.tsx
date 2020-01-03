@@ -12,40 +12,41 @@ const Home = () => {
   >(undefined);
 
   return (
-    <div className={styles.Layout}>
-      <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
-      <img
-        alt="Intersect Wordmark"
-        className={styles.WordMark}
-        src="type.png"
-      />
-      <div className={styles.DetailsWrapper}>
-        <h3 className={styles.Subheading}>Art and Music Festival</h3>
-        <h2 className={styles.Details}>August 21 - 23, 2020</h2>
-        <h2 className={styles.Details}>High Prarie, Alberta</h2>
-      </div>
-      <div className={styles.About}>
-        <p>
-          At the crossroads of community, art, and culture, we “Intersect”.
-          Welcome to Northern Alberta’s new, premier arts and music festival.
-          Brought together by industry professionals from all over Western
-          Canada, Intersect seeks to create a canvas for music festival lovers
-          of all demographics to paint an experience that represents them.
-        </p>
-        <p>
-          Bringing together local favorites as well as internationally-
-          acclaimed Canadian Folk, Bluegrass and a broad spectrum of Electronic
-          music, Intersect promises a little something for everyone. Our family
-          friendly event will be host to Workshops, an Art Gallery, Live Art
-          Installments, Kids Areas, Artisan Vendors, and a locally curated
-          Farmers Market where attendees will be able to support local Alberta
-          Farmers while enjoying fresh products on site!
-        </p>
-        <p>
-          GA Camping, Family Camping, Full Service RV Camping, and day passes
-          will be available for the event.
-        </p>
-        {/* <div className={styles.ButtonWrapper}>
+    <div className={styles.Wrapper}>
+      <div className={styles.Layout}>
+        <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
+        <img
+          alt="Intersect Wordmark"
+          className={styles.WordMark}
+          src="type.png"
+        />
+        <div className={styles.DetailsWrapper}>
+          <h3 className={styles.Subheading}>Art and Music Festival</h3>
+          <h2 className={styles.Details}>August 21 - 23, 2020</h2>
+          <h2 className={styles.Details}>High Prarie, Alberta</h2>
+        </div>
+        <div className={styles.About}>
+          <p>
+            At the crossroads of community, art, and culture, we “Intersect”.
+            Welcome to Northern Alberta’s new, premier arts and music festival.
+            Brought together by industry professionals from all over Western
+            Canada, Intersect seeks to create a canvas for music festival lovers
+            of all demographics to paint an experience that represents them.
+          </p>
+          <p>
+            Bringing together local favorites as well as internationally-
+            acclaimed Canadian Folk, Bluegrass and a broad spectrum of
+            Electronic music, Intersect promises a little something for
+            everyone. Our family friendly event will be host to Workshops, an
+            Art Gallery, Live Art Installments, Kids Areas, Artisan Vendors, and
+            a locally curated Farmers Market where attendees will be able to
+            support local Alberta Farmers while enjoying fresh products on site!
+          </p>
+          <p>
+            GA Camping, Family Camping, Full Service RV Camping, and day passes
+            will be available for the event.
+          </p>
+          {/* <div className={styles.ButtonWrapper}>
           <a
             className={styles.Button}
             target="_blank"
@@ -54,79 +55,90 @@ const Home = () => {
             Buy your tickets
           </a>
         </div> */}
-      </div>
-      <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
-      <h3 className={styles.SubheadingCentered}>Lineup releases coming soon</h3>
-      <div className={styles.Stages}>
-        <div
-          onMouseEnter={() => setHover("core")}
-          onMouseLeave={() => setHover(undefined)}
-        >
-          <div
-            className={cx(styles.Stage, {
-              [styles.StageGlow]: hover === "core",
-              [styles.StageFade]: hover === "galley" || hover === "bridge"
-            })}
-          >
-            <CoreSvg glow={hover} />
-            <p className={styles.Text}>
-              {hover === "core" ? "Lineups released soon!" : "Heavy Electronic"}
-            </p>
-            <p>
-              Come and power up at The Core with Modern Electronic and Bass
-              Music - Dubstep, House, Drum’n’Bass, Electro, Psytrance and
-              anything powerful enough to shock your system into full dance
-              mode!
-            </p>
-          </div>
         </div>
-        <div
-          onMouseEnter={() => setHover("bridge")}
-          onMouseLeave={() => setHover(undefined)}
-        >
+        <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
+        <h3 className={styles.SubheadingCentered}>
+          Lineup releases coming soon
+        </h3>
+        <div className={styles.Stages}>
           <div
-            className={cx(styles.Stage, {
-              [styles.StageGlow]: hover === "bridge",
-              [styles.StageFade]: hover === "core" || hover === "galley"
-            })}
+            onMouseEnter={() => setHover("core")}
+            onMouseLeave={() => setHover(undefined)}
           >
-            <BridgeSvg glow={hover} />
-            <p className={styles.Text}>
-              {hover === "bridge" ? "Lineups released soon!" : "Genre Fusion"}
-            </p>
+            <div
+              className={cx(styles.Stage, {
+                [styles.StageGlow]: hover === "core",
+                [styles.StageFade]: hover === "galley" || hover === "bridge"
+              })}
+            >
+              <CoreSvg glow={hover} />
+              <p className={styles.Text}>
+                {hover === "core"
+                  ? "Lineups released soon!"
+                  : "Heavy Electronic"}
+              </p>
+              <p>
+                Come and power up at The Core with Modern Electronic and Bass
+                Music - Dubstep, House, Drum’n’Bass, Electro, Psytrance and
+                anything powerful enough to shock your system into full dance
+                mode!
+              </p>
+            </div>
+          </div>
+          <div
+            onMouseEnter={() => setHover("bridge")}
+            onMouseLeave={() => setHover(undefined)}
+          >
+            <div
+              className={cx(styles.Stage, {
+                [styles.StageGlow]: hover === "bridge",
+                [styles.StageFade]: hover === "core" || hover === "galley"
+              })}
+            >
+              <BridgeSvg glow={hover} />
+              <p className={styles.Text}>
+                {hover === "bridge" ? "Lineups released soon!" : "Genre Fusion"}
+              </p>
 
-            <p>
-              This stage is all about musical fusion and “bridging the gap”
-              between genres. Expect to see DJ equipment and live instruments
-              playing together in perfect harmony. This is also where those
-              magical sunrise sets take place.
-            </p>
+              <p>
+                This stage is all about musical fusion and “bridging the gap”
+                between genres. Expect to see DJ equipment and live instruments
+                playing together in perfect harmony. This is also where those
+                magical sunrise sets take place.
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          onMouseEnter={() => setHover("galley")}
-          onMouseLeave={() => setHover(undefined)}
-        >
           <div
-            className={cx(styles.Stage, {
-              [styles.StageGlow]: hover === "galley",
-              [styles.StageFade]: hover === "core" || hover === "bridge"
-            })}
+            onMouseEnter={() => setHover("galley")}
+            onMouseLeave={() => setHover(undefined)}
           >
-            <GalleySvg glow={hover} />
-            <p className={styles.Text}>
-              {hover === "galley"
-                ? "Lineups released soon!"
-                : "Folk & Country Bands"}
-            </p>
-            <p>
-              Located near the Market and Food Vendors, The Galley stage is a
-              great place to set up your chair and enjoy all the Folk, Country,
-              Funk, Bluegrass, Blues and Rock acts that Inter.Sect has to offer.{" "}
-            </p>
+            <div
+              className={cx(styles.Stage, {
+                [styles.StageGlow]: hover === "galley",
+                [styles.StageFade]: hover === "core" || hover === "bridge"
+              })}
+            >
+              <GalleySvg glow={hover} />
+              <p className={styles.Text}>
+                {hover === "galley"
+                  ? "Lineups released soon!"
+                  : "Folk & Country Bands"}
+              </p>
+              <p>
+                Located near the Market and Food Vendors, The Galley stage is a
+                great place to set up your chair and enjoy all the Folk,
+                Country, Funk, Bluegrass, Blues and Rock acts that Inter.Sect
+                has to offer.{" "}
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <img
+        className={styles.Earth}
+        src="./planet.png"
+        alt="Picture of an earth with a spaceship trail"
+      />
     </div>
   );
 };
