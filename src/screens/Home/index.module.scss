@@ -83,6 +83,28 @@
   box-shadow: 0px 0px 20px 0px #f8c1fc;
 }
 
+.Button {
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  border: solid 1px white;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.25s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 20px 0px #f8c1fc;
+    transform: scale(1.05);
+  }
+}
+
+.ButtonWrapper {
+  margin: 30px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .Stage {
   border: 1px solid white;
   display: flex;
@@ -97,6 +119,10 @@
   &Glow {
     box-shadow: 0px 0px 40px 0px #f8c1fc;
     transform: scale(1.05);
+  }
+
+  &Fade {
+    box-shadow: 0px 0px 10px 0px #f8c1fc;
   }
 }
 

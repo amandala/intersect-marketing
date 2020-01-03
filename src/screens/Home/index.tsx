@@ -26,18 +26,34 @@ const Home = () => {
       </div>
       <div className={styles.About}>
         <p>
-          Inter.Sect Art and Music Festival is a brand new, family friendly,
-          multi-genre and multi-cultural Festival that focuses on Art, Community
-          and providing a safe place for different perspectives to come together
-          and “ intersect”.
+          At the crossroads of community, art, and culture, we “Intersect”.
+          Welcome to Northern Alberta’s new, premier arts and music festival.
+          Brought together by industry professionals from all over Western
+          Canada, Intersect seeks to create a canvas for music festival lovers
+          of all demographics to paint an experience that represents them.
         </p>
         <p>
-          Join us in High Prairie during the dog days of summer to celebrate
-          local and internationally-acclaimed Canadian musicians, Workshops,
-          Live Painting Exhibitions, and to enjoy all that our Farmers Market
-          and Art Galleries have to offer. Family Camping and full service RV
-          Camping is available, as well as day passes.{" "}
+          Bringing together local favorites as well as internationally-
+          acclaimed Canadian Folk, Bluegrass and a broad spectrum of Electronic
+          music, Intersect promises a little something for everyone. Our family
+          friendly event will be host to Workshops, an Art Gallery, Live Art
+          Installments, Kids Areas, Artisan Vendors, and a locally curated
+          Farmers Market where attendees will be able to support local Alberta
+          Farmers while enjoying fresh products on site!
         </p>
+        <p>
+          GA Camping, Family Camping, Full Service RV Camping, and day passes
+          will be available for the event.
+        </p>
+        <div className={styles.ButtonWrapper}>
+          <a
+            className={styles.Button}
+            target="_blank"
+            href="https://dropaganda.tickit.ca/"
+          >
+            Buy your tickets
+          </a>
+        </div>
       </div>
       <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
       <h3 className={styles.SubheadingCentered}>Lineup releases coming soon</h3>
@@ -48,11 +64,14 @@ const Home = () => {
         >
           <div
             className={cx(styles.Stage, {
-              [styles.StageGlow]: hover === "core"
+              [styles.StageGlow]: hover === "core",
+              [styles.StageFade]: hover === "galley" || hover === "bridge"
             })}
           >
             <CoreSvg glow={hover} />
-            <p className={styles.Text}>Heavy Electronic</p>
+            <p className={styles.Text}>
+              {hover === "core" ? "Lineups released soon!" : "Heavy Electronic"}
+            </p>
             <p>
               Come and power up at The Core with Modern Electronic and Bass
               Music - Dubstep, House, Drum’n’Bass, Electro, Psytrance and
@@ -67,11 +86,15 @@ const Home = () => {
         >
           <div
             className={cx(styles.Stage, {
-              [styles.StageGlow]: hover === "bridge"
+              [styles.StageGlow]: hover === "bridge",
+              [styles.StageFade]: hover === "core" || hover === "galley"
             })}
           >
             <BridgeSvg glow={hover} />
-            <p className={styles.Text}>Genre Fustion</p>
+            <p className={styles.Text}>
+              {hover === "bridge" ? "Lineups released soon!" : "Genre Fusion"}
+            </p>
+
             <p>
               This stage is all about musical fusion and “bridging the gap”
               between genres. Expect to see DJ equipment and live instruments
@@ -86,11 +109,16 @@ const Home = () => {
         >
           <div
             className={cx(styles.Stage, {
-              [styles.StageGlow]: hover === "galley"
+              [styles.StageGlow]: hover === "galley",
+              [styles.StageFade]: hover === "core" || hover === "bridge"
             })}
           >
             <GalleySvg glow={hover} />
-            <p className={styles.Text}>Folk & Country Bands</p>
+            <p className={styles.Text}>
+              {hover === "galley"
+                ? "Lineups released soon!"
+                : "Folk & Country Bands"}
+            </p>
             <p>
               Located near the Market and Food Vendors, The Galley stage is a
               great place to set up your chair and enjoy all the Folk, Country,
