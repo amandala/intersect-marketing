@@ -1,5 +1,5 @@
 import React from "react";
-
+import cx from "classnames";
 import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
@@ -40,49 +40,63 @@ const Home = () => {
         </p>
       </div>
       <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
-      <h3 className={styles.SubheadingCentered}>
-        Lineup releases starting January 1
-      </h3>
+      <h3 className={styles.SubheadingCentered}>Lineup releases coming soon</h3>
       <div className={styles.Stages}>
         <div
           onMouseEnter={() => setHover("core")}
           onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
         >
-          <CoreSvg glow={hover === "core"} />
-          <p className={styles.Text}>Heavy Electronic</p>
-          <p>
-            Come and power up at The Core with Modern Electronic and Bass Music
-            - Dubstep, House, Drum’n’Bass, Electro, Psytrance and anything
-            powerful enough to shock your system into full dance mode!
-          </p>
+          <div
+            className={cx(styles.Stage, {
+              [styles.StageGlow]: hover === "core"
+            })}
+          >
+            <CoreSvg glow={hover} />
+            <p className={styles.Text}>Heavy Electronic</p>
+            <p>
+              Come and power up at The Core with Modern Electronic and Bass
+              Music - Dubstep, House, Drum’n’Bass, Electro, Psytrance and
+              anything powerful enough to shock your system into full dance
+              mode!
+            </p>
+          </div>
         </div>
         <div
           onMouseEnter={() => setHover("bridge")}
           onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
         >
-          <BridgeSvg glow={hover === "bridge"} />
-          <p className={styles.Text}>Genre Fustion</p>
-          <p>
-            This stage is all about musical fusion and “bridging the gap”
-            between genres. Expect to see DJ equipment and live instruments
-            playing together in perfect harmony. This is also where those
-            magical sunrise sets take place.
-          </p>
+          <div
+            className={cx(styles.Stage, {
+              [styles.StageGlow]: hover === "bridge"
+            })}
+          >
+            <BridgeSvg glow={hover} />
+            <p className={styles.Text}>Genre Fustion</p>
+            <p>
+              This stage is all about musical fusion and “bridging the gap”
+              between genres. Expect to see DJ equipment and live instruments
+              playing together in perfect harmony. This is also where those
+              magical sunrise sets take place.
+            </p>
+          </div>
         </div>
         <div
           onMouseEnter={() => setHover("galley")}
           onMouseLeave={() => setHover(undefined)}
-          className={styles.Stage}
         >
-          <GalleySvg glow={hover === "galley"} />
-          <p className={styles.Text}>Folk & Country Bands</p>
-          <p>
-            Located near the Market and Food Vendors, The Galley stage is a
-            great place to set up your chair and enjoy all the Folk, Country,
-            Funk, Bluegrass, Blues and Rock acts that Inter.Sect has to offer.{" "}
-          </p>
+          <div
+            className={cx(styles.Stage, {
+              [styles.StageGlow]: hover === "galley"
+            })}
+          >
+            <GalleySvg glow={hover} />
+            <p className={styles.Text}>Folk & Country Bands</p>
+            <p>
+              Located near the Market and Food Vendors, The Galley stage is a
+              great place to set up your chair and enjoy all the Folk, Country,
+              Funk, Bluegrass, Blues and Rock acts that Inter.Sect has to offer.{" "}
+            </p>
+          </div>
         </div>
       </div>
     </div>

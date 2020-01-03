@@ -92,6 +92,12 @@
   padding: 25px;
   background-color: rgba(black, 0.5);
   box-shadow: 0px 0px 20px 0px #f8c1fc;
+  transition: all ease-in-out 0.25s;
+
+  &Glow {
+    box-shadow: 0px 0px 40px 0px #f8c1fc;
+    transform: scale(1.05);
+  }
 }
 
 .Mark {
