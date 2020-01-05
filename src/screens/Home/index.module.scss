@@ -45,7 +45,7 @@
 }
 
 .Details {
-  font-family: $open-sans;
+  font-family: "Agency", arial;
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
@@ -60,20 +60,37 @@
 }
 
 .Subheading {
+  font-family: "Agency", arial;
   font-size: 40px;
   line-height: 48px;
   margin: 0 0 24px 0;
   font-weight: 400;
+  text-align: center;
 }
 
 .SubheadingCentered {
-  font-family: $open-sans;
+  font-family: "Agency", arial;
   text-align: center;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 0 24px 0;
   font-weight: 500;
+}
+
+.StayTuned,
+.GetInvolved {
+  font-size: 45px;
+}
+
+.Email {
+  color: white;
+  text-decoration: none;
+}
+
+.GetInvolved {
+  padding-top: 30px;
+  line-height: 50px;
 }
 
 .Stages {

@@ -3,6 +3,7 @@ import cx from "classnames";
 import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
+import Link from "../../components/Link";
 
 import styles from "./index.module.scss";
 
@@ -23,28 +24,28 @@ const Home = () => {
         <div className={styles.DetailsWrapper}>
           <h3 className={styles.Subheading}>Art and Music Festival</h3>
           <h2 className={styles.Details}>August 21 - 23, 2020</h2>
-          <h2 className={styles.Details}>High Prarie, Alberta</h2>
+          <h2 className={styles.Details}>High Prairie, Alberta</h2>
         </div>
         <div className={styles.About}>
           <p>
-            At the crossroads of community, art, and culture, we “Intersect”.
-            Welcome to Northern Alberta’s new, premier arts and music festival.
-            Brought together by industry professionals from all over Western
-            Canada, Intersect seeks to create a canvas for music festival lovers
-            of all demographics to paint an experience that represents them.
+            Welcome to Northern Alberta’s new, premier art and music festival
+            hosted by Dropaganda Productions. Brought together by industry
+            professionals from all over Western Canada, Inter.Sect seeks to
+            create a canvas for music festival lovers of all demographics to
+            paint an experience that represents them. Bringing together local
+            favorites as well as internationally- acclaimed Canadian Folk,
+            Bluegrass and a broad spectrum of Electronic music, Inter.Sect
+            promises a little something for everyone.
           </p>
           <p>
-            Bringing together local favorites as well as internationally-
-            acclaimed Canadian Folk, Bluegrass and a broad spectrum of
-            Electronic music, Intersect promises a little something for
-            everyone. Our family friendly event will be host to Workshops, an
-            Art Gallery, Live Art Installments, Kids Areas, Artisan Vendors, and
-            a locally curated Farmers Market where attendees will be able to
-            support local Alberta Farmers while enjoying fresh products on site!
+            Our family friendly event will be host to Workshops, an Art Gallery,
+            Live Art Installments, Kids Areas, Artisan Vendors, and a locally
+            curated Farmers Market where attendees will be able to support local
+            Alberta farmers while enjoying fresh products on site!
           </p>
           <p>
-            GA Camping, Family Camping, Full Service RV Camping, and day passes
-            will be available for the event.
+            Family camping, full service RV camping, and day passes will be
+            available for the event.
           </p>
           {/* <div className={styles.ButtonWrapper}>
           <a
@@ -56,7 +57,9 @@ const Home = () => {
           </a>
         </div> */}
         </div>
-        <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
+        <h3 className={cx(styles.SubheadingCentered, styles.StayTuned)}>
+          Stay Tuned!
+        </h3>
         <h3 className={styles.SubheadingCentered}>
           Lineup releases coming soon
         </h3>
@@ -132,6 +135,17 @@ const Home = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div>
+          <h3 className={cx(styles.SubheadingCentered, styles.GetInvolved)}>
+            Would YOU like to get involved? We are looking for Volunteers/Crew
+            members, Artists and Vendors.
+          </h3>
+          <h3 className={styles.SubheadingCentered}>
+            <Link href="mailto:info@intersectamf.com">
+              Send us an email at info@intersectamf.com
+            </Link>
+          </h3>
         </div>
       </div>
       <img
