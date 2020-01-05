@@ -56,7 +56,9 @@ const Home = () => {
           </a>
         </div> */}
         </div>
-        <h3 className={styles.SubheadingCentered}>Stay Tuned!</h3>
+        <h3 className={cx(styles.SubheadingCentered, styles.StayTuned)}>
+          Stay Tuned!
+        </h3>
         <h3 className={styles.SubheadingCentered}>
           Lineup releases coming soon
         </h3>
