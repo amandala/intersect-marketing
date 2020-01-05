@@ -1,21 +1,25 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import Link from "../Link";
 
 import styles from "./index.module.scss";
 
 const MainNav = () => {
   return (
     <nav className={styles.Wrapper}>
+      <img
+        alt="Intersect Wordmark"
+        className={styles.Dropaganda}
+        src="dropaganda.svg"
+      />
       <ul className={styles.Nav}>
         <li>
-          <a
-            className={styles.Link}
+          <Link
             target="_blank"
             //href="https://dropaganda.tickit.ca/"
           >
             Tickets on sale soon
-          </a>
+          </Link>
         </li>
         {/* <li>
           <Link className={styles.Link} to="bridge">

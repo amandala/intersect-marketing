@@ -3,6 +3,7 @@ import cx from "classnames";
 import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
+import Link from "../../components/Link";
 
 import styles from "./index.module.scss";
 
@@ -134,6 +135,17 @@ const Home = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div>
+          <h3 className={cx(styles.SubheadingCentered, styles.GetInvolved)}>
+            Would YOU like to get involved? We are looking for Volunteers/Crew
+            members, Artists and Vendors.
+          </h3>
+          <h3 className={styles.SubheadingCentered}>
+            <Link href="mailto:info@intersectamf.com">
+              Send us an email at info@intersectamf.com
+            </Link>
+          </h3>
         </div>
       </div>
       <img

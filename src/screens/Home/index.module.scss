@@ -78,8 +78,19 @@
   font-weight: 500;
 }
 
-.StayTuned {
+.StayTuned,
+.GetInvolved {
   font-size: 45px;
+}
+
+.Email {
+  color: white;
+  text-decoration: none;
+}
+
+.GetInvolved {
+  padding-top: 30px;
+  line-height: 50px;
 }
 
 .Stages {
