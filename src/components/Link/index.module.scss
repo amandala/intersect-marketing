@@ -1,10 +1,11 @@
+@import "../../styles/variables";
+
 .Link {
   font-family: "Agency", arial;
   color: white;
   margin-left: 24px;
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap;
   text-align: center;
   text-shadow: 0 0 5px #fff, 0 0 30px #a39bac, 0 0 40px #a39bac,
     0 0 50px #a39bac, 0 0 60px #a39bac, 0 0 70px #a39bac, 0 0 80px #a39bac;
@@ -26,4 +27,8 @@
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
+}
+
+@include breakpoint(medium) {
+  white-space: nowrap;
 }

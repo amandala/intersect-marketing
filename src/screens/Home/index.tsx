@@ -141,11 +141,11 @@ const Home = () => {
             Would YOU like to get involved? We are looking for Volunteers/Crew
             members, Artists and Vendors.
           </h3>
-          <h3 className={styles.SubheadingCentered}>
+          <div className={styles.HelpUs}>
             <Link href="mailto:info@intersectamf.com">
               Send us an email at info@intersectamf.com
             </Link>
-          </h3>
+          </div>
         </div>
       </div>
       <img
