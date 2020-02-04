@@ -2,6 +2,8 @@
 
 .Wrapper {
   background-image: url("./nebula.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -11,8 +13,6 @@
 }
 
 .Layout {
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 150px 20px 0;
   display: flex;
   flex-direction: column;
