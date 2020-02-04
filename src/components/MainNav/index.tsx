@@ -15,8 +15,8 @@ const MainNav = () => {
       <ul className={styles.Nav}>
         <li>
           <Link
-            target="_blank"
-            //href="https://dropaganda.tickit.ca/"
+          // target="_blank"
+          //href="https://dropaganda.tickit.ca/"
           >
             Tickets on sale soon
           </Link>
