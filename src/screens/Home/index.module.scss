@@ -179,6 +179,10 @@
   justify-content: center;
 }
 
+.SmallBreak {
+  display: block;
+}
+
 @include breakpoint(medium) {
   .Layout {
     padding: 100px 40px 0;
@@ -186,6 +190,10 @@
 
   .Stage {
     max-width: 400px;
+  }
+
+  .SmallBreak {
+    display: inline;
   }
 }
 

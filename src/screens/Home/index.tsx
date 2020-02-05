@@ -143,7 +143,8 @@ const Home = () => {
           </h3>
           <div className={styles.HelpUs}>
             <Link href="mailto:info@intersectamf.com">
-              Send us an email at info@intersectamf.com
+              Send us an email at{" "}
+              <span className={styles.SmallBreak}>info@intersectamf.com</span>
             </Link>
           </div>
         </div>
