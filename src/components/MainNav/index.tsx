@@ -27,6 +27,9 @@ const MainNav = () => {
               <img src="/ig.png" alt="Visit us on Facebook" />
             </a>
           </li>
+          <li>
+            <Link href="/lineup">Lineup</Link>
+          </li>
         </ul>
         {/* <img
           alt="Dropaganda Productions Presents"
