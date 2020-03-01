@@ -28,11 +28,11 @@ const MainNav = () => {
             </a>
           </li>
         </ul>
-        <img
+        {/* <img
           alt="Dropaganda Productions Presents"
           className={styles.Dropaganda}
           src="dropaganda.svg"
-        />
+        /> */}
       </nav>
     </div>
   );

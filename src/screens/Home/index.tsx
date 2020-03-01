@@ -3,6 +3,7 @@ import cx from "classnames";
 import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
+import Link from "../../components/Link";
 
 import styles from "./index.module.scss";
 
@@ -64,12 +65,11 @@ const Home = () => {
           </a>
         </div> */}
         </div>
-        <h3 className={cx(styles.SubheadingCentered, styles.StayTuned)}>
-          Stay Tuned!
-        </h3>
-        <h3 className={styles.SubheadingCentered}>
-          Lineup releases coming soon
-        </h3>
+        <div className={styles.StayTuned}>
+          <h3 className={cx(styles.SubheadingCentered, styles.StayTuned)}>
+            <Link href="/lineup">Phase 1 Lineup Released</Link>
+          </h3>
+        </div>
         <div className={styles.Stages}>
           <div
             onMouseEnter={() => setHover("core")}
@@ -149,16 +149,22 @@ const Home = () => {
             members, Artists and Vendors
           </h3>
           <div className={styles.HelpUs}>
+            <Link href="mailto:info@intersectamf.com">
+              Send us an email at{" "}
+              <span className={styles.SmallBreak}>info@intersectamf.com</span>
+            </Link>
+          </div>
+          {/* <div className={styles.HelpUs}>
             <a
               className={styles.Application}
               href="https://forms.gle/ix2vbwdyUUAWnsqh6"
             >
               Apply to be a volunteer
             </a>
-          </div>
-          <h3 className={cx(styles.SubheadingCentered, styles.GetInvolved)}>
+          </div> */}
+          {/* <h3 className={cx(styles.SubheadingCentered, styles.GetInvolved)}>
             Check back for Artist and Vendor applications
-          </h3>
+          </h3> */}
         </div>
       </div>
       <img

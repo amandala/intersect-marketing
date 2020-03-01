@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .Wrapper {
-  background-image: url("./nebula.png");
+  background-image: url("/nebula.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -111,6 +111,10 @@
   margin-bottom: 60px;
   max-width: 900px;
   background-color: rgba(black, 0.7);
+}
+
+.StayTuned {
+  padding: 50px 0;
 }
 
 .Button {
