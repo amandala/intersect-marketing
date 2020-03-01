@@ -6,40 +6,38 @@ import styles from "./index.module.scss";
 
 const MainNav = () => {
   return (
-    <nav className={styles.Wrapper}>
-      <img
-        alt="Intersect Wordmark"
-        className={styles.Dropaganda}
-        src="dropaganda.svg"
-      />
-      <ul className={styles.Nav}>
-        <li>
-          <Link target="_blank" href="https://dropaganda.tickit.ca/">
-            Buy tickets
-          </Link>
-        </li>
-        {/* <li>
-          <Link className={styles.Link} to="bridge">
-            Bridge
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.Link} to="core">
-            Core
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.Link} to="galley">
-            Galley
-          </Link>
-        </li> */}
-        {/* <li>
-          <Link className={styles.Link} to="faq">
-            FAQ
-          </Link>
-        </li> */}
-      </ul>
-    </nav>
+    <div className={styles.Wrapper}>
+      <nav className={styles.Content}>
+        <ul className={styles.Nav}>
+          <li className={styles.SocialLink}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/inter.sectAMF/?eid=ARCz9Dd8v7H0sVmpExqGWlooVydmN-jwmlHCfX7u3T0VhLJLElTyAi2KpvTsfZp667nMznov_kcW5sG1"
+            >
+              <img src="/fb.png" alt="Visit us on Facebook" />
+            </a>
+          </li>
+          <li className={styles.SocialLink}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/inter.sect_amf/"
+            >
+              <img src="/ig.png" alt="Visit us on Facebook" />
+            </a>
+          </li>
+          <li>
+            <Link href="/lineup">Lineup</Link>
+          </li>
+        </ul>
+        {/* <img
+          alt="Dropaganda Productions Presents"
+          className={styles.Dropaganda}
+          src="dropaganda.svg"
+        /> */}
+      </nav>
+    </div>
   );
 };
 

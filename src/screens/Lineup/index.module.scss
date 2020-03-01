@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.Poster {
+  text-align: center;
+  min-height: 100vh;
+  padding: 75px 20px;
+  background-image: url("/nebula.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Image {
+  width: 100%;
+  max-width: 100vw;
+}
+
+@include breakpoint(medium) {
+  .Image {
+    max-width: 600px;
+  }
+}

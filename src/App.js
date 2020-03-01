@@ -4,7 +4,7 @@ import { MainNav } from "./components";
 
 import styles from "./App.module.scss";
 
-import { About, FAQ, Home, Tickets } from "./screens";
+import { Lineup, Home } from "./screens";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,8 +14,7 @@ function App() {
       <Router>
         <MainNav />
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/faq" component={FAQ} />
+          <Route path="/lineup" component={Lineup} />
           <Route path="/" component={Home} />
         </Switch>
       </Router>
