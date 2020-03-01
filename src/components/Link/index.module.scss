@@ -7,14 +7,15 @@
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
-  text-shadow: 0 0 5px #fff, 0 0 30px #a39bac, 0 0 40px #a39bac,
-    0 0 50px #a39bac, 0 0 60px #a39bac, 0 0 70px #a39bac, 0 0 80px #a39bac;
+  outline-color: #e60073;
+  text-shadow: 0 0 5px #fff, 0 0 10px #a39bac, 0 0 20px #a39bac,
+    0 0 30px #a39bac, 0 0 40px #a39bac, 0 0 50px #a39bac, 0 0 60px #a39bac;
 
   &:hover,
   &:focus {
     color: #ffffff;
-    text-shadow: 0 0 5px #fff, 0 0 30px #f396f9, 0 0 40px #f396f9,
-      0 0 50px #f396f9, 0 0 60px #f396f9, 0 0 70px #f396f9, 0 0 80px #f396f9;
+    text-shadow: 0 0 5px #fff, 0 0 10px #f396f9, 0 0 20px #f396f9,
+      0 0 30px #f396f9, 0 0 40px #f396f9, 0 0 50px #f396f9, 0 0 60px #f396f9;
   }
 }
 

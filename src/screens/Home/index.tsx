@@ -3,7 +3,6 @@ import cx from "classnames";
 import CoreSvg from "./CoreSvg";
 import BridgeSvg from "./BridgeSvg";
 import GalleySvg from "./GalleySvg";
-import Link from "../../components/Link";
 
 import styles from "./index.module.scss";
 
@@ -25,6 +24,14 @@ const Home = () => {
           <h3 className={styles.Subheading}>Art and Music Festival</h3>
           <h2 className={styles.Details}>August 21 - 23, 2020</h2>
           <h2 className={styles.Details}>High Prairie, Alberta</h2>
+          <div className={styles.BuyTickets}>
+            <a
+              className={styles.Application}
+              href="https://dropaganda.tickit.ca/events/8137-inter-sect-season-1"
+            >
+              Buy Tickets
+            </a>
+          </div>
         </div>
         <div className={styles.About}>
           <p>
@@ -139,19 +146,24 @@ const Home = () => {
         <div>
           <h3 className={cx(styles.SubheadingCentered, styles.GetInvolved)}>
             Would YOU like to get involved? We are looking for Volunteers/Crew
-            members, Artists and Vendors.
+            members, Artists and Vendors
           </h3>
           <div className={styles.HelpUs}>
-            <Link href="mailto:info@intersectamf.com">
-              Send us an email at{" "}
-              <span className={styles.SmallBreak}>info@intersectamf.com</span>
-            </Link>
+            <a
+              className={styles.Application}
+              href="https://forms.gle/ix2vbwdyUUAWnsqh6"
+            >
+              Apply to be a volunteer
+            </a>
           </div>
+          <h3 className={cx(styles.SubheadingCentered, styles.GetInvolved)}>
+            Check back for Artist and Vendor applications
+          </h3>
         </div>
       </div>
       <img
         className={styles.Earth}
-        src="./planet.png"
+        src="/planet.png"
         alt="Picture of an earth with a spaceship trail"
       />
     </div>
