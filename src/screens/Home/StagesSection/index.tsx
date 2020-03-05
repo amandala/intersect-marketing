@@ -3,7 +3,43 @@ import cx from "classnames";
 import BridgeSvg from "../BridgeSvg";
 import CoreSvg from "../CoreSvg";
 import GalleySvg from "../GalleySvg";
+import { P, Tiny } from "../../../components/Typography";
 import styles from "./index.module.scss";
+
+const Stage = ({
+  onMouseEnter,
+  onMouseLeave,
+  hover,
+  fade,
+  SVG,
+  details,
+  genre
+}: {
+  onMouseEnter: (arg0: any) => void;
+  onMouseLeave: (arg0: any) => void;
+  hover: boolean;
+  fade: boolean;
+  SVG: () => React.ReactNode;
+  details: string;
+  genre: string;
+}) => (
+  <div
+    onMouseEnter={e => onMouseEnter(e)}
+    onMouseLeave={e => onMouseLeave(e)}
+    className={cx(styles.Stage, {
+      [styles.StageGlow]: hover,
+      [styles.StageFade]: fade
+    })}
+  >
+    {SVG()}
+    <Tiny className={styles.ByLine}>
+      {hover ? "Lineups released soon!" : genre}
+    </Tiny>
+    <div className={styles.DetailsWrapper}>
+      <P small>{details}</P>
+    </div>
+  </div>
+);
 
 const StagesSection = () => {
   const [hover, setHover] = React.useState<
@@ -12,73 +48,40 @@ const StagesSection = () => {
 
   return (
     <div className={styles.Stages}>
-      <div
+      <Stage
         onMouseEnter={() => setHover("core")}
         onMouseLeave={() => setHover(undefined)}
-      >
-        <div
-          className={cx(styles.Stage, {
-            [styles.StageGlow]: hover === "core",
-            [styles.StageFade]: hover === "galley" || hover === "bridge"
-          })}
-        >
-          <CoreSvg glow={hover} />
-          <p className={styles.Text}>
-            {hover === "core" ? "Lineups released soon!" : "Heavy Electronic"}
-          </p>
-          <p>
-            Come and power up at The Core with Modern Electronic and Bass Music
-            - Dubstep, House, Drum’n’Bass, Electro, Psytrance and anything
-            powerful enough to shock your system into full dance mode!
-          </p>
-        </div>
-      </div>
-      <div
+        hover={hover === "core"}
+        fade={hover === "galley" || hover === "bridge"}
+        details="Come and power up at The Core with Modern Electronic and Bass Music -
+        Dubstep, House, Drum’n’Bass, Electro, Psytrance and anything powerful
+        enough to shock your system into full dance mode!"
+        genre="Heavy Electronic"
+        SVG={() => <CoreSvg glow={hover} />}
+      />
+      <Stage
         onMouseEnter={() => setHover("bridge")}
         onMouseLeave={() => setHover(undefined)}
-      >
-        <div
-          className={cx(styles.Stage, {
-            [styles.StageGlow]: hover === "bridge",
-            [styles.StageFade]: hover === "core" || hover === "galley"
-          })}
-        >
-          <BridgeSvg glow={hover} />
-          <p className={styles.Text}>
-            {hover === "bridge" ? "Lineups released soon!" : "Genre Fusion"}
-          </p>
-
-          <p>
-            This stage is all about musical fusion and “bridging the gap”
-            between genres. Expect to see DJ equipment and live instruments
-            playing together in perfect harmony. This is also where those
-            magical sunrise sets take place.
-          </p>
-        </div>
-      </div>
-      <div
+        hover={hover === "bridge"}
+        fade={hover === "galley" || hover === "core"}
+        details="This stage is all about musical fusion and “bridging the gap” between
+        genres. Expect to see DJ equipment and live instruments playing
+        together in perfect harmony. This is also where those magical sunrise
+        sets take place."
+        SVG={() => <BridgeSvg glow={hover} />}
+        genre="Genre Fusion"
+      />
+      <Stage
         onMouseEnter={() => setHover("galley")}
         onMouseLeave={() => setHover(undefined)}
-      >
-        <div
-          className={cx(styles.Stage, {
-            [styles.StageGlow]: hover === "galley",
-            [styles.StageFade]: hover === "core" || hover === "bridge"
-          })}
-        >
-          <GalleySvg glow={hover} />
-          <p className={styles.Text}>
-            {hover === "galley"
-              ? "Lineups released soon!"
-              : "Folk & Country Bands"}
-          </p>
-          <p>
-            Located near the Market and Food Vendors, The Galley stage is a
-            great place to set up your chair and enjoy all the Folk, Country,
-            Funk, Bluegrass, Blues and Rock acts that Inter.Sect has to offer.{" "}
-          </p>
-        </div>
-      </div>
+        hover={hover === "galley"}
+        fade={hover === "bridge" || hover === "core"}
+        details="Located near the Market and Food Vendors, The Galley stage is a great
+        place to set up your chair and enjoy all the Folk, Country, Funk,
+        Bluegrass, Blues and Rock acts that Inter.Sect has to offer."
+        SVG={() => <GalleySvg glow={hover} />}
+        genre="Folk & Country Bands"
+      />
     </div>
   );
 };

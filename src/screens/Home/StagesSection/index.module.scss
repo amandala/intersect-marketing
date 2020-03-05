@@ -27,17 +27,14 @@
   }
 }
 
-//TODO: make component
-.Text {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  line-height: 20px;
-}
-
 @include breakpoint(medium) {
-  .Stage {
-    max-width: 400px;
+  .Stages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .ByLine {
+    margin: 10px 0 16px;
   }
 }
 
