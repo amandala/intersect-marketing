@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.GetInvolved {
+  padding: 50px 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: rgba(black, 0.7);
+  text-align: center;
+  width: 100%;
+}
+
+.Heading {
+  margin-bottom: 50px;
+}
+
+@include breakpoint(medium) {
+  .GetInvolved {
+    padding: 100px 45px;
+  }
+
+  .Content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
