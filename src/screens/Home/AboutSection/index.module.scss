@@ -1,18 +1,18 @@
 @import "../../../styles/variables";
 
 .About {
-  padding: 50px 20px;
   background-color: rgba(black, 0.7);
   text-align: center;
   width: 100%;
 }
 
-@include breakpoint(medium) {
-  .About {
-    padding: 100px 45px;
-  }
+.Content {
+  padding: 50px 20px;
+}
 
+@include breakpoint(medium) {
   .Content {
+    padding: 100px 45px;
     max-width: $max-width;
     margin: 0 auto;
   }
