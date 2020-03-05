@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+
+.Stages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Stage {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 25px;
+  background-color: rgba(black, 0.7);
+  box-shadow: 0px 0px 20px 0px #f8c1fc;
+  transition: all ease-in-out 0.25s;
+
+  &Glow {
+    box-shadow: 0px 0px 40px 0px #f8c1fc;
+    transform: scale(1.05);
+  }
+
+  &Fade {
+    box-shadow: 0px 0px 10px 0px #f8c1fc;
+  }
+}
+
+@include breakpoint(medium) {
+  .Stages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .ByLine {
+    margin: 10px 0 16px;
+  }
+}
+
+@include breakpoint(large) {
+  .Stage {
+    max-width: 300px;
+  }
+}

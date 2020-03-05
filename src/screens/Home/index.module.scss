@@ -8,40 +8,22 @@
   flex-direction: column;
 }
 
-.Earth {
-  max-width: 100%;
-}
-
 .Layout {
-  padding: 150px 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Heading {
-  font-size: 50px;
-  line-height: 65px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 400;
-  padding: 0;
-
-  &Medium {
-    margin: 0;
-    font-size: 40px;
-    line-height: 55px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 400;
-  }
+.Earth {
+  max-width: 100%;
 }
 
-.Text {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  line-height: 20px;
+.AboveTheFold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .BuyTickets {
@@ -49,68 +31,20 @@
   margin: 30px 0;
 }
 
-.Details {
-  font-family: "Agency", arial;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
-}
-
 .DetailsWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.Subheading {
-  font-family: "Agency", arial;
-  font-size: 40px;
-  line-height: 48px;
-  margin: 0 0 24px 0;
-  font-weight: 400;
   text-align: center;
 }
 
-.SubheadingCentered {
-  font-family: "Agency", arial;
+.StayTuned {
   text-align: center;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  margin: 0 0 24px 0;
-  font-weight: 500;
-}
-
-.StayTuned,
-.GetInvolved {
-  font-size: 45px;
 }
 
 .Email {
   color: white;
   text-decoration: none;
-}
-
-.GetInvolved {
-  margin: 100px 0;
-  line-height: 50px;
-}
-
-.Stages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.About {
-  border: 1px solid white;
-  padding: 20px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  max-width: 900px;
-  background-color: rgba(black, 0.7);
 }
 
 .StayTuned {
@@ -139,39 +73,18 @@
   justify-content: center;
 }
 
-.Stage {
-  border: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 25px;
-  background-color: rgba(black, 0.7);
-  box-shadow: 0px 0px 20px 0px #f8c1fc;
-  transition: all ease-in-out 0.25s;
-
-  &Glow {
-    box-shadow: 0px 0px 40px 0px #f8c1fc;
-    transform: scale(1.05);
-  }
-
-  &Fade {
-    box-shadow: 0px 0px 10px 0px #f8c1fc;
-  }
-}
-
 .Mark {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 200px;
+  max-width: 100px;
   margin-bottom: 20px;
   opacity: 0.7;
 }
 
 .WordMark {
   width: 80%;
-  max-width: 1200px;
+  max-width: $max-width;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -182,43 +95,14 @@
   position: relative;
 }
 
-.HelpUs {
-  display: flex;
-  justify-content: center;
-}
-
 .SmallBreak {
   display: block;
 }
 
-.Application {
-  padding: 10px 14px;
-  background-color: rgba(black, 0.7);
-  box-shadow: 0px 0px 20px 0px #f8c1fc;
-  transition: all ease-in-out 0.25s;
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  border: 1px solid white;
-  text-transform: uppercase;
-  outline-color: #e60073;
-  outline-offset: 2px;
-  font-weight: 500;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 0px 40px 0px #f8c1fc;
-    transform: scale(1.005);
-  }
-}
-
 @include breakpoint(medium) {
-  .Layout {
-    padding: 100px 40px 0;
-  }
-
-  .Stage {
-    max-width: 400px;
+  .AboveTheFold {
+    min-height: unset;
+    padding: 100px 0;
   }
 
   .SmallBreak {
@@ -227,7 +111,4 @@
 }
 
 @include breakpoint(large) {
-  .Stage {
-    max-width: 300px;
-  }
 }

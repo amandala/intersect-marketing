@@ -1,0 +1,29 @@
+.HelpUs {
+  display: flex;
+  justify-content: center;
+}
+
+.Application {
+  padding: 10px 14px;
+  background-color: rgba(black, 0.7);
+  box-shadow: 0px 0px 20px 0px #f8c1fc;
+  transition: all ease-in-out 0.25s;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  outline-color: #e60073;
+  outline-offset: 2px;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 40px 0px #f8c1fc;
+    transform: scale(1.005);
+  }
+}
+
+.GetInvolved {
+  margin: 100px 0;
+}
