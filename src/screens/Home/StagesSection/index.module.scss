@@ -28,17 +28,21 @@
 }
 
 @include breakpoint(medium) {
+  .ByLine {
+    margin: 10px 0 16px;
+  }
+
+  .Stages {
+    padding: 0 50px;
+  }
+}
+
+@include breakpoint(large) {
   .Stages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .ByLine {
-    margin: 10px 0 16px;
-  }
-}
-
-@include breakpoint(large) {
   .Stage {
     max-width: 300px;
   }
