@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.Wrapper {
+  margin: 0 auto;
+  background-color: rgba(black, 0.7);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.Content {
+  width: 100%;
+  max-width: $max-width;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: $max-width;
+  margin: 0 40px;
+}
+
+.Link {
+  color: white;
+  text-decoration: none;
+}
+
+.MadeWithLove {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
