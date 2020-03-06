@@ -32,11 +32,9 @@ const MainNav = () => {
         <Link className={styles.NavLink} href="/lineup">
           Lineup
         </Link>
-        {/* <img
-          alt="Dropaganda Productions Presents"
-          className={styles.Dropaganda}
-          src="dropaganda.svg"
-        /> */}
+        <Link className={styles.NavLink} href="/volunteer">
+          Volunteer
+        </Link>
       </nav>
     </div>
   );
