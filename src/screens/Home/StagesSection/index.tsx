@@ -34,7 +34,7 @@ const Stage = ({
   >
     {SVG()}
     <Tiny className={styles.ByLine}>
-      {hover ? "Lineups released soon!" : genre}
+      {hover ? "Check back for more!" : genre}
     </Tiny>
     <div className={styles.DetailsWrapper}>
       <P small>{details}</P>
@@ -51,7 +51,7 @@ const StagesSection = () => {
     <div className={styles.Wrapper}>
       <div className={styles.Content}>
         <div className={styles.LineupCTA}>
-          <ButtonLink href="/lineup">Check out our Lineup</ButtonLink>
+          <ButtonLink href="/lineup">Check out our Phase 1 Lineup</ButtonLink>
         </div>
         <H1 className={styles.Heading}>
           We've got three unique stages. You're sure to find something you love!
