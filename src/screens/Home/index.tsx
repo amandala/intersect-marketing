@@ -31,11 +31,6 @@ const Home = () => {
           </div>
         </div>
         <AboutSection />
-        <div className={styles.StayTuned}>
-          <h3>
-            <ButtonLink href="/lineup">Check out our Lineup</ButtonLink>
-          </h3>
-        </div>
         <StagesSection />
         <GetInvolvedSection />
       </div>

@@ -1,5 +1,19 @@
 @import "../../../styles/variables";
 
+.Wrapper {
+  width: 100%;
+}
+
+.Content {
+  padding: 50px 20px;
+}
+
+.Heading {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto 34px;
+}
+
 .Stages {
   display: flex;
   flex-wrap: wrap;
@@ -27,20 +41,34 @@
   }
 }
 
-@include breakpoint(medium) {
-  .ByLine {
-    margin: 10px 0 16px;
-  }
+.LineupCTA {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
 
+.ByLine {
+  margin: 10px 0 16px;
+}
+
+@include breakpoint(medium) {
   .Stages {
     padding: 0 50px;
+  }
+
+  .Content {
+    padding: 100px 45px;
+    max-width: $max-width;
+    margin: 0 auto;
   }
 }
 
 @include breakpoint(large) {
   .Stages {
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(200px, 400px));
   }
 
   .Stage {
