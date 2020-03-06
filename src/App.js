@@ -1,7 +1,6 @@
 import React from "react";
 
-import { MainNav } from "./components";
-
+import { MainNav, Footer } from "./components";
 import styles from "./App.module.scss";
 
 import { Lineup, Home } from "./screens";
@@ -17,6 +16,7 @@ function App() {
           <Route path="/lineup" component={Lineup} />
           <Route path="/" component={Home} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
