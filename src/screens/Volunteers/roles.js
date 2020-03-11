@@ -10,7 +10,7 @@ const roles = [
     title: "Art Crew",
     description: [
       "Calling all creatives! Art Crew volunteers help us create beautiful, engaging spaces. You'll lend a hand manning the art gallery, setting up decor, making signs, and assisting where needed with the live art installations",
-      "Applicants for this team should be comfortable getting letting their imagination run wild."
+      "Applicants for this team should be comfortable letting their imagination run wild, and maybe getting a little messy."
     ]
   },
   {
