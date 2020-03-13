@@ -15,23 +15,24 @@ const GetInvolved = () => {
         <ButtonLink className={styles.Cta} href="/media">
           Apply for the Media Team
         </ButtonLink>
+        <ButtonLink className={styles.Cta} href="/vendors">
+          Apply as a Vendor
+        </ButtonLink>
         <ButtonLink className={styles.Cta} href="/volunteer">
           Apply to Volunteer
         </ButtonLink>
-        <ButtonLink className={styles.Cta} href="/vendors">
-          Apply as a vendor
-        </ButtonLink>
-        <H2 className={styles.CreativeHeading}>
-          Creative Contribution Applications open March 22
-        </H2>
+        <H1 className={styles.CreativeHeading}>Calling all creatives!</H1>
         <P>
-          Calling all creatives! We are looking to create the most engaging and
-          entertaining space possible.
+          We are looking to create the most engaging and entertaining space
+          possible.
         </P>
         <P>
           Contribute your Live Art, Art Installation, Performance Art, and
           Workshops to Inter.Sect and help make Season 1 awesome.
         </P>
+        <H2 className={styles.CreativeHeading}>
+          Creative Contribution Applications open March 22
+        </H2>
       </div>
     </BlackDiv>
   );
