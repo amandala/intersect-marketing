@@ -5,8 +5,6 @@ import NebulaPage from "../../components/NebulaPage";
 import BlackDiv from "../../components/BlackDiv";
 import styles from "./index.module.scss";
 
-// TODO: UPDATE LINK
-
 const Media = () => {
   return (
     <NebulaPage heading="We want you, to capture the moment">
@@ -20,7 +18,7 @@ const Media = () => {
           <div className={styles.Buttons}>
             <ButtonLinkExternal
               className={styles.ApplicationLink}
-              href="https://forms.gle/vAhEvQyA8TxDkKbT6"
+              href="https://forms.gle/jkwzZDQ7eoAxCjUv8"
             >
               Apply for the Media Team
             </ButtonLinkExternal>

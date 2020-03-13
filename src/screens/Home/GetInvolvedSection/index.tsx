@@ -1,6 +1,6 @@
 import React from "react";
 import { H1, H2 } from "../../../components/Typography";
-import { ButtonLinkExternal, ButtonLink } from "../../../components/Button";
+import { ButtonLink } from "../../../components/Button";
 import BlackDiv from "../../../components/BlackDiv";
 import styles from "./index.module.scss";
 
@@ -12,12 +12,12 @@ const GetInvolved = () => {
           Would YOU like to get involved? We are looking for Artists, Crew
           members, Vendors, and Volunteers
         </H1>
-        <ButtonLinkExternal
-          className={styles.Cta}
-          href="https://forms.gle/ix2vbwdyUUAWnsqh6"
-        >
+        <ButtonLink className={styles.Cta} href="/media">
+          Apply for the Media Team
+        </ButtonLink>
+        <ButtonLink className={styles.Cta} href="/volunteers">
           Apply to Volunteer
-        </ButtonLinkExternal>
+        </ButtonLink>
         <ButtonLink className={styles.Cta} href="/vendors">
           Apply as a vendor
         </ButtonLink>
