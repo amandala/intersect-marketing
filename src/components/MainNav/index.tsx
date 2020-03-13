@@ -32,11 +32,11 @@ const MainNav = () => {
         <Link className={styles.NavLink} href="/lineup">
           Lineup
         </Link>
-        <Link className={styles.NavLink} href="/volunteer">
-          Volunteer
-        </Link>
         <Link className={styles.NavLink} href="/vendors">
           Vendors
+        </Link>
+        <Link className={styles.NavLink} href="/volunteer">
+          Volunteer
         </Link>
       </nav>
     </div>
