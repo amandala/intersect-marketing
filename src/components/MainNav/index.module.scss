@@ -22,19 +22,6 @@
   width: 150px;
 }
 
-.NavLink {
-  color: $white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  font-size: 20px;
-
-  &:hover,
-  &:focus {
-    color: #f396f9;
-  }
-}
-
 .SocialLink {
   margin-right: 20px;
   height: 24px;
@@ -49,5 +36,11 @@
 
   .Dropaganda {
     padding-top: 0;
+  }
+}
+
+@include breakpoint(xlarge) {
+  .Link {
+    margin-right: 20px;
   }
 }

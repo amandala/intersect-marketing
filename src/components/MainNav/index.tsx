@@ -1,6 +1,6 @@
 import React from "react";
 
-import Link from "../Link";
+import { InternalLink } from "../Link";
 
 import styles from "./index.module.scss";
 
@@ -29,15 +29,21 @@ const MainNav = () => {
             alt="Visit us on Facebook"
           />
         </a>
-        <Link className={styles.NavLink} href="/lineup">
+        <InternalLink className={styles.Link} href="/">
+          Home
+        </InternalLink>
+        <InternalLink className={styles.Link} href="/lineup">
           Lineup
-        </Link>
-        <Link className={styles.NavLink} href="/vendors">
+        </InternalLink>
+        <InternalLink className={styles.Link} href="/media">
+          Media
+        </InternalLink>
+        <InternalLink className={styles.Link} href="/vendors">
           Vendors
-        </Link>
-        <Link className={styles.NavLink} href="/volunteer">
+        </InternalLink>
+        <InternalLink className={styles.Link} href="/volunteer">
           Volunteer
-        </Link>
+        </InternalLink>
       </nav>
     </div>
   );

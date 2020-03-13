@@ -7,8 +7,14 @@
   margin: 0 auto;
 }
 
-@include breakpoint(medium) {
+@include breakpoint(xlarge) {
   .Image {
     max-width: 600px;
+  }
+
+  .Wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
   }
 }

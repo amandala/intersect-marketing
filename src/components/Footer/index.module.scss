@@ -14,17 +14,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: $max-width-big;
+  justify-content: space-between;
   margin: 0 40px;
 }
 
-.Link {
-  color: white;
-  text-decoration: none;
-}
-
 .MadeWithLove {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
