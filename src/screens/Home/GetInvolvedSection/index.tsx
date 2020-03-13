@@ -1,25 +1,32 @@
 import React from "react";
-import { H1 } from "../../../components/Typography";
-import { ButtonLinkExternal } from "../../../components/Button";
+import { H1, H2 } from "../../../components/Typography";
+import { ButtonLinkExternal, ButtonLink } from "../../../components/Button";
+import BlackDiv from "../../../components/BlackDiv";
 import styles from "./index.module.scss";
 
 const GetInvolved = () => {
   return (
-    <div className={styles.GetInvolved}>
+    <BlackDiv>
       <div className={styles.Content}>
-        <H1 className={styles.Heading}>
-          Would YOU like to get involved? We are looking for Volunteers/Crew
-          members, Artists and Vendors
+        <H1>
+          Would YOU like to get involved? We are looking for Artists, Crew
+          members, Vendors, and Volunteers
         </H1>
-        <div className={styles.HelpUs}>
-          <ButtonLinkExternal href="mailto:info@intersectamf.com">
-            Send us an email
-            {/* <span className={styles.SmallBreak}>info@intersectamf.com</span> */}
-          </ButtonLinkExternal>
-        </div>
-        {/* <ApplicationSection /> */}
+        <ButtonLinkExternal
+          className={styles.Cta}
+          href="https://forms.gle/ix2vbwdyUUAWnsqh6"
+        >
+          Apply to Volunteer
+        </ButtonLinkExternal>
+        <ButtonLink className={styles.Cta} href="/vendors">
+          Apply as a vendor
+        </ButtonLink>
+        <H2>
+          Live Art, Art Installation, Performance Art, Art Gallery, and Media
+          applications open March 22
+        </H2>
       </div>
-    </div>
+    </BlackDiv>
   );
 };
 

@@ -10,11 +10,11 @@
 
 .Content {
   width: 100%;
-  max-width: $max-width;
+  max-width: $max-width-big;
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: $max-width;
+  max-width: $max-width-big;
   margin: 0 40px;
 }
 
@@ -27,6 +27,7 @@
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px 10px;
+  font-size: 20px;
 
   &:hover,
   &:focus {

@@ -35,6 +35,9 @@ const MainNav = () => {
         <Link className={styles.NavLink} href="/volunteer">
           Volunteer
         </Link>
+        <Link className={styles.NavLink} href="/vendors">
+          Vendors
+        </Link>
       </nav>
     </div>
   );

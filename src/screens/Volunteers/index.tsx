@@ -1,5 +1,7 @@
 import React from "react";
 import { H1, H2, P } from "../../components/Typography";
+import BlackDiv from "../../components/BlackDiv";
+import NebulaPage from "../../components/NebulaPage";
 import styles from "./index.module.scss";
 
 import roles from "./roles.js";
@@ -13,11 +15,8 @@ type VolunteerRoleType = {
 
 const Volunteers = () => {
   return (
-    <div className={styles.Wrapper}>
-      <div className={styles.Layout}>
-        <H1 className={styles.Heading}>Help us make Inter.sect awesome!</H1>
-      </div>
-      <div className={styles.Backbone}>
+    <NebulaPage heading="Help us make Inter.sect awesome!">
+      <BlackDiv>
         <div className={styles.HelpUs}>
           <P>
             As you know, volunteers are the backbone of any festival. They're
@@ -34,10 +33,9 @@ const Volunteers = () => {
             <strong>click any role to apply!</strong>
           </P>
         </div>
-      </div>
-
+      </BlackDiv>
       <div className={styles.Roles}>
-        {roles.map(role => (
+        {roles.map((role: VolunteerRoleType) => (
           <a
             className={styles.RoleLinkWrapper}
             target="_blank"
@@ -69,7 +67,7 @@ const Volunteers = () => {
           </a>
         ))}
       </div>
-    </div>
+    </NebulaPage>
   );
 };
 

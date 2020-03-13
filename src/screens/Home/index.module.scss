@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  padding-top: 58px;
 }
 
 .Layout {
@@ -17,4 +16,10 @@
 
 .Earth {
   max-width: 100%;
+}
+
+@include breakpoint(large) {
+  .Wrapper {
+    padding-top: 58px;
+  }
 }

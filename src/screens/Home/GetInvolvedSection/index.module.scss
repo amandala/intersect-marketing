@@ -1,31 +1,26 @@
 @import "../../../styles/variables";
 
-.GetInvolved {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  background-color: rgba(black, 0.7);
-  text-align: center;
-  width: 100%;
-}
-
 .Content {
-  padding: 50px 20px;
+  text-align: center;
 }
 
-.Heading {
-  margin-bottom: 50px;
+.Cta {
+  display: block;
+  margin: 50px 0;
 }
 
 @include breakpoint(medium) {
-  .GetInvolved {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .Content {
+    max-width: $max-width-small;
+    margin: 0 auto;
   }
 
-  .Content {
-    padding: 100px 45px;
-    max-width: $max-width;
+  .Cta {
+    display: inline-block;
+    margin-right: 24px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

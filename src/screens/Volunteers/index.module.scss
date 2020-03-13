@@ -1,40 +1,14 @@
 @import "../../styles/variables";
 
-.Wrapper {
-  background-image: url("/nebula.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 50px;
-}
-
-.Layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 20px;
-}
-
-.Heading {
-  text-align: center;
-}
-
-.Backbone {
-  background-color: rgba(black, 0.7);
-  text-align: center;
-  width: 100%;
-  margin: 50px 0;
-}
-
 .HelpUs {
-  padding: 50px 20px;
-  max-width: $max-width;
+  max-width: $max-width-small;
   margin: 0 auto;
 }
 
 .Roles {
-  padding: 0 20px 50px;
-  max-width: $max-width;
-  margin: 0 auto;
+  padding: 0 20px 0;
+  max-width: $max-width-small;
+  margin: 100px auto;
 }
 
 .Role {
@@ -44,6 +18,10 @@
   background-color: rgba(black, 0.7);
   box-shadow: 0px 0px 20px 0px #f8c1fc;
   transition: all ease-in-out 0.25s;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &:hover {
     box-shadow: 0px 0px 40px 0px #f8c1fc;
@@ -65,16 +43,8 @@
 }
 
 @include breakpoint(medium) {
-  .Wrapper {
-    padding-top: 108px;
-  }
-
-  .HelpUs {
-    padding: 50px 45px;
-  }
-
   .Roles {
-    padding: 0 45px 50px;
+    padding: 0 45px 0;
   }
 
   .Role {

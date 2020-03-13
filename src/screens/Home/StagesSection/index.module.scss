@@ -12,6 +12,7 @@
   text-align: center;
   max-width: 80%;
   margin: 0 auto 34px;
+  max-width: $max-width-small;
 }
 
 .Stages {
@@ -58,7 +59,7 @@
 
   .Content {
     padding: 100px 45px;
-    max-width: $max-width;
+    max-width: $max-width-big;
     margin: 0 auto;
   }
 }

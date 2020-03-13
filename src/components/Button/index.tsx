@@ -1,17 +1,20 @@
 import React from "react";
+import cx from "classnames";
 import { Link } from "react-router-dom";
 
 import styles from "./index.module.scss";
 
 export const ButtonLink = ({
   children,
+  className = "",
   href
 }: {
   children: React.ReactNode;
+  className?: string;
   href: string;
 }) => {
   return (
-    <Link to={href} className={styles.Button}>
+    <Link to={href} className={cx(styles.Button, className)}>
       {children}
     </Link>
   );
@@ -20,7 +23,7 @@ export const ButtonLink = ({
 export const ButtonLinkExternal = ({
   children,
   href,
-  className,
+  className = "",
   ...rest
 }: {
   children: React.ReactNode;
@@ -31,7 +34,7 @@ export const ButtonLinkExternal = ({
     <a
       rel="noopener noreferrer"
       target="_blank"
-      className={styles.Button}
+      className={cx(styles.Button, className)}
       href={href}
       {...rest}
     >

@@ -10,11 +10,11 @@
 
 .Content {
   width: 100%;
-  max-width: $max-width;
+  max-width: $max-width-big;
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: $max-width;
+  max-width: $max-width-big;
   margin: 0 40px;
 }
 
