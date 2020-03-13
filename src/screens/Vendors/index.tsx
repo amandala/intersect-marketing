@@ -26,7 +26,7 @@ const Vendors = () => {
             </P>
             <P>
               Click the link below to apply to be a vendor at our Farmer's
-              Market
+              Market.
             </P>
             <div className={styles.Buttons}>
               <ButtonLinkExternal
@@ -52,7 +52,7 @@ const Vendors = () => {
             </ul>
             <P>
               Click the appropriate link below to apply for a spot in the Galley
-              Market
+              Market.
             </P>
             <div className={styles.Buttons}>
               <ButtonLinkExternal
@@ -65,7 +65,7 @@ const Vendors = () => {
                 className={styles.ApplicationLink}
                 href="https://forms.gle/af7cNwuYGPNygruQ8"
               >
-                Artisan Vendor
+                Artisan Vendor Application
               </ButtonLinkExternal>
             </div>
           </div>

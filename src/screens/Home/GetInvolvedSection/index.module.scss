@@ -9,6 +9,10 @@
   margin: 50px 0;
 }
 
+.CreativeHeading {
+  margin: 24px 0;
+}
+
 @include breakpoint(medium) {
   .Content {
     max-width: $max-width-small;

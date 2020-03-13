@@ -28,10 +28,7 @@ const Volunteers = () => {
             festival from the ground up, you'll definitely make some wicked new
             friends while you’re at it!
           </P>
-          <P>
-            Check out our open positions below and{" "}
-            <strong>click any role to apply!</strong>
-          </P>
+          <P>Check out our open positions below and click any role to apply.</P>
         </div>
       </BlackDiv>
       <div className={styles.Roles}>

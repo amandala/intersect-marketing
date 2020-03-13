@@ -13,7 +13,7 @@ const Media = () => {
           <P>
             If a picture says a thousand words, a video must say millions! Help
             us tell the story of the first ever Inter.Sect by joining our Media
-            Team
+            Team.
           </P>
           <div className={styles.Buttons}>
             <ButtonLinkExternal
