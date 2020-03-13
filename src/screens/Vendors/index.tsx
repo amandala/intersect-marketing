@@ -7,10 +7,7 @@ import styles from "./index.module.scss";
 
 const Vendors = () => {
   return (
-    <NebulaPage
-      heading="Sell your local produce, delicious food, and artisanal goods in our
-  Galley Market or Farmer's Market"
-    >
+    <NebulaPage heading="Sell your local produce, prepared food, and artisanal goods in one of our markets">
       <BlackDiv>
         <div className={styles.Markets}>
           <P>
