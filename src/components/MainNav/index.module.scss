@@ -14,18 +14,60 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   max-width: $max-width-big;
-  margin: 0 40px;
 }
 
 .Dropaganda {
   width: 150px;
 }
 
+.NavButton {
+  color: white;
+  z-index: 99;
+  padding: 0 20px;
+}
+
+.Social {
+  display: flex;
+}
+
 .SocialLink {
   margin-right: 20px;
   height: 24px;
   outline-color: #f396f9;
+}
+
+.NavLinksWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.NavLinks {
+  position: absolute;
+  opacity: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  padding-top: 100px;
+  top: 34px;
+
+  &Open {
+    opacity: 1;
+
+    & #app {
+      overflow-y: hidden;
+    }
+  }
+}
+
+.Link {
+  margin-bottom: 24px;
 }
 
 @include breakpoint(medium) {
@@ -42,5 +84,19 @@
 @include breakpoint(xlarge) {
   .Link {
     margin-right: 20px;
+  }
+
+  .NavButton {
+    display: none;
+  }
+
+  .NavLinks {
+    position: relative;
+    opacity: 1;
+    height: unset;
+    width: unset;
+    display: block;
+    padding: 0;
+    top: unset;
   }
 }

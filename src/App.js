@@ -1,5 +1,5 @@
 import React from "react";
-
+import cx from "classnames";
 import { MainNav, Footer } from "./components";
 import styles from "./App.module.scss";
 
@@ -8,10 +8,15 @@ import { Lineup, Home, Vendors, Volunteers, Media } from "./screens";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  const [mobileNavOpen, setMobileNavOpen] = React.useState(false);
+
   return (
-    <div className={styles.App}>
+    <div className={cx(styles.App, { [styles.AppFrozen]: mobileNavOpen })}>
       <Router>
-        <MainNav />
+        <MainNav
+          mobileNavOpen={mobileNavOpen}
+          setMobileNavOpen={setMobileNavOpen}
+        />
         <Switch>
           <Route path="/lineup" component={Lineup} />
           <Route path="/media" component={Media} />
