@@ -61,11 +61,6 @@ const MainNav = ({
             >
               Volunteer
             </InternalLink>
-            <img
-              alt="Intersect Wordmark"
-              className={styles.WordMark}
-              src="type.png"
-            />
           </div>
         </div>
         <div className={styles.Social}>
