@@ -1,34 +1,21 @@
 @import "../../styles/variables";
 
 .Link {
-  font-family: "Agency", arial;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
   outline-color: #e60073;
-  text-shadow: 0 0 5px #fff, 0 0 10px #a39bac, 0 0 20px #a39bac,
-    0 0 30px #a39bac, 0 0 40px #a39bac, 0 0 50px #a39bac, 0 0 60px #a39bac;
   white-space: normal;
-  line-height: 50px;
   outline-color: #f396f9;
+  cursor: pointer;
+  font-weight: 600;
 
   &:hover,
   &:focus {
     color: #ffffff;
     text-shadow: 0 0 5px #fff, 0 0 10px #f396f9, 0 0 20px #f396f9,
       0 0 30px #f396f9, 0 0 40px #f396f9, 0 0 50px #f396f9, 0 0 60px #f396f9;
-  }
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }

@@ -1,21 +1,26 @@
 import React from "react";
-import { Link as ReactLink } from "react-router-dom";
+import cx from "classnames";
+import { Link } from "react-router-dom";
 
 import styles from "./index.module.scss";
 
-const Link = ({ href = "", children, ...rest }) => {
+export const InternalLink = ({ href, children, className = "", ...rest }) => {
   return (
-    <ReactLink className={styles.Link} to={href} {...rest}>
+    <Link className={cx(styles.Link, className)} to={href} {...rest}>
       {children}
-    </ReactLink>
+    </Link>
   );
 };
 
-export default Link;
-
-export const ExternalLink = ({ href = "", children, ...rest }) => {
+export const ExternalLink = ({ href, children, className = "", ...rest }) => {
   return (
-    <a className={styles.Link} target="_blank" to={href} {...rest}>
+    <a
+      className={cx(styles.Link, className)}
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
+      {...rest}
+    >
       {children}
     </a>
   );

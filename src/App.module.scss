@@ -1,4 +1,4 @@
-@import './styles/variables';
+@import "./styles/variables";
 
 .App {
   font-family: $open-sans-condensed;
@@ -11,4 +11,9 @@
   position: relative;
   line-height: 28px;
   letter-spacing: 0.2px;
+
+  &Frozen {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
 }

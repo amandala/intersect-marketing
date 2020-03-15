@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.Wrapper {
+  background-image: url("/nebula.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboveTheFold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  max-width: $max-width-small;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.Heading {
+  max-width: $max-width-small;
+  margin-bottom: 0;
+}
+
+@include breakpoint(medium) {
+  .Wrapper {
+    padding-top: 44px;
+    min-height: calc(100vh - 44px - 40px);
+  }
+
+  .AboveTheFold {
+    margin: 100px 0;
+    padding: 50px 45px;
+  }
+}
+
+@include breakpoint(large) {
+  .AboveTheFold {
+    min-height: 300px;
+    margin: 0;
+  }
+
+  .Heading {
+    max-width: $max-width-small;
+  }
+}

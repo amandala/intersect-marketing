@@ -1,10 +1,11 @@
 import React from "react";
 import { P } from "../../../components/Typography";
+import BlackDiv from "../../../components/BlackDiv";
 import styles from "./index.module.scss";
 
 const AboutSection = () => {
   return (
-    <div className={styles.About}>
+    <BlackDiv>
       <div className={styles.Content}>
         <P>
           Welcome to Northern Alberta’s new, premier art and music festival
@@ -27,7 +28,7 @@ const AboutSection = () => {
           available for the event.
         </P>
       </div>
-    </div>
+    </BlackDiv>
   );
 };
 

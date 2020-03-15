@@ -2,7 +2,7 @@
 
 .Wrapper {
   margin: 0 auto;
-  background-color: rgba(black, 0.7);
+  background-color: black;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -10,34 +10,82 @@
 
 .Content {
   width: 100%;
-  max-width: $max-width;
+  max-width: $max-width-big;
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: $max-width;
-  margin: 0 40px;
+  justify-content: space-between;
+  max-width: $max-width-big;
 }
 
 .Dropaganda {
   width: 150px;
 }
 
-.NavLink {
-  color: $white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 5px 10px;
+.NavButton {
+  color: white;
+  z-index: 99;
+  padding: 0 20px;
+  border: 0;
+  background-color: transparent;
+  outline-color: #f396f9;
 
   &:hover,
   &:focus {
-    color: #f396f9;
+    transform: scale(1.025);
+    box-shadow: 0px 0px 40px 0px #f8c1fc;
   }
+}
+
+.Social {
+  display: flex;
 }
 
 .SocialLink {
   margin-right: 20px;
   height: 24px;
   outline-color: #f396f9;
+}
+
+.NavLinksWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.NavLinks {
+  position: absolute;
+  opacity: 0;
+  background-image: url("/nebula.png");
+  background-color: rgba(black, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  top: 34px;
+  display: none;
+
+  &Open {
+    opacity: 1;
+    display: flex;
+    z-index: 9;
+    & #app {
+      overflow-y: hidden;
+    }
+  }
+}
+
+.WordMark {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 100px;
+}
+
+.Link {
+  margin-bottom: 24px;
 }
 
 @include breakpoint(medium) {
@@ -48,5 +96,25 @@
 
   .Dropaganda {
     padding-top: 0;
+  }
+}
+
+@include breakpoint(xlarge) {
+  .Link {
+    margin-right: 20px;
+  }
+
+  .NavButton {
+    display: none;
+  }
+
+  .NavLinks {
+    position: relative;
+    opacity: 1;
+    height: unset;
+    width: unset;
+    display: block;
+    padding: 0;
+    top: unset;
   }
 }
