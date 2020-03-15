@@ -27,8 +27,8 @@
 
 @include breakpoint(medium) {
   .Wrapper {
-    padding-top: 58px;
-    min-height: calc(100vh - 58px - 40px);
+    padding-top: 44px;
+    min-height: calc(100vh - 44px - 40px);
   }
 
   .AboveTheFold {

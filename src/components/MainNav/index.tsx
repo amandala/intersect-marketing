@@ -26,19 +26,39 @@ const MainNav = ({
               [styles.NavLinksOpen]: mobileNavOpen
             })}
           >
-            <InternalLink className={styles.Link} href="/">
+            <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
+              href="/"
+            >
               Home
             </InternalLink>
-            <InternalLink className={styles.Link} href="/lineup">
+            <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
+              href="/lineup"
+            >
               Lineup
             </InternalLink>
-            <InternalLink className={styles.Link} href="/media">
+            <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
+              href="/media"
+            >
               Media
             </InternalLink>
-            <InternalLink className={styles.Link} href="/vendors">
+            <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
+              href="/vendors"
+            >
               Vendors
             </InternalLink>
-            <InternalLink className={styles.Link} href="/volunteer">
+            <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
+              href="/volunteer"
+            >
               Volunteer
             </InternalLink>
           </div>
