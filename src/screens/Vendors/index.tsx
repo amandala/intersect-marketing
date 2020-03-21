@@ -18,11 +18,11 @@ const Vendors = () => {
           <div className={styles.Market}>
             <H2>Farmer's Market</H2>
             <P>
-              We have ??3000sqft?? enclosed and fully serviced market space
-              perfect for selling local fresh produce, meats, and other
-              delicious goodies. The Farmer's Market is located just outside the
-              main fairground gate providing an on site one-stop-shop location
-              for all our attendees.
+              We have a large enclosed and fully serviced market space perfect
+              for selling local fresh produce, meats, and other delicious
+              goodies. The Farmer's Market is located just outside the main
+              fairground gate providing an on site one-stop-shop location for
+              all our attendees.
             </P>
             <P>
               Click the link below to apply to be a vendor at our Farmer's
