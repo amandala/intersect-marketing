@@ -33,7 +33,11 @@ const MainNav = ({
             >
               Home
             </InternalLink>
-            <InternalLink className={styles.Link} href="/creatives">
+            <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
+              href="/creatives"
+            >
               Creatives
             </InternalLink>
             <InternalLink
