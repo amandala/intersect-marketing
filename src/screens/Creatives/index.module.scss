@@ -25,10 +25,7 @@
 @include breakpoint(medium) {
   .Buttons {
     text-align: center;
-  }
-
-  .ApplicationLink {
-    display: inline-block;
-    margin-right: 24px;
+    max-width: 50%;
+    margin: 0 auto;
   }
 }

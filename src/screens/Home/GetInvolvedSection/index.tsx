@@ -1,5 +1,5 @@
 import React from "react";
-import { H1, H2, P } from "../../../components/Typography";
+import { H1, P } from "../../../components/Typography";
 import { ButtonLink } from "../../../components/Button";
 import BlackDiv from "../../../components/BlackDiv";
 import styles from "./index.module.scss";
@@ -30,9 +30,9 @@ const GetInvolved = () => {
           Contribute your Live Art, Art Installation, Performance Art, and
           Workshops to Inter.Sect and help make Season 1 awesome.
         </P>
-        <H2 className={styles.CreativeHeading}>
-          Creative Contribution Applications open March 22
-        </H2>
+        <ButtonLink className={styles.Cta} href="/creatives">
+          Apply as a Creative
+        </ButtonLink>
       </div>
     </BlackDiv>
   );
