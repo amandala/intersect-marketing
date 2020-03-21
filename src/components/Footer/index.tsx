@@ -13,7 +13,7 @@ const Footer = () => (
         </Tiny>
       </div>
       <div>
-        <Tiny>
+        <Tiny className={styles.GetInTouch}>
           Need to get in touch?{" "}
           <ExternalLink href="mailto:info@intersectamf.com">
             Send us an email

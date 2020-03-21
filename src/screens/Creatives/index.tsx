@@ -11,7 +11,7 @@ const Creatives = () => {
       <BlackDiv>
         <div className={styles.Details}>
           <P>
-            Help us bring the off-world survivor space-pirate world of Intersect
+            Help us bring the off-world survivor space-pirate theme of Intersect
             to life by contributing your art, performance, or workshop.
           </P>
           <div className={styles.Buttons}>
@@ -30,12 +30,6 @@ const Creatives = () => {
             <ButtonLinkExternal
               className={styles.ApplicationLink}
               href="https://forms.gle/JJq38ZJieyJo4tMx8"
-            >
-              Create Live Art
-            </ButtonLinkExternal>
-            <ButtonLinkExternal
-              className={styles.ApplicationLink}
-              href="https://forms.gle/etf9sU7DT9NUyS759"
             >
               Create Live Art
             </ButtonLinkExternal>
