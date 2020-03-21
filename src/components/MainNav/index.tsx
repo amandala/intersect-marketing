@@ -29,6 +29,9 @@ const MainNav = ({
             <InternalLink className={styles.Link} href="/">
               Home
             </InternalLink>
+            <InternalLink className={styles.Link} href="/creatives">
+              Creatives
+            </InternalLink>
             <InternalLink className={styles.Link} href="/lineup">
               Lineup
             </InternalLink>
