@@ -11,7 +11,7 @@ const Creatives = () => {
       <BlackDiv>
         <div className={styles.Details}>
           <P>
-            Be a part of our space- pirate, survival story by contributing your
+            Be a part of our space-pirate, survival story by contributing your
             themed art, performance, or workshop
           </P>
           <div className={styles.Buttons}>
