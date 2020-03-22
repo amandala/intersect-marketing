@@ -6,17 +6,9 @@
   width: 100%;
 }
 
-.Markets {
+.Details {
   max-width: $max-width-small;
   margin: 0 auto;
-}
-
-.Market {
-  margin: 100px 0px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 }
 
 .ApplicationLink {
@@ -26,7 +18,7 @@
 
 @include breakpoint(medium) {
   .Wrapper {
-    padding-top: 44px;
+    padding-top: 58px;
   }
 }
 

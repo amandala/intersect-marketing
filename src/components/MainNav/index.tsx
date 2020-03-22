@@ -36,6 +36,13 @@ const MainNav = ({
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
+              href="/creatives"
+            >
+              Creatives
+            </InternalLink>
+            <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
               href="/lineup"
             >
               Lineup
