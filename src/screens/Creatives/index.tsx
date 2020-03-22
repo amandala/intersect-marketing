@@ -11,8 +11,8 @@ const Creatives = () => {
       <BlackDiv>
         <div className={styles.Details}>
           <P>
-            Help us bring the off-world survivor space-pirate theme of Intersect
-            to life by contributing your art, performance, or workshop.
+            Be a part of our space- pirate, survival story by contributing your
+            themed art, performance, or workshop
           </P>
           <div className={styles.Buttons}>
             <ButtonLinkExternal
