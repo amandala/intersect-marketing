@@ -10,7 +10,7 @@ const GetInvolved = () => {
       <div className={styles.Content}>
         <H1>
           Would YOU like to get involved? We are looking for Crew members,
-          Vendors, and Volunteers.
+          Vendors, and Volunteers for our 2021 event.
         </H1>
         <ButtonLink className={styles.Cta} href="/media">
           Apply for the Media Team
