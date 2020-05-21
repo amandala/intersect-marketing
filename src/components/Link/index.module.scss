@@ -6,16 +6,18 @@
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
-  outline-color: #e60073;
   white-space: normal;
-  outline-color: #f396f9;
+  outline-color: #21d1ec;
   cursor: pointer;
   font-weight: 600;
 
   &:hover,
   &:focus {
     color: #ffffff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #f396f9, 0 0 20px #f396f9,
-      0 0 30px #f396f9, 0 0 40px #f396f9, 0 0 50px #f396f9, 0 0 60px #f396f9;
+    text-shadow: 1px 1px 2px #21d1ec;
+  }
+
+  &:active {
+    border-bottom: 2px solid white;
   }
 }

@@ -2,13 +2,13 @@ import React from "react";
 import { P } from "../../components/Typography";
 import { ButtonLinkExternal } from "../../components/Button";
 import NebulaPage from "../../components/NebulaPage";
-import BlackDiv from "../../components/BlackDiv";
+import Section from "../../components/Section";
 import styles from "./index.module.scss";
 
 const Media = () => {
   return (
     <NebulaPage heading="We want you, to capture the moment">
-      <BlackDiv>
+      <Section>
         <div className={styles.Details}>
           <P>
             If a picture says a thousand words, a video must say millions! Help
@@ -24,7 +24,7 @@ const Media = () => {
             </ButtonLinkExternal>
           </div>
         </div>
-      </BlackDiv>
+      </Section>
     </NebulaPage>
   );
 };

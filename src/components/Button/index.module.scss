@@ -7,13 +7,13 @@
   border: 1px solid white;
   font-weight: 400;
   text-transform: uppercase;
-  outline-color: #f396f9;
+  outline-color: #21d1ec;
   text-align: center;
   display: inline-block;
 
   &:hover,
   &:focus {
     transform: scale(1.025);
-    box-shadow: 0px 0px 40px 0px #f8c1fc;
+    box-shadow: 0px 0px 40px 0px #21d1ec;
   }
 }

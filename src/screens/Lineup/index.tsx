@@ -1,13 +1,13 @@
 import React from "react";
 import NebulaPage from "../../components/NebulaPage";
-import BlackDiv from "../../components/BlackDiv";
+import Section from "../../components/Section";
 
 import styles from "./index.module.scss";
 
 const Lineup = () => {
   return (
     <NebulaPage>
-      <BlackDiv>
+      <Section>
         <div className={styles.Wrapper}>
           <img
             className={styles.Image}
@@ -15,7 +15,7 @@ const Lineup = () => {
             alt="INTERSECT Lineup Phase 1"
           />
         </div>
-      </BlackDiv>
+      </Section>
     </NebulaPage>
   );
 };

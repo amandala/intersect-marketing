@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
-.BlackDiv {
-  background-color: rgba(black, 0.7);
+.Section {
+  //  background-color: rgba(black, 0.7);
 }
 
 .Content {
@@ -15,7 +15,7 @@
 }
 
 @include breakpoint(large) {
-  .BlackDiv {
+  .Section {
     width: 100%;
   }
 }

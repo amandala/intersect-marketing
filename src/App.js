@@ -25,7 +25,7 @@ function App() {
             <Route path="/media" component={Media} />
             <Route path="/vendors" component={Vendors} />
             <Route path="/volunteer" component={Volunteers} />
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
           </Switch>
           <Footer />
         </ScrollToTop>
