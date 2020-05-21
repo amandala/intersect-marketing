@@ -14,14 +14,9 @@ const AboveTheFold = () => {
         src="type.png"
       />
       <div className={styles.DetailsWrapper}>
-        <H1>Art and Music Festival</H1>
-        <H2>August 21 - 23, 2020</H2>
-        <H3>High Prairie, Alberta</H3>
-        <div className={styles.BuyTickets}>
-          <ButtonLinkExternal href="https://dropaganda.tickit.ca/events/8137-inter-sect-season-1">
-            Buy Tickets
-          </ButtonLinkExternal>
-        </div>
+        <H1>SESSIONS</H1>
+        <H2>PART 1 - JUNE 6, 2020</H2>
+        <H2>Join our private live stream party from Joussard, AB featuring:</H2>
       </div>
     </div>
   );

@@ -2,13 +2,13 @@ import React from "react";
 import { P } from "../../components/Typography";
 import { ButtonLinkExternal } from "../../components/Button";
 import NebulaPage from "../../components/NebulaPage";
-import BlackDiv from "../../components/BlackDiv";
+import Section from "../../components/Section";
 import styles from "./index.module.scss";
 
 const Creatives = () => {
   return (
     <NebulaPage heading="Let's get creative!">
-      <BlackDiv>
+      <Section>
         <div className={styles.Details}>
           <P>
             Be a part of our space-pirate, survival story by contributing your
@@ -47,7 +47,7 @@ const Creatives = () => {
             </ButtonLinkExternal>
           </div>
         </div>
-      </BlackDiv>
+      </Section>
     </NebulaPage>
   );
 };

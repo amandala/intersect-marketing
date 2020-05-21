@@ -6,7 +6,7 @@ import styles from "./index.module.scss";
 
 const MainNav = ({
   mobileNavOpen,
-  setMobileNavOpen
+  setMobileNavOpen,
 }: {
   mobileNavOpen: boolean;
   setMobileNavOpen: (arg0: boolean) => void;
@@ -23,7 +23,7 @@ const MainNav = ({
           </button>
           <div
             className={cx(styles.NavLinks, {
-              [styles.NavLinksOpen]: mobileNavOpen
+              [styles.NavLinksOpen]: mobileNavOpen,
             })}
           >
             <InternalLink
@@ -38,35 +38,28 @@ const MainNav = ({
               className={styles.Link}
               href="/creatives"
             >
-              Creatives
+              Artist Spotlight
             </InternalLink>
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
               href="/lineup"
             >
-              Lineup
+              Live Stream
             </InternalLink>
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
               href="/media"
             >
-              Media
+              Vendors Market
             </InternalLink>
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
               href="/vendors"
             >
-              Vendors
-            </InternalLink>
-            <InternalLink
-              onClick={() => setMobileNavOpen(false)}
-              className={styles.Link}
-              href="/volunteer"
-            >
-              Volunteer
+              About
             </InternalLink>
           </div>
         </div>

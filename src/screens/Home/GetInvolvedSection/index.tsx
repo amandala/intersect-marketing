@@ -1,12 +1,12 @@
 import React from "react";
 import { H1, P } from "../../../components/Typography";
 import { ButtonLink } from "../../../components/Button";
-import BlackDiv from "../../../components/BlackDiv";
+import Section from "../../../components/Section";
 import styles from "./index.module.scss";
 
 const GetInvolved = () => {
   return (
-    <BlackDiv>
+    <Section>
       <div className={styles.Content}>
         <H1>
           Would YOU like to get involved? We are looking for Crew members,
@@ -23,18 +23,14 @@ const GetInvolved = () => {
         </ButtonLink>
         <H1 className={styles.CreativeHeading}>Calling all creatives!</H1>
         <P>
-          We are looking to create the most engaging and entertaining space
-          possible.
-        </P>
-        <P>
-          Contribute your Live Art, Art Installation, Performance Art, and
-          Workshops to Inter.Sect and help make Season 1 awesome.
+          We will be featuring live art on our live streams and vendor
+          marketplace.
         </P>
         <ButtonLink className={styles.Cta} href="/creatives">
           Apply as a Creative
         </ButtonLink>
       </div>
-    </BlackDiv>
+    </Section>
   );
 };
 

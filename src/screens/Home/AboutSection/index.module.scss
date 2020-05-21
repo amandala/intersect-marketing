@@ -1,7 +1,8 @@
 @import "../../../styles/variables";
 
-.Content {
-  text-align: center;
+.ArtistLogo {
+  width: 100%;
+  max-width: 500px;
 }
 
 @include breakpoint(medium) {
