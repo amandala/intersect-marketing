@@ -2,7 +2,7 @@
 
 .Wrapper {
   margin: 0 auto;
-  background-color: rgba(97, 117, 148, 1);
+  background-color: black;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -10,12 +10,11 @@
 
 .Content {
   width: 100%;
-  max-width: $max-width-big;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: $max-width-big;
+  max-width: $max-width-small;
 }
 
 .Dropaganda {
@@ -87,7 +86,6 @@
 
 @include breakpoint(medium) {
   .Wrapper {
-    background-color: rgba(97, 117, 148, 0.5);
     width: 100%;
     padding: 40px 0 20px;
   }
@@ -116,5 +114,9 @@
     display: block;
     padding: 0;
     top: unset;
+  }
+
+  .Content {
+    //max-width: $max-width-big;
   }
 }
