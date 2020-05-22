@@ -15,7 +15,7 @@ const NebulaPage = ({ heading, children }: PropsType) => {
           <H1 className={styles.Heading}>{heading}</H1>
         </div>
       ) : null}
-      {children}
+      <div className={styles.Content}>{children}</div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .Wrapper {
-  background-image: url("/nebula.png");
+  background-image: url("/bg2x-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -23,6 +23,10 @@
 .Heading {
   max-width: $max-width-small;
   margin-bottom: 0;
+}
+
+.Content {
+  //background-color: black;
 }
 
 @include breakpoint(medium) {

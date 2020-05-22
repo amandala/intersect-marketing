@@ -8,7 +8,10 @@ const AboutSection = () => {
   return (
     <Section>
       <div className={styles.Content}>
-        <img className={styles.ArtistLogo} src="/KaliYugaGenesaLogo.png" />
+        <img
+          className={styles.ArtistLogo}
+          src="/genesa/KaliYugaGenesaLogo.png"
+        />
         <P>
           Kali Yuga & The Genesa Project (Tanner Berry) are a dynamic duo of
           do-ers whose passion for the electronic music community and love for
@@ -33,7 +36,7 @@ const AboutSection = () => {
           Astral Harvest and Motion Notion. Catch them coming up at Inter.Sect
           Sessions Part 1 on June 6, 2020.
         </P>
-        <InternalLink href="/genesa">View full spotlight</InternalLink>
+        <InternalLink href="/genesaproject">View full spotlight</InternalLink>
       </div>
     </Section>
   );
