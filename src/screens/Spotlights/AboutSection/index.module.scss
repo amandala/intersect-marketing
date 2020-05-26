@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+
+.ArtistLogo {
+  width: 100%;
+  max-width: 500px;
+}
+
+@include breakpoint(medium) {
+  .Content {
+    max-width: $max-width-small;
+    margin: 0 auto;
+  }
+}

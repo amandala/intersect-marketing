@@ -8,13 +8,6 @@
   min-height: calc(100vh - 44px);
 }
 
-.DetailsWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .BuyTickets {
   display: flex;
   margin: 30px 0;
@@ -36,6 +29,19 @@
   justify-content: center;
   margin-bottom: 20px;
   opacity: 0.7;
+}
+
+.DropagandaPresents {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Dropaganda {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 7px;
 }
 
 @include breakpoint(medium) {

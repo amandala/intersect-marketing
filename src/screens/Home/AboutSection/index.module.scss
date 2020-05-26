@@ -5,6 +5,28 @@
   max-width: 500px;
 }
 
+.DetailsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ArtistLogos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ArtistLogo {
+  margin-bottom: 45px;
+}
+
+.Featuring {
+  margin-bottom: 45px;
+}
+
 @include breakpoint(medium) {
   .Content {
     max-width: $max-width-small;

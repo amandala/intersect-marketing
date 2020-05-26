@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.Wrapper {
+  background-image: url("/bg2x-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.Layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Earth {
+  max-width: 100%;
+}
+
+@include breakpoint(large) {
+  .Wrapper {
+    padding-top: 44px;
+  }
+}
