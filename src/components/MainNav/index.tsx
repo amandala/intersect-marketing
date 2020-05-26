@@ -36,9 +36,9 @@ const MainNav = ({
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
-              href="/creatives"
+              href="/lineup"
             >
-              Artist Spotlight
+              Lineup
             </InternalLink>
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
@@ -47,7 +47,7 @@ const MainNav = ({
             >
               Live Stream
             </InternalLink>
-            <InternalLink
+            {/* <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
               href="/media"
@@ -60,7 +60,7 @@ const MainNav = ({
               href="/vendors"
             >
               About
-            </InternalLink>
+            </InternalLink> */}
           </div>
         </div>
         <div className={styles.Social}>

@@ -58,7 +58,7 @@ const AboutSection = () => {
               alt="Thug Shells Logo"
             />
           </div>
-          <ButtonLink href="/genesaproject">
+          <ButtonLink href="/spotlights">
             Check out our artist spotlights
           </ButtonLink>
         </div>

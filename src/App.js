@@ -29,9 +29,9 @@ function App() {
           />
           <Switch>
             <Route path="/creatives" component={Creatives} />
-            <Route path="/lineup" component={Lineup} />
             <Route path="/genesaproject" component={GenesaProject} />
             <Route path="/media" component={Media} />
+            <Route path="/lineup" component={Lineup} />
             <Route path="/vendors" component={Vendors} />
             <Route path="/volunteer" component={Volunteers} />
             <Route exact path="/" component={Home} />

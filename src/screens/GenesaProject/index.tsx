@@ -7,8 +7,13 @@ import styles from "./index.module.scss";
 const GenesaProject = () => {
   return (
     <ArtistSpotlightPage
-      logo="/genesa/KaliYugaGenesaLogo.png"
-      name="Kali Yuga and the Genesa Project"
+      header={
+        <img
+          className={styles.Logo}
+          src="/artists/genesa/KaliYugaGenesaLogo.png"
+          alt="Kali Yuga and the Genesa Project"
+        />
+      }
     >
       <H3 className={styles.Heading}>PRODUCTION / PERFORMANCE DUO</H3>
       <P>
