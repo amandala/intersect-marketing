@@ -3,14 +3,14 @@ import React from "react";
 import styles from "./index.module.scss";
 
 type PropsType = {
-  header: React.ReactNode;
+  header?: React.ReactNode;
   children: React.ReactNode;
 };
 
 const ArtistSpotlightPage = ({ header, children }: PropsType) => {
   return (
     <div className={styles.Wrapper}>
-      <div className={styles.Header}>{header}</div>
+      {header ? <div className={styles.Header}>{header}</div> : null}
       <div className={styles.Black}>
         <div className={styles.ContentWrapper}>
           <div className={styles.Content}>{children}</div>

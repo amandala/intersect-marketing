@@ -13,6 +13,7 @@ import {
   Media,
   Creatives,
   GenesaProject,
+  Whisper,
 } from "./screens";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -36,6 +37,7 @@ function App() {
             <Route path="/lineup" component={Lineup} />
             <Route path="/vendors" component={Vendors} />
             <Route path="/volunteer" component={Volunteers} />
+            <Route exact path="/whisper" component={Whisper} />
             <Route exact path="/" component={Home} />
           </Switch>
           <Footer />

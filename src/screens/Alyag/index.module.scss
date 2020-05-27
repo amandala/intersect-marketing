@@ -6,6 +6,7 @@
 .Logo {
   width: 100%;
   max-width: 600px;
+  margin: 0 auto 45px;
 }
 
 .Heading {
@@ -30,7 +31,8 @@
   flex-direction: column;
 }
 
-.Video {
-  width: 100%;
-  margin-bottom: 45px;
+.Links {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,30 +1,19 @@
 import React from "react";
-import YouTube from "react-youtube";
+import YouTube from "react-youtube-embed";
 import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
 import { ButtonLinkExternal } from "../../components/Button";
 import { P, H3 } from "../../components/Typography";
 
 import styles from "./index.module.scss";
 
-const opts = {
-  height: "auto",
-  width: "100%",
-  playerVars: {
-    autoplay: 0,
-  },
-};
-
 const Alyag = () => {
   return (
-    <ArtistSpotlightPage
-      header={
-        <img
-          className={styles.Logo}
-          src="/artists/alyag/alyag-logo.png"
-          alt="Kali Yuga and the Genesa Project"
-        />
-      }
-    >
+    <ArtistSpotlightPage>
+      <img
+        className={styles.Logo}
+        src="/artists/alyag/alyag-logo-glow.png"
+        alt="Alyag Logo"
+      />
       <img
         className={styles.Image1}
         src="/artists/alyag/alyag3.jpg"
@@ -110,19 +99,21 @@ const Alyag = () => {
       <div className={styles.Section}>
         <H3 className={styles.Heading}>EXTRAS</H3>
         <div className={styles.Extras}>
-          <YouTube className={styles.Video} videoId="liInmuHnBJo" />
-          <ButtonLinkExternal
-            className={styles.Button}
-            href="https://alyag.net/home"
-          >
-            VISIT: alyag.net
-          </ButtonLinkExternal>
-          <ButtonLinkExternal
-            className={styles.Button}
-            href="https://www.instagram.com/alyagstunes/"
-          >
-            VISIT: @alyagstune
-          </ButtonLinkExternal>
+          <YouTube id="liInmuHnBJo" />
+          <div className={styles.Links}>
+            <ButtonLinkExternal
+              className={styles.Button}
+              href="https://alyag.net/home"
+            >
+              VISIT: alyag.net
+            </ButtonLinkExternal>
+            <ButtonLinkExternal
+              className={styles.Button}
+              href="https://www.instagram.com/alyagstunes/"
+            >
+              VISIT: @alyagstune
+            </ButtonLinkExternal>
+          </div>
         </div>
       </div>
     </ArtistSpotlightPage>

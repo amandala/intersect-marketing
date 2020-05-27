@@ -6,3 +6,4 @@ export { default as Media } from "./Media";
 export { default as Lineup } from "./Lineup";
 export { default as Vendors } from "./Vendors";
 export { default as Volunteers } from "./Volunteers";
+export { default as Whisper } from "./Whisper";

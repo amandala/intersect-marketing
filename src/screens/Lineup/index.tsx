@@ -52,7 +52,7 @@ const Lineup = () => {
           Spectrasoul, S.P.Y., LongWalkShortDock, Dub Phizix, Shlump, Serial
           Killaz, Aries, Logistics, Dieselboy and many more.
         </P>
-        <InternalLink href="/genesaproject">View full spotlight</InternalLink>
+        <InternalLink href="/whisper">View full spotlight</InternalLink>
       </div>
       <div className={styles.ArtistMini}>
         <img
@@ -68,7 +68,7 @@ const Lineup = () => {
           babe-a-liscious DJ K-Stylez - these two ladies are like nothing you've
           ever MC-seen before.
         </P>
-        <InternalLink href="/genesaproject">View full spotlight</InternalLink>
+        <InternalLink href="/thugshells">View full spotlight</InternalLink>
       </div>
     </ArtistSpotlightPage>
   );

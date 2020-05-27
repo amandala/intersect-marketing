@@ -1,5 +1,4 @@
 import React from "react";
-import cx from "classnames";
 import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
 import { ButtonLinkExternal } from "../../components/Button";
 import { P, H3 } from "../../components/Typography";
@@ -8,15 +7,12 @@ import styles from "./index.module.scss";
 
 const GenesaProject = () => {
   return (
-    <ArtistSpotlightPage
-      header={
-        <img
-          className={styles.Logo}
-          src="/artists/genesa/KaliYugaGenesaLogo.png"
-          alt="Kali Yuga and the Genesa Project"
-        />
-      }
-    >
+    <ArtistSpotlightPage>
+      <img
+        className={styles.Logo}
+        src="/artists/genesa/KaliYugaGenesaLogo.png"
+        alt="Kali Yuga and the Genesa Project"
+      />
       <img
         className={styles.Image1}
         src="/artists/genesa/both2.jpg"
