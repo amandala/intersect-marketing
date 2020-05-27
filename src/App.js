@@ -11,6 +11,7 @@ import {
   Vendors,
   Volunteers,
   Media,
+  ThugShells,
   Creatives,
   GenesaProject,
   Whisper,
@@ -34,6 +35,7 @@ function App() {
             <Route path="/creatives" component={Creatives} />
             <Route path="/genesaproject" component={GenesaProject} />
             <Route path="/media" component={Media} />
+            <Route path="/thugshells" component={ThugShells} />
             <Route path="/lineup" component={Lineup} />
             <Route path="/vendors" component={Vendors} />
             <Route path="/volunteer" component={Volunteers} />
