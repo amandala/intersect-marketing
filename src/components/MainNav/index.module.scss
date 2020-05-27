@@ -94,12 +94,6 @@
   }
 }
 
-@include breakpoint(large) {
-  .Content {
-    max-width: $max-width-small;
-  }
-}
-
 @include breakpoint(xlarge) {
   .Link {
     margin-right: 20px;
@@ -107,6 +101,10 @@
 
   .NavButton {
     display: none;
+  }
+
+  .Content {
+    max-width: $max-width-small;
   }
 
   .NavLinks {

@@ -5,6 +5,7 @@ import { MainNav, Footer } from "./components";
 import styles from "./App.module.scss";
 
 import {
+  Alyag,
   Lineup,
   Home,
   Vendors,
@@ -28,6 +29,7 @@ function App() {
             setMobileNavOpen={setMobileNavOpen}
           />
           <Switch>
+            <Route path="/alyag" component={Alyag} />
             <Route path="/creatives" component={Creatives} />
             <Route path="/genesaproject" component={GenesaProject} />
             <Route path="/media" component={Media} />

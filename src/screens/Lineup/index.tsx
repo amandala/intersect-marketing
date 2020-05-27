@@ -37,7 +37,7 @@ const Lineup = () => {
           "Alyag" is a Calgary, Canada based multi-instrumentalist, music
           producer, crafty tinkerer, and sassball extraordinaire.
         </P>
-        <InternalLink href="/genesaproject">View full spotlight</InternalLink>
+        <InternalLink href="/alyag">View full spotlight</InternalLink>
       </div>
       <div className={styles.ArtistMini}>
         <img

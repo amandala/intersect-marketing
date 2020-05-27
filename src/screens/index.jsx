@@ -1,3 +1,4 @@
+export { default as Alyag } from "./Alyag";
 export { default as Creatives } from "./Creatives";
 export { default as Home } from "./Home";
 export { default as GenesaProject } from "./GenesaProject";
