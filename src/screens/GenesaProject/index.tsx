@@ -114,44 +114,46 @@ const GenesaProject = () => {
           <span className={styles.Author}>- JO HORWOOD, B&K EVENT REVIEW</span>
         </P>
       </div>
-      <div className={cx(styles.Section, styles.Extras)}>
+      <div className={styles.Section}>
         <H3 className={styles.Heading}>EXTRAS</H3>
-        <ButtonLinkExternal
-          className={styles.Button}
-          href="https://www.facebook.com/watch/?v=271923116803085"
-        >
-          Watch: Pagoda 2018 Official Recap
-        </ButtonLinkExternal>
-        <ButtonLinkExternal
-          className={styles.Button}
-          href="https://www.facebook.com/watch/?v=1423904740954745"
-        >
-          Watch: The Genesa Series Presents Mr. Bill
-        </ButtonLinkExternal>
-        <ButtonLinkExternal
-          className={styles.Button}
-          href="https://www.facebook.com/watch/?v=1169251959753359"
-        >
-          Watch: The Genesa Series NYE 2016
-        </ButtonLinkExternal>
-        <ButtonLinkExternal
-          className={styles.Button}
-          href="http://www.genesaproject.com/thoughtlab-podcast2-1/2016/10/19/episode-019-cjsw-909-the-mix-up-august-27th-2016-the-genesa-project"
-        >
-          Listen: 90.9 CJSW Calgary Radio Appearance
-        </ButtonLinkExternal>
-        <ButtonLinkExternal
-          className={styles.Button}
-          href="http://www.genesaproject.com/thoughtlab/"
-        >
-          Listen: Genesa ThoughtLab Podcast
-        </ButtonLinkExternal>
-        <ButtonLinkExternal
-          className={styles.Button}
-          href="http://www.freqmagazine.com/freq-does-shambhala20/"
-        >
-          Read: Mention in FREQ Magazine @Shambhala 20
-        </ButtonLinkExternal>
+        <div className={styles.Extras}>
+          <ButtonLinkExternal
+            className={styles.Button}
+            href="https://www.facebook.com/watch/?v=271923116803085"
+          >
+            Watch: Pagoda 2018 Official Recap
+          </ButtonLinkExternal>
+          <ButtonLinkExternal
+            className={styles.Button}
+            href="https://www.facebook.com/watch/?v=1423904740954745"
+          >
+            Watch: The Genesa Series Presents Mr. Bill
+          </ButtonLinkExternal>
+          <ButtonLinkExternal
+            className={styles.Button}
+            href="https://www.facebook.com/watch/?v=1169251959753359"
+          >
+            Watch: The Genesa Series NYE 2016
+          </ButtonLinkExternal>
+          <ButtonLinkExternal
+            className={styles.Button}
+            href="http://www.genesaproject.com/thoughtlab-podcast2-1/2016/10/19/episode-019-cjsw-909-the-mix-up-august-27th-2016-the-genesa-project"
+          >
+            Listen: 90.9 CJSW Calgary Radio Appearance
+          </ButtonLinkExternal>
+          <ButtonLinkExternal
+            className={styles.Button}
+            href="http://www.genesaproject.com/thoughtlab/"
+          >
+            Listen: Genesa ThoughtLab Podcast
+          </ButtonLinkExternal>
+          <ButtonLinkExternal
+            className={styles.Button}
+            href="http://www.freqmagazine.com/freq-does-shambhala20/"
+          >
+            Read: Mention in FREQ Magazine @Shambhala 20
+          </ButtonLinkExternal>
+        </div>
       </div>
       <img
         className={styles.Image1}

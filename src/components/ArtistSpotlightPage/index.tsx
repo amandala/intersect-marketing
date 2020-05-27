@@ -11,8 +11,10 @@ const ArtistSpotlightPage = ({ header, children }: PropsType) => {
   return (
     <div className={styles.Wrapper}>
       <div className={styles.Header}>{header}</div>
-      <div className={styles.ContentWrapper}>
-        <div className={styles.Content}>{children}</div>
+      <div className={styles.Black}>
+        <div className={styles.ContentWrapper}>
+          <div className={styles.Content}>{children}</div>
+        </div>
       </div>
     </div>
   );
