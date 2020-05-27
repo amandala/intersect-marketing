@@ -1,5 +1,7 @@
 import React from "react";
+import cx from "classnames";
 import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
+import { ButtonLinkExternal } from "../../components/Button";
 import { P, H3 } from "../../components/Typography";
 
 import styles from "./index.module.scss";
@@ -15,6 +17,11 @@ const GenesaProject = () => {
         />
       }
     >
+      <img
+        className={styles.Image1}
+        src="/artists/genesa/both2.jpg"
+        alt="Kali Yuga and Tanner Berry"
+      />
       <H3 className={styles.Heading}>PRODUCTION / PERFORMANCE DUO</H3>
       <P>
         “Genesa represents a Super Energy System that serves to clear the way
@@ -71,39 +78,91 @@ const GenesaProject = () => {
       <div className={styles.Logos}>
         <img
           className={styles.Logo}
-          src="/genesa/KaliYugaLogo.png"
+          src="/artists/genesa/KaliYugaLogo.png"
           alt="Kali Yuga Logo"
         />
         <img
           className={styles.Logo}
-          src="/genesa/GenesaProjectLogo.png"
+          src="/artists/genesa/GenesaProjectLogo.png"
           alt="Genesa Project Logo"
         />
       </div>
-      <H3 className={styles.Heading}>ACKNOWLEDGEMENTS</H3>
-      <P>
-        "Longtime purveyors of auditory excellence, [they] have been slaying
-        dancefloors with extreme bodacity for nearly a decade. Prepare your
-        orifices for a sonic earfucking the likes of which has ne'er been seen,
-        except for those other totally radsauce shindigs when they done gone
-        laid down dem sweetassed beats. Yea verily: Unto thine earholes shalt be
-        poured pure liquid gold, but not like literally as such would likely
-        maketh thee spake thusly: ouch."
-        <span className={styles.Author}>
-          - SEAN DANCO, GENESA SECURITY TEAM
-        </span>
-      </P>
-      <P>
-        "The Genesa Series holds events that are heavily oriented with the
-        community, oftentimes choosing the smaller venues for their shows rather
-        than clubs and bars, and always enjoying a heavy attendance from flow
-        performers, dancers, DJs, and promoters from Calgary. The family energy
-        was vibrant, and wonderfully evidenced by the group hug that was called
-        to end the night and celebrate Tanner Berry of The Genesa Project’s
-        birthday. Thank you to The Genesa Series for providing a truly beautiful
-        show, with such a refreshingly pure essence."
-        <span className={styles.Author}>- JO HORWOOD, B&K EVENT REVIEW</span>
-      </P>
+      <div className={styles.Section}>
+        <H3 className={styles.Heading}>ACKNOWLEDGEMENTS</H3>
+        <P>
+          "Longtime purveyors of auditory excellence, [they] have been slaying
+          dancefloors with extreme bodacity for nearly a decade. Prepare your
+          orifices for a sonic earfucking the likes of which has ne'er been
+          seen, except for those other totally radsauce shindigs when they done
+          gone laid down dem sweetassed beats. Yea verily: Unto thine earholes
+          shalt be poured pure liquid gold, but not like literally as such would
+          likely maketh thee spake thusly: ouch."
+          <span className={styles.Author}>
+            - SEAN DANCO, GENESA SECURITY TEAM
+          </span>
+        </P>
+        <P>
+          "The Genesa Series holds events that are heavily oriented with the
+          community, oftentimes choosing the smaller venues for their shows
+          rather than clubs and bars, and always enjoying a heavy attendance
+          from flow performers, dancers, DJs, and promoters from Calgary. The
+          family energy was vibrant, and wonderfully evidenced by the group hug
+          that was called to end the night and celebrate Tanner Berry of The
+          Genesa Project’s birthday. Thank you to The Genesa Series for
+          providing a truly beautiful show, with such a refreshingly pure
+          essence."
+          <span className={styles.Author}>- JO HORWOOD, B&K EVENT REVIEW</span>
+        </P>
+      </div>
+      <div className={cx(styles.Section, styles.Extras)}>
+        <H3 className={styles.Heading}>EXTRAS</H3>
+        <ButtonLinkExternal
+          className={styles.Button}
+          href="https://www.facebook.com/watch/?v=271923116803085"
+        >
+          Watch: Pagoda 2018 Official Recap
+        </ButtonLinkExternal>
+        <ButtonLinkExternal
+          className={styles.Button}
+          href="https://www.facebook.com/watch/?v=1423904740954745"
+        >
+          Watch: The Genesa Series Presents Mr. Bill
+        </ButtonLinkExternal>
+        <ButtonLinkExternal
+          className={styles.Button}
+          href="https://www.facebook.com/watch/?v=1169251959753359"
+        >
+          Watch: The Genesa Series NYE 2016
+        </ButtonLinkExternal>
+        <ButtonLinkExternal
+          className={styles.Button}
+          href="http://www.genesaproject.com/thoughtlab-podcast2-1/2016/10/19/episode-019-cjsw-909-the-mix-up-august-27th-2016-the-genesa-project"
+        >
+          Listen: 90.9 CJSW Calgary Radio Appearance
+        </ButtonLinkExternal>
+        <ButtonLinkExternal
+          className={styles.Button}
+          href="http://www.genesaproject.com/thoughtlab/"
+        >
+          Listen: Genesa ThoughtLab Podcast
+        </ButtonLinkExternal>
+        <ButtonLinkExternal
+          className={styles.Button}
+          href="http://www.freqmagazine.com/freq-does-shambhala20/"
+        >
+          Read: Mention in FREQ Magazine @Shambhala 20
+        </ButtonLinkExternal>
+      </div>
+      <img
+        className={styles.Image1}
+        src="/artists/genesa/kali.jpg"
+        alt="Kali Yuga"
+      />
+      <img
+        className={styles.Image1}
+        src="/artists/genesa/tanner.jpg"
+        alt="Tanner Berry"
+      />
     </ArtistSpotlightPage>
   );
 };

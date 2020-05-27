@@ -13,15 +13,14 @@ const AboutSection = () => {
             Brought to you from the beautiful Sunstone Inn Bed and Breakfast in
             Northern Alberta, The Inter.Sessions seek to bring together many of
             the amazing and diverse artists featured at the Inter.Sect Art and
-            Music Festival.
+            Music Festival. From The Bridge, The Core and The Galley stages come
+            a wide variety of genres and talents!
           </P>
           <P>
-            From The Bridge, The Core and The Galley stages come a wide variety
-            of genres and talents! Join us in celebrating new and exciting
-            flavours of Canadian Electronic/Bass, Rock, Folk, Country, Hip-Hop,
-            Fusion and Blues, while Live Art/Painting is done in real time, all
-            from the gorgeous backdrop of an intimate, lakeside bed and
-            breakfast.
+            Join us in celebrating new and exciting flavours of Canadian
+            Electronic/Bass, Rock, Folk, Country, Hip-Hop, Fusion and Blues,
+            while Live Art/Painting is done in real time, all from the gorgeous
+            backdrop of an intimate, lakeside bed and breakfast.
           </P>
           <P>
             BEYOND THE LIVESTREAM The Inter.Sessions are more than just a live
@@ -58,7 +57,7 @@ const AboutSection = () => {
               alt="Thug Shells Logo"
             />
           </div>
-          <ButtonLink href="/spotlights">
+          <ButtonLink href="/lineup">
             Check out our artist spotlights
           </ButtonLink>
         </div>
