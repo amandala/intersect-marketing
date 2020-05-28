@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { P, H2, H3 } from "../../../components/Typography";
 import Section from "../../../components/Section";
 import { ButtonLink } from "../../../components/Button";
@@ -30,33 +31,41 @@ const AboutSection = () => {
             VOLUME 1 - JUNE 6, 2020 FEATURING:
           </H2>
           <div className={styles.ArtistLogos}>
-            <img
-              className={styles.ArtistLogo}
-              src="/artists/genesa/KaliYugaGenesaLogo.png"
-              alt="Kali Yuga and the Genesa Project Logo"
-            />
-            <img
-              className={styles.ArtistLogo}
-              src="/artists/alyag/alyag-logo.png"
-              alt="Alyag Logo"
-            />
-            <img
-              className={styles.ArtistLogo}
-              src="/artists/whisper/whisper-logo.png"
-              alt="Whisper Logo"
-            />
-            <img
-              className={styles.ArtistLogo}
-              src="/artists/thugShells/thug-shells-bw.png"
-              alt="Thug Shells Logo"
-            />
-
+            <Link to="/genesa">
+              <img
+                className={styles.ArtistLogo}
+                src="/artists/genesa/KaliYugaGenesaLogo.png"
+                alt="Kali Yuga and the Genesa Project Logo"
+              />
+            </Link>
+            <Link to="/alyag">
+              <img
+                className={styles.ArtistLogo}
+                src="/artists/alyag/alyag-logo.png"
+                alt="Alyag Logo"
+              />
+            </Link>
+            <Link to="/whisper">
+              <img
+                className={styles.ArtistLogo}
+                src="/artists/whisper/whisper-logo.png"
+                alt="Whisper Logo"
+              />
+            </Link>
+            <Link to="/thugshells">
+              <img
+                className={styles.ArtistLogo}
+                src="/artists/thugShells/thug-shells-bw.png"
+                alt="Thug Shells Logo"
+              />
+            </Link>
             {/* //TODO: update to white logo
+            <Link to="/darkbubzz">
             <img
               className={styles.ArtistLogo}
               src="/artists/darkBubzz/DarkBubbzLight.png"
               alt="DarkBubzz Logo"
-            /> */}
+            /></Link> */}
           </div>
           <ButtonLink href="/lineup">
             Check out our artist spotlights

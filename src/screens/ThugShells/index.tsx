@@ -11,7 +11,7 @@ const ThugShells = () => {
     <ArtistSpotlightPage>
       <img
         className={styles.Logo}
-        src="/artists/thugShells/thuggylogogreen.png"
+        src="/artists/thugShells/thuggyblue.png"
         alt="ThugShells Logo"
       />
       <img
