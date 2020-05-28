@@ -6,6 +6,7 @@ import styles from "./App.module.scss";
 
 import {
   Alyag,
+  DarkBubzz,
   Lineup,
   Home,
   Vendors,
@@ -31,14 +32,15 @@ function App() {
             setMobileNavOpen={setMobileNavOpen}
           />
           <Switch>
-            <Route path="/alyag" component={Alyag} />
-            <Route path="/creatives" component={Creatives} />
-            <Route path="/genesaproject" component={GenesaProject} />
-            <Route path="/media" component={Media} />
-            <Route path="/thugshells" component={ThugShells} />
-            <Route path="/lineup" component={Lineup} />
-            <Route path="/vendors" component={Vendors} />
-            <Route path="/volunteer" component={Volunteers} />
+            <Route exact path="/alyag" component={Alyag} />
+            <Route exact path="/darkbubzz" component={DarkBubzz} />
+            <Route exact path="/creatives" component={Creatives} />
+            <Route exact path="/genesaproject" component={GenesaProject} />
+            <Route exact path="/media" component={Media} />
+            <Route exact path="/thugshells" component={ThugShells} />
+            <Route exact path="/lineup" component={Lineup} />
+            <Route exact path="/vendors" component={Vendors} />
+            <Route exact path="/volunteer" component={Volunteers} />
             <Route exact path="/whisper" component={Whisper} />
             <Route exact path="/" component={Home} />
           </Switch>

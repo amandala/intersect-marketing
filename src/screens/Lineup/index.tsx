@@ -70,6 +70,20 @@ const Lineup = () => {
         </P>
         <InternalLink href="/thugshells">View full spotlight</InternalLink>
       </div>
+      <div className={styles.ArtistMini}>
+        <img
+          className={styles.ArtistLogo}
+          src="/artists/darkBubzz/DarkBubbzLight.png"
+          alt="DarkBubzz Logo"
+        />
+        <P>
+          Sean "DarkBubbz" has been spinning up fresh tracks since the ripe year
+          of 2003 when he first fell in love with vinyl music.. Currently based
+          out of Edmonton, Alberta, Canada. Spinning Glitch, Electro, Drum &
+          Bass, Dubstep and all kinds of Crazy Bass music
+        </P>
+        <InternalLink href="/darkbubzz">View full spotlight</InternalLink>
+      </div>
     </ArtistSpotlightPage>
   );
 };

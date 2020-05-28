@@ -56,6 +56,11 @@ const AboutSection = () => {
               src="/artists/thugShells/thug-shells-bw.png"
               alt="Thug Shells Logo"
             />
+            {/* <img
+              className={styles.ArtistLogo}
+              src="/artists/darkBubzz/DarkBubbzLight.png"
+              alt="DarkBubzz Logo"
+            /> */}
           </div>
           <ButtonLink href="/lineup">
             Check out our artist spotlights
