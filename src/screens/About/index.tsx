@@ -33,8 +33,11 @@ const About = () => {
           issues.
         </li>
         <li className={styles.ListItem}>
-          <strong>If you are a vendor:</strong> Please email
-          vendor@Intersectamf.com regarding your vendor fees.
+          <strong>If you are a vendor:</strong> Please email{" "}
+          <a className={styles.Link} href="mailto:liveart@intersectamf.com">
+            vendor@intersectamf.com.
+          </a>{" "}
+          regarding your vendor fees.
         </li>
       </ul>
       <H2>All is not lost :)</H2>
@@ -51,7 +54,10 @@ const About = () => {
       </P>
       <P>
         <strong>Artists/Painters:</strong> We want to talk to you about Art
-        Streams! Contact us at Artist@intersectamf.com.
+        Streams! Contact us at{" "}
+        <a className={styles.Link} href="mailto:liveart@intersectamf.com">
+          liveart@intersectamf.com.
+        </a>
       </P>
     </ArtistSpotlightPage>
   );
