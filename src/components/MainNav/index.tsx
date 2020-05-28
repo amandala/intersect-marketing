@@ -53,7 +53,7 @@ const MainNav = ({
               href="/media"
             >
               Vendors Market
-            </InternalLink>
+            </InternalLink>=====
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
@@ -70,7 +70,12 @@ const MainNav = ({
             rel="noopener noreferrer"
             href="https://www.facebook.com/inter.sectAMF/?eid=ARCz9Dd8v7H0sVmpExqGWlooVydmN-jwmlHCfX7u3T0VhLJLElTyAi2KpvTsfZp667nMznov_kcW5sG1"
           >
-            <img src="/fb.png" alt="Visit us on Facebook" />
+            <img
+              height={20}
+              width={20}
+              src="/icons/facebook-3-64.png"
+              alt="Visit us on Facebook"
+            />
           </a>
           <a
             className={styles.SocialLink}
@@ -79,9 +84,9 @@ const MainNav = ({
             href="https://www.instagram.com/inter.sect_amf/"
           >
             <img
-              height={24}
-              width={24}
-              src="/ig.png"
+              height={20}
+              width={20}
+              src="/icons/instagram-3-64.png"
               alt="Visit us on Facebook"
             />
           </a>

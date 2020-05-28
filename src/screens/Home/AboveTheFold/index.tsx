@@ -15,6 +15,7 @@ const AboveTheFold = () => {
         <Tiny>PRESENTS</Tiny>
       </div>
       <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
+      {/* //TODO: update to new logo */}
       <img
         alt="Intersect Wordmark"
         className={styles.WordMark}

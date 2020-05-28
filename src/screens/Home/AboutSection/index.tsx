@@ -1,5 +1,5 @@
 import React from "react";
-import { P, H2 } from "../../../components/Typography";
+import { P, H2, H3 } from "../../../components/Typography";
 import Section from "../../../components/Section";
 import { ButtonLink } from "../../../components/Button";
 import styles from "./index.module.scss";
@@ -21,12 +21,6 @@ const AboutSection = () => {
             Electronic/Bass, Rock, Folk, Country, Hip-Hop, Fusion and Blues,
             while Live Art/Painting is done in real time, all from the gorgeous
             backdrop of an intimate, lakeside bed and breakfast.
-          </P>
-          <P>
-            BEYOND THE LIVESTREAM The Inter.Sessions are more than just a live
-            stream event! Be part of a much more intimate experience through our
-            Podcasts, Interviews, “Live Off The Floor” recordings of spontaneous
-            Jams and Collaborations, and fresh and surprising bonus content.
           </P>
         </div>
       </Section>
@@ -56,7 +50,9 @@ const AboutSection = () => {
               src="/artists/thugShells/thug-shells-bw.png"
               alt="Thug Shells Logo"
             />
-            {/* <img
+
+            {/* //TODO: update to white logo
+            <img
               className={styles.ArtistLogo}
               src="/artists/darkBubzz/DarkBubbzLight.png"
               alt="DarkBubzz Logo"
@@ -65,6 +61,33 @@ const AboutSection = () => {
           <ButtonLink href="/lineup">
             Check out our artist spotlights
           </ButtonLink>
+        </div>
+      </Section>
+      <Section>
+        <div className={styles.Content}>
+          <H3>BEYOND THE LIVESTREAM</H3>
+          <P>
+            The Inter.Sessions are more than just a live stream event! Be part
+            of a much more intimate experience through our Podcasts, Interviews,
+            “Live Off The Floor” recordings of spontaneous Jams and
+            Collaborations, and fresh and surprising bonus content.
+          </P>
+          <H3>SUPPORT FINE ART</H3>
+          <P>
+            Creative expression is at our core. Inter.Sect Art and Music
+            Festival & Inter.Sessions are dedicated to supporting, exposing and
+            curating amazing and thought-provoking fine arts and painting from
+            up and coming to established artists. Stand with us in validating
+            and supporting our dedicated Canadian creators.
+          </P>
+          <H3>ALL ABOUT THE MERCH</H3>
+          <P>
+            Interact in the chats on our streams and participate kep your eyes
+            peeled for contests to get your hands on unique and interesting
+            merchandise from our musicians, artists, sponsors, and festival
+            vendors. Be on the look-out for our online Vendors Market weekends!
+          </P>
+          {/* //TODO: link vendor page */}
         </div>
       </Section>
     </div>

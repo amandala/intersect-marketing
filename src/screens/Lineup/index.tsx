@@ -7,7 +7,7 @@ import styles from "./index.module.scss";
 
 const Lineup = () => {
   return (
-    <ArtistSpotlightPage header="VOLUME 1 ** NEED LOGO **">
+    <ArtistSpotlightPage header="** PLACEHOLDER ** VOLUME 1 ** PLACEHOLDER ** ">
       <div className={styles.ArtistMini}>
         <img
           className={styles.ArtistLogo}
@@ -71,6 +71,7 @@ const Lineup = () => {
         <InternalLink href="/thugshells">View full spotlight</InternalLink>
       </div>
       <div className={styles.ArtistMini}>
+        {/* //TODO: update to white logo */}
         <img
           className={styles.ArtistLogo}
           src="/artists/darkBubzz/DarkBubbzLight.png"
