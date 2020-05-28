@@ -43,9 +43,9 @@ const MainNav = ({
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
-              href="/lineup"
+              href="/about"
             >
-              Live Stream
+              About
             </InternalLink>
             {/* <InternalLink
               onClick={() => setMobileNavOpen(false)}

@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.Header {
+  max-width: $max-width-small;
+  text-align: center;
+}
+
+.List {
+  margin: 0 0 24px;
+}
+
+.ListItem {
+  padding-bottom: 12px;
+}

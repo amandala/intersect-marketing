@@ -5,6 +5,7 @@ import { MainNav, Footer } from "./components";
 import styles from "./App.module.scss";
 
 import {
+  About,
   Alyag,
   DarkBubzz,
   Lineup,
@@ -32,6 +33,7 @@ function App() {
             setMobileNavOpen={setMobileNavOpen}
           />
           <Switch>
+            <Route exact path="/about" component={About} />
             <Route exact path="/alyag" component={Alyag} />
             <Route exact path="/darkbubzz" component={DarkBubzz} />
             <Route exact path="/creatives" component={Creatives} />
