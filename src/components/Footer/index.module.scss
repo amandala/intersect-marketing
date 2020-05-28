@@ -2,10 +2,11 @@
 
 .Wrapper {
   margin: 0 auto;
-  background-color: rgba(black, 0.7);
+  background-color: black;
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  border-top: 1px solid white;
 }
 
 .Content {

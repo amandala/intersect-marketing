@@ -25,10 +25,6 @@
   margin-bottom: 0;
 }
 
-.Content {
-  //background-color: black;
-}
-
 @include breakpoint(medium) {
   .Wrapper {
     padding-top: 44px;

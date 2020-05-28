@@ -2,7 +2,7 @@
 
 .Wrapper {
   margin: 0 auto;
-  background-color: black;
+  background-color: #000000bf;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -95,6 +95,10 @@
 }
 
 @include breakpoint(xlarge) {
+  .Wrapper {
+    border-bottom: 1px solid white;
+  }
+
   .Link {
     margin-right: 20px;
   }
