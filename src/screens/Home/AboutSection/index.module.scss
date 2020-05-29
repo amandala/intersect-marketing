@@ -27,6 +27,10 @@
   margin-bottom: 45px;
 }
 
+.Mc {
+  margin-bottom: 7px;
+}
+
 @include breakpoint(medium) {
   .Content {
     max-width: $max-width-small;

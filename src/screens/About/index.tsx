@@ -40,14 +40,14 @@ const About = () => {
           regarding your vendor fees.
         </li>
       </ul>
-      <H2>All is not lost :)</H2>
+      <H2>But all is not lost :)</H2>
       <P>
         Keep your eyes peeled for the upcoming “Inter.Sessions”, which will host
         a fresh collection of Livestreams, Podcasts, Interviews new exciting
         collaborations with the wonderful artists and musicians we have booked
         for August 20th, 2021!
       </P>
-      <H2>We want to help!</H2>
+      <H2>And we want to help!</H2>
       <P>
         <strong>Vendors:</strong> Talk to us about the ways we can help you get
         your amazing products out there, for the world to see!

@@ -14,14 +14,14 @@ const AboveTheFold = () => {
         />
         <Tiny>PRESENTS</Tiny>
       </div>
-      <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
-      {/* //TODO: update to new logo */}
-      <img
-        alt="Intersect Wordmark"
-        className={styles.WordMark}
-        src="type.png"
-      />
-      <H1>SESSIONS</H1>
+      <div className={styles.Sessions}>
+        <img
+          alt="Inter.Sessions Logo"
+          className={styles.WordMark}
+          src="/sessions/type-white.png"
+        />
+        <Tiny>VOLUME 1 STREAMING JUNE 6, 2020</Tiny>
+      </div>
     </div>
   );
 };

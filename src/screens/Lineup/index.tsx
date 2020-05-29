@@ -71,10 +71,9 @@ const Lineup = () => {
         <InternalLink href="/thugshells">View full spotlight</InternalLink>
       </div>
       <div className={styles.ArtistMini}>
-        {/* //TODO: update to white logo */}
         <img
           className={styles.ArtistLogo}
-          src="/artists/darkBubzz/DarkBubbzLight.png"
+          src="/artists/darkBubzz/bubzz.png"
           alt="DarkBubzz Logo"
         />
         <P>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { P, H2, H3 } from "../../../components/Typography";
+import { P, H2, H3, Tiny } from "../../../components/Typography";
 import Section from "../../../components/Section";
 import { ButtonLink } from "../../../components/Button";
 import styles from "./index.module.scss";
@@ -38,13 +38,6 @@ const AboutSection = () => {
                 alt="Kali Yuga and the Genesa Project Logo"
               />
             </Link>
-            <Link to="/alyag">
-              <img
-                className={styles.ArtistLogo}
-                src="/artists/alyag/alyag-logo.png"
-                alt="Alyag Logo"
-              />
-            </Link>
             <Link to="/whisper">
               <img
                 className={styles.ArtistLogo}
@@ -52,6 +45,21 @@ const AboutSection = () => {
                 alt="Whisper Logo"
               />
             </Link>
+            <Link to="/alyag">
+              <img
+                className={styles.ArtistLogo}
+                src="/artists/alyag/alyag-logo.png"
+                alt="Alyag Logo"
+              />
+            </Link>
+            <Link to="/darkbubzz">
+              <img
+                className={styles.ArtistLogo}
+                src="/artists/darkBubzz/bubzz.png"
+                alt="DarkBubzz Logo"
+              />
+            </Link>
+            <Tiny className={styles.Mc}>WITH SPECIAL GUEST MC</Tiny>
             <Link to="/thugshells">
               <img
                 className={styles.ArtistLogo}
@@ -59,13 +67,6 @@ const AboutSection = () => {
                 alt="Thug Shells Logo"
               />
             </Link>
-            {/* //TODO: update to white logo
-            <Link to="/darkbubzz">
-            <img
-              className={styles.ArtistLogo}
-              src="/artists/darkBubzz/DarkBubbzLight.png"
-              alt="DarkBubzz Logo"
-            /></Link> */}
           </div>
           <ButtonLink href="/lineup">
             Check out our artist spotlights

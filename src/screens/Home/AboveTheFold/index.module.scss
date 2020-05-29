@@ -5,21 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 44px);
-}
-
-.BuyTickets {
-  display: flex;
-  margin: 30px 0;
-}
-
-.Mark {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 100px;
-  margin-bottom: 20px;
-  opacity: 0.7;
+  margin-top: 45px;
 }
 
 .WordMark {
@@ -27,20 +13,23 @@
   max-width: $max-width-small;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  opacity: 0.7;
+  margin-bottom: 7px;
 }
 
-.DropagandaPresents {
-  margin-bottom: 30px;
+.DropagandaPresents,
+.Sessions {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.Sessions {
+  margin-top: 20px;
+}
+
 .Dropaganda {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   margin-bottom: 7px;
 }
 
@@ -48,5 +37,10 @@
   .AboveTheFold {
     min-height: unset;
     padding: 30px 0;
+  }
+
+  .WordMark {
+    width: 100%;
+    max-width: 500px;
   }
 }
