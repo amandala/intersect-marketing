@@ -1,5 +1,5 @@
 import React from "react";
-import { H1, Tiny } from "../../../components/Typography";
+import { Tiny } from "../../../components/Typography";
 
 import styles from "./index.module.scss";
 

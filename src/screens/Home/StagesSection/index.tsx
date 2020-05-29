@@ -4,7 +4,6 @@ import BridgeSvg from "../BridgeSvg";
 import CoreSvg from "../CoreSvg";
 import GalleySvg from "../GalleySvg";
 import { P, Tiny, H1 } from "../../../components/Typography";
-import { ButtonLink } from "../../../components/Button";
 import styles from "./index.module.scss";
 
 const Stage = ({
@@ -50,9 +49,6 @@ const StagesSection = () => {
   return (
     <div className={styles.Wrapper}>
       <div className={styles.Content}>
-        <div className={styles.LineupCTA}>
-          <ButtonLink href="/lineup">Check out our Phase 1 Lineup</ButtonLink>
-        </div>
         <H1 className={styles.Heading}>
           We've got three unique stages. You're sure to find something you love!
         </H1>
