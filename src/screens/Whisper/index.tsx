@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube-embed";
-import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
+import StarHeaderPage from "../../components/StarHeaderPage";
 import { ButtonLinkExternal } from "../../components/Button";
 import { P, H3 } from "../../components/Typography";
 
@@ -8,7 +8,7 @@ import styles from "./index.module.scss";
 
 const Whisper = () => {
   return (
-    <ArtistSpotlightPage>
+    <StarHeaderPage black>
       <video
         className={styles.Logo}
         autoPlay
@@ -94,7 +94,7 @@ const Whisper = () => {
           alt="Whisper"
         />
       </div>
-    </ArtistSpotlightPage>
+    </StarHeaderPage>
   );
 };
 

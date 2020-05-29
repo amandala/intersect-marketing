@@ -1,13 +1,13 @@
 import React from "react";
 import { P, H1, H2 } from "../../components/Typography";
-import { InternalLink } from "../../components/Link";
-import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
+import StarHeaderPage from "../../components/StarHeaderPage";
 
 import styles from "./index.module.scss";
 
 const About = () => {
   return (
-    <ArtistSpotlightPage
+    <StarHeaderPage
+      black={false}
       header={
         <div className={styles.Header}>
           <H1>2020 Intersect Art and Music Festival Postponement Notice</H1>
@@ -59,7 +59,7 @@ const About = () => {
           liveart@intersectamf.com.
         </a>
       </P>
-    </ArtistSpotlightPage>
+    </StarHeaderPage>
   );
 };
 

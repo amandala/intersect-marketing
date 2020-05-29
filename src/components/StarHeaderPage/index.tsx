@@ -1,17 +1,18 @@
 import React from "react";
-
+import cx from "classnames";
 import styles from "./index.module.scss";
 
 type PropsType = {
   header?: React.ReactNode;
   children: React.ReactNode;
+  black?: boolean;
 };
 
-const ArtistSpotlightPage = ({ header, children }: PropsType) => {
+const StarHeaderPage = ({ header, children, black = true }: PropsType) => {
   return (
     <div className={styles.Wrapper}>
       {header ? <div className={styles.Header}>{header}</div> : null}
-      <div className={styles.Black}>
+      <div className={cx(styles.OpaqueBlack, { [styles.Black]: black })}>
         <div className={styles.ContentWrapper}>
           <div className={styles.Content}>{children}</div>
         </div>
@@ -20,4 +21,4 @@ const ArtistSpotlightPage = ({ header, children }: PropsType) => {
   );
 };
 
-export default ArtistSpotlightPage;
+export default StarHeaderPage;

@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube-embed";
-import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
+import StarHeaderPage from "../../components/StarHeaderPage";
 import { ButtonLinkExternal } from "../../components/Button";
 import { P, H3 } from "../../components/Typography";
 
@@ -8,7 +8,7 @@ import styles from "./index.module.scss";
 
 const Alyag = () => {
   return (
-    <ArtistSpotlightPage>
+    <StarHeaderPage>
       <img
         className={styles.Logo}
         src="/artists/alyag/alyag-logo-glow.png"
@@ -110,7 +110,7 @@ const Alyag = () => {
           alt="Alyag"
         />
       </div>
-    </ArtistSpotlightPage>
+    </StarHeaderPage>
   );
 };
 

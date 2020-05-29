@@ -1,5 +1,5 @@
 import React from "react";
-import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
+import StarHeaderPage from "../../components/StarHeaderPage";
 import { ButtonLinkExternal } from "../../components/Button";
 import { P, H3 } from "../../components/Typography";
 
@@ -7,7 +7,7 @@ import styles from "./index.module.scss";
 
 const GenesaProject = () => {
   return (
-    <ArtistSpotlightPage>
+    <StarHeaderPage>
       <img
         className={styles.Logo}
         src="/artists/genesa/KaliYugaGenesaLogo.png"
@@ -161,7 +161,7 @@ const GenesaProject = () => {
         src="/artists/genesa/tanner.jpg"
         alt="Tanner Berry"
       />
-    </ArtistSpotlightPage>
+    </StarHeaderPage>
   );
 };
 

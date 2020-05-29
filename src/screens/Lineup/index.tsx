@@ -1,13 +1,14 @@
 import React from "react";
 import { P } from "../../components/Typography";
 import { InternalLink } from "../../components/Link";
-import ArtistSpotlightPage from "../../components/ArtistSpotlightPage";
+import StarHeaderPage from "../../components/StarHeaderPage";
 
 import styles from "./index.module.scss";
 
 const Lineup = () => {
   return (
-    <ArtistSpotlightPage
+    <StarHeaderPage
+      black={false}
       header={
         <img
           className={styles.ArtistLogo}
@@ -92,7 +93,7 @@ const Lineup = () => {
         </P>
         <InternalLink href="/darkbubzz">View full spotlight</InternalLink>
       </div>
-    </ArtistSpotlightPage>
+    </StarHeaderPage>
   );
 };
 
