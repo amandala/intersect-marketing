@@ -7,7 +7,15 @@ import styles from "./index.module.scss";
 
 const Lineup = () => {
   return (
-    <ArtistSpotlightPage header="** PLACEHOLDER ** VOLUME 1 ** PLACEHOLDER ** ">
+    <ArtistSpotlightPage
+      header={
+        <img
+          className={styles.ArtistLogo}
+          src="/sessions/v1full-white.png"
+          alt="Whisper Logo"
+        />
+      }
+    >
       <div className={styles.ArtistMini}>
         <img
           className={styles.ArtistLogo}

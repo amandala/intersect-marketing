@@ -25,10 +25,34 @@
 
 .Featuring {
   margin-bottom: 45px;
+  margin-top: 7px;
 }
 
 .Mc {
   margin-bottom: 7px;
+}
+
+.Centered {
+  text-align: center;
+}
+
+.Link {
+  color: white;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #21d1ec;
+  }
+}
+
+.VolumeInfo {
+  margin: 0 20px;
+}
+
+.VolumeLogo {
+  width: 100%;
+  max-width: 500px;
 }
 
 @include breakpoint(medium) {

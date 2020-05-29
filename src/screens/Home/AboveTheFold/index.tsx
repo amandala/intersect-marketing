@@ -20,7 +20,6 @@ const AboveTheFold = () => {
           className={styles.WordMark}
           src="/sessions/type-white.png"
         />
-        <Tiny>VOLUME 1 STREAMING JUNE 6, 2020</Tiny>
       </div>
     </div>
   );
