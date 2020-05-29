@@ -4,7 +4,20 @@ import ScrollToTop from "react-router-scroll-top";
 import { MainNav, Footer } from "./components";
 import styles from "./App.module.scss";
 
-import { Lineup, Home, Vendors, Volunteers, Media, Creatives } from "./screens";
+import {
+  About,
+  Alyag,
+  DarkBubzz,
+  Lineup,
+  Home,
+  Vendors,
+  Volunteers,
+  Media,
+  ThugShells,
+  Creatives,
+  GenesaProject,
+  Whisper,
+} from "./screens";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -20,12 +33,18 @@ function App() {
             setMobileNavOpen={setMobileNavOpen}
           />
           <Switch>
-            <Route path="/creatives" component={Creatives} />
-            <Route path="/lineup" component={Lineup} />
-            <Route path="/media" component={Media} />
-            <Route path="/vendors" component={Vendors} />
-            <Route path="/volunteer" component={Volunteers} />
-            <Route path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/alyag" component={Alyag} />
+            <Route exact path="/darkbubzz" component={DarkBubzz} />
+            <Route exact path="/creatives" component={Creatives} />
+            <Route exact path="/genesaproject" component={GenesaProject} />
+            <Route exact path="/media" component={Media} />
+            <Route exact path="/thugshells" component={ThugShells} />
+            <Route exact path="/lineup" component={Lineup} />
+            <Route exact path="/vendors" component={Vendors} />
+            <Route exact path="/volunteer" component={Volunteers} />
+            <Route exact path="/whisper" component={Whisper} />
+            <Route exact path="/" component={Home} />
           </Switch>
           <Footer />
         </ScrollToTop>

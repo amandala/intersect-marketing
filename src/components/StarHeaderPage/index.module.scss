@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.Wrapper {
+  background-image: url("/bg2x-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 20px;
+}
+
+.Logo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.OpaqueBlack {
+  background-color: #000000bf;
+  width: 100%;
+}
+
+.Black {
+  background-color: #000000;
+}
+
+.ContentWrapper {
+  width: 100%;
+  max-width: $max-width-small;
+  margin: 0 auto;
+}
+
+.Content {
+  padding: 45px 20px;
+}
+
+@include breakpoint(large) {
+  .ContentWrapper {
+    width: 100%;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+}

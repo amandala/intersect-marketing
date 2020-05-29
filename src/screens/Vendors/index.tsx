@@ -2,13 +2,13 @@ import React from "react";
 import { H2, P } from "../../components/Typography";
 import { ButtonLinkExternal } from "../../components/Button";
 import NebulaPage from "../../components/NebulaPage";
-import BlackDiv from "../../components/BlackDiv";
+import Section from "../../components/Section";
 import styles from "./index.module.scss";
 
 const Vendors = () => {
   return (
     <NebulaPage heading="Sell your local produce, prepared food, and artisanal goods in one of our markets">
-      <BlackDiv>
+      <Section>
         <div className={styles.Markets}>
           <P>
             Inter.Sect Season 1 has two awesome vendor spots. With a diverse
@@ -70,7 +70,7 @@ const Vendors = () => {
             </div>
           </div>
         </div>
-      </BlackDiv>
+      </Section>
     </NebulaPage>
   );
 };

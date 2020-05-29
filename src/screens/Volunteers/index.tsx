@@ -1,6 +1,6 @@
 import React from "react";
 import { H1, H2, P } from "../../components/Typography";
-import BlackDiv from "../../components/BlackDiv";
+import Section from "../../components/Section";
 import NebulaPage from "../../components/NebulaPage";
 import styles from "./index.module.scss";
 
@@ -16,7 +16,7 @@ type VolunteerRoleType = {
 const Volunteers = () => {
   return (
     <NebulaPage heading="Help us make Inter.sect awesome!">
-      <BlackDiv>
+      <Section>
         <div className={styles.HelpUs}>
           <P>
             As you know, volunteers are the backbone of any festival. They're
@@ -30,7 +30,7 @@ const Volunteers = () => {
           </P>
           <P>Check out our open positions below and click any role to apply.</P>
         </div>
-      </BlackDiv>
+      </Section>
       <div className={styles.Roles}>
         {roles.map((role: VolunteerRoleType) => (
           <a
@@ -41,7 +41,7 @@ const Volunteers = () => {
           >
             <div className={styles.Role}>
               <H2 className={styles.RoleTitle}>{role.title}</H2>
-              {role.description.map(description => (
+              {role.description.map((description) => (
                 <P small className={styles.RoleDescription}>
                   {description}
                 </P>
@@ -54,7 +54,7 @@ const Volunteers = () => {
                     </P>
                   ) : null}
                   <ul className={styles.Requirements}>
-                    {role.requirements.map(requirement => (
+                    {role.requirements.map((requirement) => (
                       <li>{requirement}</li>
                     ))}
                   </ul>

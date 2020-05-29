@@ -1,21 +1,25 @@
 import React from "react";
-import { H1, H2, H3 } from "../../../components/Typography";
+import { Tiny } from "../../../components/Typography";
 
 import styles from "./index.module.scss";
 
 const AboveTheFold = () => {
   return (
     <div className={styles.AboveTheFold}>
-      <img alt="Intersect Logo" className={styles.Mark} src="mark.png" />
-      <img
-        alt="Intersect Wordmark"
-        className={styles.WordMark}
-        src="type.png"
-      />
-      <div className={styles.DetailsWrapper}>
-        <H1>Art and Music Festival</H1>
-        <H2>Postponed until 2021</H2>
-        <H3>High Prairie, Alberta</H3>
+      <div className={styles.DropagandaPresents}>
+        <img
+          className={styles.Dropaganda}
+          alt="Dropaganda Logo"
+          src="/dropaganda.png"
+        />
+        <Tiny>PRESENTS</Tiny>
+      </div>
+      <div className={styles.Sessions}>
+        <img
+          alt="Inter.Sessions Logo"
+          className={styles.WordMark}
+          src="/sessions/type-white.png"
+        />
       </div>
     </div>
   );

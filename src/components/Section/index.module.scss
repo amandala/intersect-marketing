@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.Section {
+  //  background-color: rgba(black, 0.7);
+}
+
+.Content {
+  padding: 60px 20px;
+}
+
+@include breakpoint(medium) {
+  .Content {
+    padding: 60px 45px;
+  }
+}
+
+@include breakpoint(large) {
+  .Section {
+    width: 100%;
+  }
+}

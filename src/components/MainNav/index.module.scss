@@ -2,7 +2,7 @@
 
 .Wrapper {
   margin: 0 auto;
-  background-color: black;
+  background-color: #000000bf;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -10,12 +10,10 @@
 
 .Content {
   width: 100%;
-  max-width: $max-width-big;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: $max-width-big;
 }
 
 .Dropaganda {
@@ -28,13 +26,7 @@
   padding: 0 20px;
   border: 0;
   background-color: transparent;
-  outline-color: #f396f9;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.025);
-    box-shadow: 0px 0px 40px 0px #f8c1fc;
-  }
+  outline-color: rgba(97, 117, 148, 1);
 }
 
 .Social {
@@ -44,7 +36,7 @@
 .SocialLink {
   margin-right: 20px;
   height: 24px;
-  outline-color: #f396f9;
+  outline-color: #21d1ec;
 }
 
 .NavLinksWrapper {
@@ -57,7 +49,7 @@
 .NavLinks {
   position: absolute;
   opacity: 0;
-  background-image: url("/nebula.png");
+  background-image: url("/bg2x-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(black, 0.7);
@@ -94,7 +86,7 @@
 @include breakpoint(medium) {
   .Wrapper {
     width: 100%;
-    position: absolute;
+    padding: 40px 0 20px;
   }
 
   .Dropaganda {
@@ -103,6 +95,10 @@
 }
 
 @include breakpoint(xlarge) {
+  .Wrapper {
+    border-bottom: 1px solid white;
+  }
+
   .Link {
     margin-right: 20px;
   }
@@ -111,7 +107,12 @@
     display: none;
   }
 
+  .Content {
+    max-width: $max-width-small;
+  }
+
   .NavLinks {
+    background-color: transparent;
     background-image: none;
     position: relative;
     opacity: 1;

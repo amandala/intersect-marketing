@@ -6,7 +6,7 @@ import styles from "./index.module.scss";
 
 const MainNav = ({
   mobileNavOpen,
-  setMobileNavOpen
+  setMobileNavOpen,
 }: {
   mobileNavOpen: boolean;
   setMobileNavOpen: (arg0: boolean) => void;
@@ -23,7 +23,7 @@ const MainNav = ({
           </button>
           <div
             className={cx(styles.NavLinks, {
-              [styles.NavLinksOpen]: mobileNavOpen
+              [styles.NavLinksOpen]: mobileNavOpen,
             })}
           >
             <InternalLink
@@ -36,13 +36,6 @@ const MainNav = ({
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
-              href="/creatives"
-            >
-              Creatives
-            </InternalLink>
-            <InternalLink
-              onClick={() => setMobileNavOpen(false)}
-              className={styles.Link}
               href="/lineup"
             >
               Lineup
@@ -50,24 +43,24 @@ const MainNav = ({
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
+              href="/about"
+            >
+              About
+            </InternalLink>
+            {/* <InternalLink
+              onClick={() => setMobileNavOpen(false)}
+              className={styles.Link}
               href="/media"
             >
-              Media
-            </InternalLink>
+              Vendors Market
+            </InternalLink>=====
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
               href="/vendors"
             >
-              Vendors
-            </InternalLink>
-            <InternalLink
-              onClick={() => setMobileNavOpen(false)}
-              className={styles.Link}
-              href="/volunteer"
-            >
-              Volunteer
-            </InternalLink>
+              About
+            </InternalLink> */}
           </div>
         </div>
         <div className={styles.Social}>
@@ -77,7 +70,12 @@ const MainNav = ({
             rel="noopener noreferrer"
             href="https://www.facebook.com/inter.sectAMF/?eid=ARCz9Dd8v7H0sVmpExqGWlooVydmN-jwmlHCfX7u3T0VhLJLElTyAi2KpvTsfZp667nMznov_kcW5sG1"
           >
-            <img src="/fb.png" alt="Visit us on Facebook" />
+            <img
+              height={20}
+              width={20}
+              src="/icons/facebook-3-64.png"
+              alt="Visit us on Facebook"
+            />
           </a>
           <a
             className={styles.SocialLink}
@@ -86,9 +84,9 @@ const MainNav = ({
             href="https://www.instagram.com/inter.sect_amf/"
           >
             <img
-              height={24}
-              width={24}
-              src="/ig.png"
+              height={20}
+              width={20}
+              src="/icons/instagram-3-64.png"
               alt="Visit us on Facebook"
             />
           </a>
