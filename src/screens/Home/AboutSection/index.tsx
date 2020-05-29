@@ -64,7 +64,7 @@ const AboutSection = () => {
           />
           <Tiny className={styles.Featuring}>FEATURING</Tiny>
           <div className={styles.ArtistLogos}>
-            <Link to="/genesa">
+            <Link to="/genesaproject">
               <img
                 className={styles.ArtistLogo}
                 src="/artists/genesa/KaliYugaGenesaLogo.png"
