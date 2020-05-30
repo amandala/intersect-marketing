@@ -23,16 +23,6 @@ const Alyag = () => {
         "Alyag mashes musical genres like he mashes his potatoes!"
       </H3>
       <P>
-        Sean "DarkBubbz" has been spinning up fresh tracks since the ripe year
-        of 2003 when he first fell in love with wanting to be on the other side
-        of the decks partying as a teenager. Over the years he has fallen in
-        love with many kinds of music and has grown an appreciation for anything
-        with a catchy tune that will get your toes tapping. Hes out to get your
-        ass shaken and booty bumpin. His main drive is to share with all the
-        lovely people on that dance floor the treasures he has come along in his
-        may travels across this shiny globe
-      </P>
-      <P>
         An eclectic amalgamation of
         electro-psy-funk-neuro-disco-DnB-trance-metal, "Alyag" is the
         self-produced sonic brainchild of multi-instrumentalist and longtime
