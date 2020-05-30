@@ -34,23 +34,23 @@ const AboutSection = () => {
           <P>
             The Inter.Sessions are more than just a live stream event! Be part
             of a much more intimate experience through our Podcasts, Interviews,
-            “Live Off The Floor” recordings of spontaneous Jams and
-            Collaborations, and fresh and surprising bonus content.
+            “Live Off The Floor” recordings of spontaneous jams, collaborations,
+            and fresh and surprising bonus content.
           </P>
           <H3>SUPPORT FINE ART</H3>
           <P>
             Creative expression is at our core. Inter.Sect Art and Music
-            Festival & Inter.Sessions are dedicated to supporting, exposing and
-            curating amazing and thought-provoking fine arts and painting from
-            up and coming to established artists. Stand with us in validating
-            and supporting our dedicated Canadian creators.
+            Festival & Inter.Sessions are dedicated to curating, exposing, and
+            supporting amazing and thought-provoking fine arts from up and
+            coming to established artists. Stand with us in supporting our
+            dedicated Canadian creators.
           </P>
           <H3>ALL ABOUT THE MERCH</H3>
           <P>
-            Interact in the chats on our streams and participate kep your eyes
-            peeled for contests to get your hands on unique and interesting
-            merchandise from our musicians, artists, sponsors, and festival
-            vendors. Be on the look-out for our online Vendors Market weekends!
+            Interact in the chats on our streams and keep your eyes peeled for
+            contests to get your hands on unique and interesting merchandise
+            from our musicians, artists, sponsors, and festival vendors. Be on
+            the look-out for our online Vendors Market weekends!
           </P>
           {/* //TODO: link vendor page */}
         </div>
