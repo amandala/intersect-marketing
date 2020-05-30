@@ -37,6 +37,32 @@ const Alyag = () => {
         evolving soundscape journey, sparking the listener's imagination and
         encouraging them to formulate their own tale to the tune.
       </P>
+      <P>
+        On stage, Alyag is an even farther reaching extension of that eclectic
+        energy, blending all original music into a cohesive, ever-flowing
+        electronic mix while he deftly switches between live guitars,
+        synthesizers, and drum samplers amid a furious whirlwind of emotes. Each
+        set is uniquely arranged, featuring extensive remixes of his existing
+        work coupled with unreleased material and new transitions - often entire
+        musical sections not heard anywhere else - tailored specifically toward
+        that individual performance.
+      </P>
+      <P>
+        In the wake of a series of singles and 2018's "Recreational
+        Schizophrenia" EP, 2019 has seen the November release of Alyag's first
+        full-length album, "The Graveyard of Maybe-Somethings", as well as an
+        ever-expanding roster of live shows. Most notable appearances include
+        Reign Bough Fiddle, FozzyFest, Astral Harvest, Shambhala, and Wicked
+        Woods music festivals, often alongside Kali Yuga & The Genesa Project,
+        as well as multiple performances at the Ship & Anchor, Habitat, HiFi,
+        and Junction clubs in Calgary.
+      </P>
+      <P>
+        With a continuously evolving multitude of ideas and projects lined up to
+        add to his already considerable aural arsenal, 2020 is primed to be a
+        busy and exciting year for Alyag, whose production proclivity is only
+        just ramping up.
+      </P>
       <img
         className={styles.Image1}
         src="/artists/alyag/alyag1.jpg"
@@ -55,9 +81,28 @@ const Alyag = () => {
             </ButtonLinkExternal>
             <ButtonLinkExternal
               className={styles.Button}
+              href="https://alyag.bandcamp.com/"
+            >
+              VISIT: BandCamp
+            </ButtonLinkExternal>
+
+            <ButtonLinkExternal
+              className={styles.Button}
+              href="https://soundcloud.com/alyag"
+            >
+              VISIT: SoundCloud
+            </ButtonLinkExternal>
+            <ButtonLinkExternal
+              className={styles.Button}
+              href="https://www.facebook.com/alyagstunes"
+            >
+              VISIT: Facebook
+            </ButtonLinkExternal>
+            <ButtonLinkExternal
+              className={styles.Button}
               href="https://www.instagram.com/alyagstunes/"
             >
-              VISIT: @alyagstune
+              VISIT: Instagram
             </ButtonLinkExternal>
           </div>
         </div>
