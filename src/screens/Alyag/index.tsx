@@ -47,39 +47,6 @@ const Alyag = () => {
         evolving soundscape journey, sparking the listener's imagination and
         encouraging them to formulate their own tale to the tune.
       </P>
-      <P>
-        The Genesa Project is a duo of doers. Based out of Calgary, AB, Canada,
-        the project encompasses a wide range of ideas and ventures, including
-        local event promoting, stage design, music production, and video podcast
-        hosting. Our first local event was held in 2011; a small, intimate venue
-        with a modest turnout. Since then, the project has snowballed, gaining
-        momentum with opportunities to work with and perform at a number of
-        western Canadian music festivals such as Shambhala, Astral Harvest,
-        Motion Notion, Inshala, and FozzyFest. Through the local event series,
-        we have brought artists such as Defunk, DJ QBert, Mr. Bill, Govinda,
-        Mochipet, and ill-Esha to our Calgary based scene. We strive to provide
-        a different kind of sound to our local area; what many might consider to
-        be "out of the box". Our goal is to always have multiple live musical
-        elements within each show, including live instrumentals, drums and
-        vocals.
-      </P>
-      <P>
-        In the wake of a series of singles and 2018's "Recreational
-        Schizophrenia" EP, 2019 has seen the November release of Alyag's first
-        full-length album, "The Graveyard of Maybe-Somethings", as well as an
-        ever-expanding roster of live shows. Most notable appearances include
-        Reign Bough Fiddle, FozzyFest, Astral Harvest, Shambhala, and Wicked
-        Woods music festivals, often alongside Kali Yuga & The Genesa Project,
-        as well as multiple performances at the Ship & Anchor, Habitat, HiFi,
-        and Junction clubs in Calgary.
-      </P>
-      <P>
-        With a continuously evolving multitude of ideas and projects lined up to
-        add to his already considerable aural arsenal, 2020 is primed to be a
-        busy and exciting year for Alyag, whose production proclivity is only
-        just ramping up.
-      </P>
-
       <img
         className={styles.Image1}
         src="/artists/alyag/alyag1.jpg"
