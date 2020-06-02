@@ -66,7 +66,7 @@ const Lineup = () => {
       <div className={styles.ArtistMini}>
         <img
           className={styles.ArtistLogo}
-          src="/artists/thugShells/thug-shells-bw.png"
+          src="/artists/thugShells/thug-shells-plain.png"
           alt="Thug Shells Logo"
         />
         <P>

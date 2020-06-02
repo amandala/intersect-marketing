@@ -16,7 +16,7 @@ const Footer = () => (
         <Tiny className={styles.GetInTouch}>
           Need to get in touch?{" "}
           <ExternalLink href="mailto:info@intersectamf.com">
-            Send us an email
+            info@intersectamf.com
           </ExternalLink>
         </Tiny>
       </div>
