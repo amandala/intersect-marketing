@@ -19,6 +19,8 @@ import {
   Whisper,
 } from "./screens";
 
+import TwitchStream from "./screens/TwitchStream";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -44,6 +46,7 @@ function App() {
             <Route exact path="/vendors" component={Vendors} />
             <Route exact path="/volunteer" component={Volunteers} />
             <Route exact path="/whisper" component={Whisper} />
+            <Route exact path="/stream" component={TwitchStream} />
             <Route exact path="/" component={Home} />
           </Switch>
           <Footer />
