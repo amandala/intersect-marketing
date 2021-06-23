@@ -18,9 +18,9 @@ export const H2 = ({ children, className = "" }: TypographyType) => (
 export const H3 = ({ children, className = "" }: TypographyType) => (
   <h3 className={cx(styles.H3, className)}>{children}</h3>
 );
-// export const H4 = ({ children, className = "" }: TypographyType) => (
-//   <h4 className={cx(styles.H4, className)}>{children}</h4>
-// );
+export const H4 = ({ children, className = "" }: TypographyType) => (
+  <h4 className={cx(styles.H4, className)}>{children}</h4>
+);
 // export const H5 = ({ children, className = "" }: TypographyType) => (
 //   <h5 className={cx(styles.H5, className)}>{children}</h5>
 // );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Tiny, H1 } from "../../../components/Typography";
+import { H1, H4 } from "../../../components/Typography";
 
 import styles from "./index.module.scss";
 
@@ -14,7 +14,13 @@ const AboveTheFold = () => {
         />
       </div>
       <div className={styles.Sessions}>
-        <H1>Inter.Sect Art & Music Festival 2021</H1>
+        <img
+          className={styles.InterSect}
+          alt="Dropaganda Logo"
+          src="/type.png"
+        />
+        <H1>Art & Music Festival</H1>
+        <H4>August 20 - 22 2021</H4>
       </div>
     </div>
   );

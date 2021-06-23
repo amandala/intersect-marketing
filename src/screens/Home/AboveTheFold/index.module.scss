@@ -25,12 +25,19 @@
 
 .Sessions {
   margin-top: 20px;
+  padding: 0 45px;
 }
 
 .Dropaganda {
   width: 100%;
   max-width: 200px;
   margin-bottom: 7px;
+}
+
+.InterSect {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
 }
 
 @include breakpoint(medium) {
