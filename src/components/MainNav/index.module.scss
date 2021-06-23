@@ -106,6 +106,12 @@
   }
 }
 
+@include breakpoint(large){
+  .Content {
+    margin: 0 50px;
+  }
+}
+
 @include breakpoint(xlarge) {
   .Wrapper {
     border-bottom: 1px solid white;
@@ -117,10 +123,6 @@
 
   .NavButton {
     display: none;
-  }
-
-  .Content {
-    max-width: $max-width-small;
   }
 
   .NavLinks {
