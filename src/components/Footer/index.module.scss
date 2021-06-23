@@ -1,20 +1,14 @@
 @import "../../styles/variables";
 
 .Wrapper {
-  margin: 0 auto;
   background-color: black;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+  padding: 30px 20px;
   border-top: 1px solid white;
 }
 
 .Content {
-  width: 100%;
-  max-width: $max-width-small;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column-reverse;
   justify-content: space-between;
   margin: 0 24px;
 }
@@ -22,8 +16,57 @@
 .MadeWithLove {
   display: flex;
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .GetInTouch {
   text-align: right;
+  margin-bottom: 6px;
 }
+
+.ContactWrapper {
+  margin-bottom: 40px;;
+}
+
+.ContactSection {
+  text-align: right;
+  margin-bottom: 30px;;
+}
+
+.Link   {
+  display: block;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.Dropaganda {
+  width: 100%;
+  max-width: 400px;;
+}
+
+.DropagandaPresents {
+  margin-bottom: 40px;;
+}
+
+
+@include breakpoint(medium){
+  .Wrapper {
+    padding: 30px 50px;
+  }
+
+  .Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .MadeWithLove {
+    text-align: left;
+    text-align: left;
+  }
+
+  .ContactWrapper {
+    margin-bottom: 0;
+  }
+}
+

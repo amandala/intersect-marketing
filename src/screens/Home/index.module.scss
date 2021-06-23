@@ -18,6 +18,19 @@
   max-width: 100%;
 }
 
+.FeatureImageWrapper {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: black;
+  padding: 10px;
+  margin: 20px;
+}
+
+.FeatureImage {
+  width: 100%;
+  max-width: 500px;
+}
+
 @include breakpoint(large) {
   .Wrapper {
     padding-top: 44px;

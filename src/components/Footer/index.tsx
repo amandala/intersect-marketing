@@ -7,18 +7,45 @@ const Footer = () => (
   <div className={styles.Wrapper}>
     <div className={styles.Content}>
       <div className={styles.MadeWithLove}>
+        <div className={styles.DropagandaPresents}>
+          <img
+            className={styles.Dropaganda}
+            alt="Dropaganda Logo"
+            src="/dropaganda.png"
+          />
+        </div>
         <Tiny>
           Site made with ♡ by{" "}
-          <ExternalLink href="http://www.portad.ca">Port:AD</ExternalLink>
-        </Tiny>
-      </div>
-      <div>
-        <Tiny className={styles.GetInTouch}>
-          Need to get in touch?{" "}
-          <ExternalLink href="mailto:info@intersectamf.com">
-            info@intersectamf.com
+          <ExternalLink href="https://www.instagram.com/mixedmanifest/">
+            Mixed Manifest
           </ExternalLink>
         </Tiny>
+      </div>
+      <div className={styles.ContactWrapper}>
+        <div className={styles.ContactSection}>
+          <Tiny className={styles.GetInTouch}>Contact</Tiny>
+          <ExternalLink
+            className={styles.Link}
+            href="mailto:info@intersectamf.com"
+          >
+            info@intersectamf.com
+          </ExternalLink>
+        </div>
+        <div className={styles.ContactSection}>
+          <Tiny className={styles.GetInTouch}>Social</Tiny>
+          <ExternalLink
+            className={styles.Link}
+            href="https://www.instagram.com/inter.sect_amf/"
+          >
+            Instagram
+          </ExternalLink>
+          <ExternalLink
+            className={styles.Link}
+            href="https://www.instagram.com/inter.sect_amf/"
+          >
+            Facebook
+          </ExternalLink>
+        </div>
       </div>
     </div>
   </div>

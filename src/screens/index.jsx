@@ -1,4 +1,4 @@
-export { default as About } from "./About";
+export { default as Updates } from "./Updates";
 export { default as Alyag } from "./Alyag";
 export { default as Creatives } from "./Creatives";
 export { default as DarkBubzz } from "./DarkBubzz";

@@ -5,7 +5,6 @@
   background-color: #000000bf;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
 }
 
 .Content {
@@ -14,6 +13,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
+
+  &Open {
+    padding: 0;
+  }
 }
 
 .Dropaganda {
@@ -63,6 +67,7 @@
   display: none;
 
   &Open {
+    top: 0;
     display: block;
     opacity: 1;
     display: flex;
@@ -71,6 +76,14 @@
       overflow-y: hidden;
     }
   }
+}
+
+.Logo {
+  width: 50px;;
+}
+
+.NavButtonOpen {
+  margin-top: 25px;
 }
 
 .WordMark {
@@ -85,7 +98,6 @@
 
 @include breakpoint(medium) {
   .Wrapper {
-    width: 100%;
     padding: 40px 0 20px;
   }
 

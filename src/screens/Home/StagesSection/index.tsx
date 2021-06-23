@@ -1,8 +1,7 @@
 import React from "react";
 import cx from "classnames";
-import BridgeSvg from "../BridgeSvg";
-import CoreSvg from "../CoreSvg";
-import GalleySvg from "../GalleySvg";
+import BridgeSvg from "./BridgeSvg";
+import GalleySvg from "./GalleySvg";
 import { P, Tiny, H1 } from "../../../components/Typography";
 import styles from "./index.module.scss";
 
@@ -13,7 +12,7 @@ const Stage = ({
   fade,
   SVG,
   details,
-  genre
+  genre,
 }: {
   onMouseEnter: (arg0: any) => void;
   onMouseLeave: (arg0: any) => void;
@@ -24,11 +23,11 @@ const Stage = ({
   genre: string;
 }) => (
   <div
-    onMouseEnter={e => onMouseEnter(e)}
-    onMouseLeave={e => onMouseLeave(e)}
+    onMouseEnter={(e) => onMouseEnter(e)}
+    onMouseLeave={(e) => onMouseLeave(e)}
     className={cx(styles.Stage, {
       [styles.StageGlow]: hover,
-      [styles.StageFade]: fade
+      [styles.StageFade]: fade,
     })}
   >
     {SVG()}
@@ -50,10 +49,10 @@ const StagesSection = () => {
     <div className={styles.Wrapper}>
       <div className={styles.Content}>
         <H1 className={styles.Heading}>
-          We've got three unique stages. You're sure to find something you love!
+          We've got two unique stages. You're sure to find something you love!
         </H1>
         <div className={styles.Stages}>
-          <Stage
+          {/* <Stage
             onMouseEnter={() => setHover("core")}
             onMouseLeave={() => setHover(undefined)}
             hover={hover === "core"}
@@ -63,7 +62,7 @@ const StagesSection = () => {
         enough to shock your system into full dance mode!"
             genre="Heavy Electronic"
             SVG={() => <CoreSvg glow={hover} />}
-          />
+          /> */}
           <Stage
             onMouseEnter={() => setHover("bridge")}
             onMouseLeave={() => setHover(undefined)}

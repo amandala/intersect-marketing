@@ -1,5 +1,5 @@
 import React from "react";
-import { H1, H2, P } from "../../../components/Typography";
+import { H1, P } from "../../../components/Typography";
 import { ButtonLink } from "../../../components/Button";
 import Section from "../../../components/Section";
 import styles from "./index.module.scss";

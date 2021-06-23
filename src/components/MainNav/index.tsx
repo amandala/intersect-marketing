@@ -13,10 +13,14 @@ const MainNav = ({
 }) => {
   return (
     <div className={styles.Wrapper}>
-      <nav className={styles.Content}>
+      <nav
+        className={cx(styles.Content, { [styles.ContentOpen]: mobileNavOpen })}
+      >
         <div className={styles.NavLinksWrapper}>
           <button
-            className={styles.NavButton}
+            className={cx(styles.NavButton, {
+              [styles.NavButtonOpen]: mobileNavOpen,
+            })}
             onClick={() => setMobileNavOpen(!mobileNavOpen)}
           >
             {mobileNavOpen ? "X" : "|||"}
@@ -31,21 +35,21 @@ const MainNav = ({
               className={styles.Link}
               href="/"
             >
-              Home
+              <img className={styles.Logo} src="/mark.png" />
             </InternalLink>
-            <InternalLink
+            {/* <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
               href="/lineup"
             >
               Lineup
-            </InternalLink>
+            </InternalLink> */}
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
-              href="/about"
+              href="/updates"
             >
-              About
+              Updates
             </InternalLink>
             {/* <InternalLink
               onClick={() => setMobileNavOpen(false)}

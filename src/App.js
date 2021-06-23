@@ -5,7 +5,7 @@ import { MainNav, Footer } from "./components";
 import styles from "./App.module.scss";
 
 import {
-  About,
+  Updates,
   Alyag,
   DarkBubzz,
   Lineup,
@@ -19,7 +19,7 @@ import {
   Whisper,
 } from "./screens";
 
-import TwitchStream from "./screens/TwitchStream";
+
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -35,7 +35,7 @@ function App() {
             setMobileNavOpen={setMobileNavOpen}
           />
           <Switch>
-            <Route exact path="/about" component={About} />
+            <Route exact path="/updates" component={Updates} />
             <Route exact path="/alyag" component={Alyag} />
             <Route exact path="/darkbubzz" component={DarkBubzz} />
             <Route exact path="/creatives" component={Creatives} />
@@ -46,7 +46,6 @@ function App() {
             <Route exact path="/vendors" component={Vendors} />
             <Route exact path="/volunteer" component={Volunteers} />
             <Route exact path="/whisper" component={Whisper} />
-            <Route exact path="/stream" component={TwitchStream} />
             <Route exact path="/" component={Home} />
           </Switch>
           <Footer />

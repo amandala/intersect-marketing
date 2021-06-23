@@ -1,5 +1,5 @@
 import React from "react";
-import { Tiny } from "../../../components/Typography";
+import { Tiny, H1 } from "../../../components/Typography";
 
 import styles from "./index.module.scss";
 
@@ -12,14 +12,9 @@ const AboveTheFold = () => {
           alt="Dropaganda Logo"
           src="/dropaganda.png"
         />
-        <Tiny>PRESENTS</Tiny>
       </div>
       <div className={styles.Sessions}>
-        <img
-          alt="Inter.Sessions Logo"
-          className={styles.WordMark}
-          src="/sessions/type-white.png"
-        />
+        <H1>Inter.Sect Art & Music Festival 2021</H1>
       </div>
     </div>
   );

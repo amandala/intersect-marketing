@@ -1,8 +1,7 @@
 import React from "react";
-// import { SwitchTransition, FadeTransition } from "react-transition-group";
 
 const BridgeSvg = ({
-  glow
+  glow,
 }: {
   glow: undefined | "core" | "bridge" | "galley";
 }) => {
