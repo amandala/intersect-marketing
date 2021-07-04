@@ -12,13 +12,12 @@ const Updates = () => {
     {
       data: {
         release_date: "",
-        title: "test",
-        details: [{ text: "TEST" }],
+        title: "",
+        details: [{ text: "" }],
       },
     },
   ]);
-
-  console.log(doc);
+  const [loading, setLoading] = React.useState<boolean>(true);
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -26,8 +25,8 @@ const Updates = () => {
         Prismic.Predicates.at("document.type", "update")
       );
       if (response) {
-        console.log(response);
         setDocData(response.results);
+        setLoading(false);
       }
     };
     fetchData();
@@ -42,9 +41,8 @@ const Updates = () => {
         </div>
       }
     >
-      {doc &&
+      {!loading ? (
         doc.map((update) => {
-          console.log(update);
           return (
             <div>
               <Tiny>{update.data.release_date}</Tiny>
@@ -54,7 +52,15 @@ const Updates = () => {
               ))}
             </div>
           );
-        })}
+        })
+      ) : (
+        <div className={styles.Loader}>
+          <div className={styles.Ripple}>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      )}
     </StarHeaderPage>
   );
 };
