@@ -19,7 +19,7 @@ const AboveTheFold = () => {
           alt="Dropaganda Logo"
           src="/type.png"
         />
-        <H1>Art & Music Festival</H1>
+        <H1 className={styles.Heading}>Art & Music Festival</H1>
         <H4>August 20 - 22 2021</H4>
       </div>
     </div>

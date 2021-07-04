@@ -58,9 +58,15 @@
 }
 
 .Loader {
-  min-height: 400px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@include breakpoint(large){
+  .Loader {
+    min-height: 400px;
+  }
 }
 
