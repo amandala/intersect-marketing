@@ -11,8 +11,8 @@ const Creatives = () => {
       <Section>
         <div className={styles.Details}>
           <P>
-            Be a part of our space-pirate, survival story by contributing your
-            themed art, performance, or workshop
+            Be a part of our space-pirate survival story by contributing your
+            themed art.
           </P>
           <div className={styles.Buttons}>
             <ButtonLinkExternal
@@ -32,12 +32,6 @@ const Creatives = () => {
               href="https://forms.gle/JJq38ZJieyJo4tMx8"
             >
               Create Live Art
-            </ButtonLinkExternal>
-            <ButtonLinkExternal
-              className={styles.ApplicationLink}
-              href="https://forms.gle/1QS4WMpmFWN3BFyd9"
-            >
-              Do a Live Performance
             </ButtonLinkExternal>
           </div>
         </div>

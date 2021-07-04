@@ -67,7 +67,7 @@ const roles = [
   {
     title: "Hospitality",
     description: [
-      "Hospitality volunteers provide customer service and deal directly with artists, performers and musicians. They work mostly in green room spaces and will also help to transport performers from off-site to stage areas.",
+      "Hospitality volunteers provide customer service and deal directly with artists and musicians. They work mostly in green room spaces and will also help to transport performers from off-site to stage areas.",
       "Applicants for this team are encouraged to have experience working in hospitality industries as bartenders or servers or previous experience working for hospitality teams at other festivals."
     ]
   },
