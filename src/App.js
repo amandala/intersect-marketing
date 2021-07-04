@@ -26,6 +26,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   const [mobileNavOpen, setMobileNavOpen] = React.useState(false);
 
+
+
   return (
     <div className={cx(styles.App, { [styles.AppFrozen]: mobileNavOpen })}>
       <Router>
