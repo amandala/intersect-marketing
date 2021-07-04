@@ -68,10 +68,7 @@ const StagesSection = () => {
             onMouseLeave={() => setHover(undefined)}
             hover={hover === "bridge"}
             fade={hover === "galley" || hover === "core"}
-            details="This stage is all about musical fusion and “bridging the gap” between
-        genres. Expect to see DJ equipment and live instruments playing
-        together in perfect harmony. This is also where those magical sunrise
-        sets take place."
+            details="Witness commanding electronic and hip-hop performances on 'The Bridge'. This year, the command deck of the Inter.sect comes alive with a variety of compelling Electronic and Hip-hop acts that are sure to demand some dancing. With skilled and passionate Lighting and Projection techs at the ready, The Bridge is sure to inspire wonder and joy until the sun rises."
             SVG={() => <BridgeSvg glow={hover} />}
             genre="Genre Fusion"
           />
@@ -80,9 +77,7 @@ const StagesSection = () => {
             onMouseLeave={() => setHover(undefined)}
             hover={hover === "galley"}
             fade={hover === "bridge" || hover === "core"}
-            details="Located near the Market and Food Vendors, The Galley stage is a great
-        place to set up your chair and enjoy all the Folk, Country, Funk,
-        Bluegrass, Blues and Rock acts that Inter.Sect has to offer."
+            details="Wander over to 'The Galley' to see what delicious tunes the bands are cooking up. From folk, funk, country, rock, blues, metal and so much more: The Galley is dedicated to offering a little bit of everything for anyone to enjoy. So grab your chair, grab a snack and chow down on this feast for the senses."
             SVG={() => <GalleySvg glow={hover} />}
             genre="Folk & Country Bands"
           />

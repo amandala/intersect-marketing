@@ -1,6 +1,6 @@
 import React from "react";
 import cx from "classnames";
-import { InternalLink } from "../Link";
+import { ExternalLink, InternalLink } from "../Link";
 
 import styles from "./index.module.scss";
 
@@ -37,13 +37,13 @@ const MainNav = ({
             >
               <img className={styles.Logo} src="/mark.png" />
             </InternalLink>
-            {/* <InternalLink
+            <ExternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
-              href="/lineup"
+              href="https://dropaganda.tickit.ca/events/12365"
             >
-              Lineup
-            </InternalLink> */}
+              Tickets
+            </ExternalLink>
             <InternalLink
               onClick={() => setMobileNavOpen(false)}
               className={styles.Link}
@@ -72,7 +72,7 @@ const MainNav = ({
             className={styles.SocialLink}
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.facebook.com/inter.sectAMF/?eid=ARCz9Dd8v7H0sVmpExqGWlooVydmN-jwmlHCfX7u3T0VhLJLElTyAi2KpvTsfZp667nMznov_kcW5sG1"
+            href="https://www.facebook.com/events/357952509093995/"
           >
             <img
               height={20}
