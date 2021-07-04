@@ -103,17 +103,12 @@
   }
 }
 
-@include breakpoint(large){
- 
-
- 
-}
 
 @include breakpoint(xlarge) {
 
   .Wrapper {
     border-bottom: 1px solid white;
-    padding: 40px 0 20px;
+  
   }
 
   .Content {
