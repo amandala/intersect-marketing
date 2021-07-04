@@ -41,7 +41,7 @@ const Footer = () => (
           </ExternalLink>
           <ExternalLink
             className={styles.Link}
-            href="https://www.instagram.com/inter.sect_amf/"
+            href="https://www.facebook.com/events/357952509093995/"
           >
             Facebook
           </ExternalLink>
