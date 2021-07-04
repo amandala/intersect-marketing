@@ -97,9 +97,6 @@
 }
 
 @include breakpoint(medium) {
-  .Wrapper {
-    padding: 40px 0 20px;
-  }
 
   .Dropaganda {
     padding-top: 0;
@@ -107,14 +104,20 @@
 }
 
 @include breakpoint(large){
-  .Content {
-    margin: 0 50px;
-  }
+ 
+
+ 
 }
 
 @include breakpoint(xlarge) {
+
   .Wrapper {
     border-bottom: 1px solid white;
+    padding: 40px 0 20px;
+  }
+
+  .Content {
+    margin: 0 50px;
   }
 
   .Link {

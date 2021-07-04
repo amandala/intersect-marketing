@@ -39,12 +39,6 @@ const Creatives = () => {
             >
               Do a Live Performance
             </ButtonLinkExternal>
-            <ButtonLinkExternal
-              className={styles.ApplicationLink}
-              href="https://forms.gle/fmR2xSTdxLEooXFd6"
-            >
-              Host a Workshop
-            </ButtonLinkExternal>
           </div>
         </div>
       </Section>

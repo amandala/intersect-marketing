@@ -72,13 +72,6 @@ const roles = [
     ]
   },
   {
-    title: "Kids Zone",
-    description: [
-      "Volunteers in the kids zone will help supervise the various activities that will include kids focused workshops and presentations as well as arts and crafts and free play. They will not be responsible for babysitting, but will be expected to help keep the chaos to a safe level.",
-      "Applicants for this team should enjoy working with kids and be willing to have fun, get silly and comfortable working in fast-paced potentially chaotic environments."
-    ]
-  },
-  {
     title: "Kitchen",
     description: [
       "Kitchen volunteers are responsible for prepping, cooking and serving food to our lovely staff and super volunteers. Our staff and crew kitchen will be housed indoors and will be operating for the entire duration of our time on-site August 17-28.",
