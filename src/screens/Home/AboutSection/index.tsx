@@ -10,7 +10,12 @@ const AboutSection = ({ data }: { data?: [{ text: string }] }) => {
       <Section>
         <div className={styles.Content}>
           <H1 className={styles.Centered}>Stay up to date</H1>
-          {data && data.map((p) => <P className={styles.Centered}>{p.text}</P>)}
+          {data &&
+            data.map((p) => (
+              <P key={p.text} className={styles.Centered}>
+                {p.text}
+              </P>
+            ))}
           <div className={styles.Cta}>
             <ButtonLink href="/updates">See Updates</ButtonLink>
           </div>

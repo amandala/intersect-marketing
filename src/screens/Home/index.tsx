@@ -6,6 +6,7 @@ import GetInvolvedSection from "./GetInvolvedSection";
 import AboutSection from "./AboutSection";
 import AboveTheFold from "./AboveTheFold";
 import StagesSection from "./StagesSection";
+import { ButtonLinkExternal } from "../../components/Button";
 
 import styles from "./index.module.scss";
 
@@ -46,6 +47,7 @@ const Home = () => {
         Prismic.Predicates.at("document.type", "home-page")
       );
       if (response) {
+        console.log(response.results[0]);
         setDocData(response.results[0]);
       }
     };
@@ -62,6 +64,12 @@ const Home = () => {
       </div>
       <div className={styles.Layout}>
         <AboveTheFold />
+        <ButtonLinkExternal
+          className={styles.Tickets}
+          href="https://dropaganda.tickit.ca/events/12365"
+        >
+          Get Tickets
+        </ButtonLinkExternal>
         <div className={styles.FeatureImageWrapper}>
           <img
             className={styles.FeatureImage}

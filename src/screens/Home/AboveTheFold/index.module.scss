@@ -5,53 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 45px;
+  margin-bottom: 50px;
 }
 
-.WordMark {
-  width: 80%;
-  max-width: $max-width-small;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 7px;
-}
-
-.DropagandaPresents,
-.Sessions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Sessions {
-  margin-top: 20px;
-  padding: 0 45px;
-}
-
-.Heading {
-  text-align: center;
-}
-
-.Dropaganda {
+.Image {
   width: 100%;
-  max-width: 200px;
-  margin-bottom: 7px;
-}
-
-.InterSect {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 10px;
-}
-
-@include breakpoint(medium) {
-  .AboveTheFold {
-    min-height: unset;
-    padding: 30px 0;
-  }
-
-  .WordMark {
-    width: 100%;
-    max-width: 500px;
-  }
 }
