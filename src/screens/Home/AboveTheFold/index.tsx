@@ -1,5 +1,4 @@
 import React from "react";
-import { H1, H4 } from "../../../components/Typography";
 
 import styles from "./index.module.scss";
 

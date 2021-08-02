@@ -12,7 +12,7 @@ const Stage = ({
   fade,
   SVG,
   details,
-  genre,
+  genre
 }: {
   onMouseEnter: (arg0: any) => void;
   onMouseLeave: (arg0: any) => void;
@@ -27,12 +27,12 @@ const Stage = ({
     onMouseLeave={(e) => onMouseLeave(e)}
     className={cx(styles.Stage, {
       [styles.StageGlow]: hover,
-      [styles.StageFade]: fade,
+      [styles.StageFade]: fade
     })}
   >
     {SVG()}
     <Tiny className={styles.ByLine}>
-      {hover ? "Check back for more!" : genre}
+      {hover ? "Lineups are live!!" : genre}
     </Tiny>
     <div className={styles.DetailsWrapper}>
       <P small>{details}</P>

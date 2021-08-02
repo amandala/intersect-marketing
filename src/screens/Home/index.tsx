@@ -38,8 +38,11 @@ const Home = () => {
     data: {
       feature_image: { url: string };
       announcement: [{ text: string }];
+      posters: [{ poster: { url: string } }];
     };
   }>();
+
+  console.log(doc?.data.posters);
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -70,12 +73,18 @@ const Home = () => {
         >
           Get Tickets
         </ButtonLinkExternal>
+
         <div className={styles.FeatureImageWrapper}>
-          <img
-            className={styles.FeatureImage}
-            src={doc?.data.feature_image.url}
-            alt={"Bridge release poster"}
-          />
+          {doc?.data.posters.map((data) => {
+            console.log(data);
+            return (
+              <img
+                className={styles.Poster}
+                src={data.poster.url}
+                alt={"Bridge release poster"}
+              />
+            );
+          })}
         </div>
         <AboutSection data={doc?.data.announcement} />
         <StagesSection />

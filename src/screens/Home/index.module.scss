@@ -25,14 +25,17 @@
 .FeatureImageWrapper {
   padding: 20px;
   margin: 0 auto;
-  background-color: black;
   padding: 10px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.FeatureImage {
+.Poster {
   width: 100%;
   max-width: 500px;
+  margin-bottom: 24px;
+  border: 10px solid black;
 }
 
 .Loader {
@@ -87,4 +90,9 @@
 }
 
 @include breakpoint(large) {
+  .FeatureImageWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
 }
