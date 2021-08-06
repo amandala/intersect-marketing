@@ -16,24 +16,20 @@ const Vendors = () => {
             for every taste and style.
           </P>
           <div className={styles.Market}>
-            <H2>Farmer's Market</H2>
+            <H2>Vendor Hall</H2>
             <P>
               We have a large enclosed and fully serviced market space perfect
-              for selling local fresh produce, meats, and other delicious
-              goodies. The Farmer's Market is located just outside the main
-              fairground gate providing an on site one-stop-shop location for
-              all our attendees.
+              for smaller table based vendors.
             </P>
             <P>
-              Click the link below to apply to be a vendor at our Farmer's
-              Market.
+              Click the link below to apply to be a vendor at our Vendor Hall.
             </P>
             <div className={styles.Buttons}>
               <ButtonLinkExternal
                 className={styles.ApplicationLink}
                 href="https://forms.gle/vAhEvQyA8TxDkKbT6"
               >
-                Farmer's Market Application
+                Vendor Hall Application
               </ButtonLinkExternal>
             </div>
           </div>
