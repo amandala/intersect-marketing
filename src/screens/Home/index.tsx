@@ -73,7 +73,7 @@ const Home = () => {
         >
           Get Tickets
         </ButtonLinkExternal>
-
+        <StagesSection />
         <div className={styles.FeatureImageWrapper}>
           {doc?.data.posters.map((data) => {
             console.log(data);
@@ -87,7 +87,7 @@ const Home = () => {
           })}
         </div>
         <AboutSection data={doc?.data.announcement} />
-        <StagesSection />
+
         <GetInvolvedSection />
       </div>
     </div>
